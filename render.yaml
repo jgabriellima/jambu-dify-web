@@ -3,7 +3,7 @@ services:
     name: api
     env: docker
     dockerfilePath: ./api/Dockerfile
-    dockerContext: .
+    dockerContext: ./api
     envVars:
       - key: MODE
         value: api
@@ -13,18 +13,36 @@ services:
         value: sk-9f73s3ljTXVcMT3Blb3ljTqtsKiGHXVcMT3BlbkFJLK7U
       - key: MIGRATION_ENABLED
         value: 'true'
-      - key: DB_USERNAME
-        value: postgres
-      - key: DB_PASSWORD
-        value: difyai123456
-      - key: DB_HOST
-        value: ${db.DATABASE_URL}
+      - key: PGHOST
+        fromDatabase:
+          name: difyDB
+          property: host
+      - key: PGDATABASE
+        fromDatabase:
+          name: difyDB
+          property: database
+      - key: PGPORT
+        fromDatabase:
+          name: difyDB
+          property: port
+      - key: PGUSER
+        fromDatabase:
+          name: difyDB
+          property: user
+      - key: PGPASSWORD
+        fromDatabase:
+          name: difyDB
+          property: password
       - key: REDIS_HOST
-        value: ${redis.HOST}
+        fromService:
+          type: redis
+          name: lightning
+          property: host
       - key: REDIS_PORT
-        value: ${redis.PORT}
-      - key: REDIS_PASSWORD
-        value: difyai123456
+        fromService:
+          type: redis
+          name: lightning
+          property: port
       - key: CELERY_BROKER_URL
         value: redis://:${redis.PASSWORD}@${redis.HOST}:${redis.PORT}/1
       - key: VECTOR_STORE
@@ -37,15 +55,12 @@ services:
         value: 'https://4d5241867f0d2ed25ac913316e167a61@o190918.ingest.us.sentry.io/4506889664462848'
       - key: SENTRY_TRACES_SAMPLE_RATE
         value: 1.0
-    regions:
-      - frankfurt
-    port: 5001
 
   - type: worker
     name: worker
     env: docker
     dockerfilePath: ./api/Dockerfile
-    dockerContext: .
+    dockerContext: ./api
     envVars:
       - key: MODE
         value: worker
@@ -55,18 +70,36 @@ services:
         value: sk-9f73s3ljTXVcMT3Blb3ljTqtsKiGHXVcMT3BlbkFJLK7U
       - key: MIGRATION_ENABLED
         value: 'true'
-      - key: DB_USERNAME
-        value: postgres
-      - key: DB_PASSWORD
-        value: difyai123456
-      - key: DB_HOST
-        value: ${db.DATABASE_URL}
+      - key: PGHOST
+        fromDatabase:
+          name: difyDB
+          property: host
+      - key: PGDATABASE
+        fromDatabase:
+          name: difyDB
+          property: database
+      - key: PGPORT
+        fromDatabase:
+          name: difyDB
+          property: port
+      - key: PGUSER
+        fromDatabase:
+          name: difyDB
+          property: user
+      - key: PGPASSWORD
+        fromDatabase:
+          name: difyDB
+          property: password
       - key: REDIS_HOST
-        value: ${redis.HOST}
+        fromService:
+          type: redis
+          name: lightning
+          property: host
       - key: REDIS_PORT
-        value: ${redis.PORT}
-      - key: REDIS_PASSWORD
-        value: difyai123456
+        fromService:
+          type: redis
+          name: lightning
+          property: port
       - key: CELERY_BROKER_URL
         value: redis://:${redis.PASSWORD}@${redis.HOST}:${redis.PORT}/1
       - key: VECTOR_STORE
@@ -80,28 +113,18 @@ services:
       - key: SENTRY_TRACES_SAMPLE_RATE
         value: 1.0
 
+  - type: redis
+    name: lightning
+    ipAllowList:
+      - source: 0.0.0.0/0
+        description: everywhere
+
   - type: web
     name: web
     env: docker
     dockerfilePath: ./web/Dockerfile
-    dockerContext: .
-    ports:
-      - "3000"
+    dockerContext: ./web
 
-  - type: pserv
-    name: db
-    env: docker
-    image: postgres:15-alpine
-    envVars:
-      - key: PGUSER
-        value: postgres
-      - key: POSTGRES_PASSWORD
-        value: difyai123456
-      - key: POSTGRES_DB
-        value: dify
-
-  - type: pserv
-    name: redis
-    env: docker
-    image: redis:6-alpine
-    command: redis-server --requirepass difyai123456
+databases:
+  - name: difyDB
+    plan: starter
