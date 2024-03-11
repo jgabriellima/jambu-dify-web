@@ -1,0 +1,107 @@
+services:
+  - type: web
+    name: api
+    env: docker
+    dockerfilePath: ../api/Dockerfile
+    dockerContext: .
+    envVars:
+      - key: MODE
+        value: api
+      - key: LOG_LEVEL
+        value: INFO
+      - key: SECRET_KEY
+        value: sk-9f73s3ljTXVcMT3Blb3ljTqtsKiGHXVcMT3BlbkFJLK7U
+      - key: MIGRATION_ENABLED
+        value: 'true'
+      - key: DB_USERNAME
+        value: postgres
+      - key: DB_PASSWORD
+        value: difyai123456
+      - key: DB_HOST
+        value: ${db.DATABASE_URL}
+      - key: REDIS_HOST
+        value: ${redis.HOST}
+      - key: REDIS_PORT
+        value: ${redis.PORT}
+      - key: REDIS_PASSWORD
+        value: difyai123456
+      - key: CELERY_BROKER_URL
+        value: redis://:${redis.PASSWORD}@${redis.HOST}:${redis.PORT}/1
+      - key: VECTOR_STORE
+        value: qdrant
+      - key: QDRANT_URL
+        value: https://98d0bf03-d08e-40d7-880c-63984f247731.us-east4-0.gcp.cloud.qdrant.io:6333
+      - key: QDRANT_API_KEY
+        value: NIFUqE3BMS2A84QjT-nbR6rcsPcn0whRt0av4mBGihIcVNgFKBAxXA
+      - key: SENTRY_DSN
+        value: 'https://4d5241867f0d2ed25ac913316e167a61@o190918.ingest.us.sentry.io/4506889664462848'
+      - key: SENTRY_TRACES_SAMPLE_RATE
+        value: 1.0
+    regions:
+      - frankfurt
+    port: 5001
+
+  - type: worker
+    name: worker
+    env: docker
+    dockerfilePath: ../api/Dockerfile
+    dockerContext: .
+    envVars:
+      - key: MODE
+        value: worker
+      - key: LOG_LEVEL
+        value: INFO
+      - key: SECRET_KEY
+        value: sk-9f73s3ljTXVcMT3Blb3ljTqtsKiGHXVcMT3BlbkFJLK7U
+      - key: MIGRATION_ENABLED
+        value: 'true'
+      - key: DB_USERNAME
+        value: postgres
+      - key: DB_PASSWORD
+        value: difyai123456
+      - key: DB_HOST
+        value: ${db.DATABASE_URL}
+      - key: REDIS_HOST
+        value: ${redis.HOST}
+      - key: REDIS_PORT
+        value: ${redis.PORT}
+      - key: REDIS_PASSWORD
+        value: difyai123456
+      - key: CELERY_BROKER_URL
+        value: redis://:${redis.PASSWORD}@${redis.HOST}:${redis.PORT}/1
+      - key: VECTOR_STORE
+        value: qdrant
+      - key: QDRANT_URL
+        value: https://98d0bf03-d08e-40d7-880c-63984f247731.us-east4-0.gcp.cloud.qdrant.io:6333
+      - key: QDRANT_API_KEY
+        value: NIFUqE3BMS2A84QjT-nbR6rcsPcn0whRt0av4mBGihIcVNgFKBAxXA
+      - key: SENTRY_DSN
+        value: 'https://4d5241867f0d2ed25ac913316e167a61@o190918.ingest.us.sentry.io/4506889664462848'
+      - key: SENTRY_TRACES_SAMPLE_RATE
+        value: 1.0
+
+  - type: web
+    name: web
+    env: docker
+    dockerfilePath: ../web/Dockerfile
+    dockerContext: .
+    ports:
+      - "3000"
+
+  - type: pserv
+    name: db
+    env: docker
+    image: postgres:15-alpine
+    envVars:
+      - key: PGUSER
+        value: postgres
+      - key: POSTGRES_PASSWORD
+        value: difyai123456
+      - key: POSTGRES_DB
+        value: dify
+
+  - type: pserv
+    name: redis
+    env: docker
+    image: redis:6-alpine
+    command: redis-server --requirepass difyai123456
