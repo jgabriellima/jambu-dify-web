@@ -2,7 +2,7 @@ services:
   - type: web
     name: api
     env: docker
-    dockerfilePath: ../api/Dockerfile
+    dockerfilePath: ./api/Dockerfile
     dockerContext: .
     envVars:
       - key: MODE
@@ -44,7 +44,7 @@ services:
   - type: worker
     name: worker
     env: docker
-    dockerfilePath: ../api/Dockerfile
+    dockerfilePath: ./api/Dockerfile
     dockerContext: .
     envVars:
       - key: MODE
@@ -83,7 +83,7 @@ services:
   - type: web
     name: web
     env: docker
-    dockerfilePath: ../web/Dockerfile
+    dockerfilePath: ./web/Dockerfile
     dockerContext: .
     ports:
       - "3000"
