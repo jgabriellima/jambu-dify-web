@@ -13,12 +13,13 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --primary-glow: conic-gradient(from 180deg at 50% 50%,
-      #16abff33 0deg,
-      #0885ff33 55deg,
-      #54d6ff33 120deg,
-      #0071ff33 160deg,
-      transparent 360deg);
+    --primary-glow: conic-gradient(from 180deg at 50% 50%,
+    #33ff9933 0deg,    /* Light green */
+    #33cc6633 55deg,   /* Medium green */
+    #33993333 120deg,  /* Dark green */
+    #66ff9933 160deg,  /* Lighter green */
+    transparent 360deg);
+
   --secondary-glow: radial-gradient(rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0));
 
@@ -135,7 +136,7 @@ button:focus-within {
 
 /* overwrite paging active dark model style  */
 [class*=style_paginatio] li .text-primary-600 {
-  color: rgb(28 100 242);
+  color: rgb(49, 150, 7);
   background-color: rgb(235 245 255);
 }
 

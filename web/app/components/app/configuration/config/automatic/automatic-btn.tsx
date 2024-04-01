@@ -25,7 +25,7 @@ const AutomaticBtn: FC<IAutomaticBtnProps> = ({
       onClick={onClick}
     >
       {leftIcon}
-      <span className='text-xs font-semibold text-indigo-600'>{t('appDebug.operation.automatic')}</span>
+      <span className='text-xs font-semibold text-[#006400]'>{t('appDebug.operation.automatic')}</span>
     </div>
   )
 }

@@ -120,7 +120,7 @@ const InviteModal = ({
                         <div className='flex flex-row'>
                           <span
                             className={cn(
-                              'text-indigo-600 w-8',
+                              'text-[#006400] w-8',
                               'flex items-center',
                             )}
                           >

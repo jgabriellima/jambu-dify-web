@@ -198,7 +198,7 @@ const Form = () => {
             />
             <div className='mt-2 w-full text-xs leading-6 text-gray-500'>
               {t('datasetSettings.form.embeddingModelTip')}
-              <span className='text-[#155eef] cursor-pointer' onClick={() => setShowAccountSettingModal({ payload: 'provider' })}>{t('datasetSettings.form.embeddingModelTipLink')}</span>
+              <span className='text-[#38A169] cursor-pointer' onClick={() => setShowAccountSettingModal({ payload: 'provider' })}>{t('datasetSettings.form.embeddingModelTipLink')}</span>
             </div>
           </div>
         </div>
@@ -209,7 +209,7 @@ const Form = () => {
           <div>
             <div>{t('datasetSettings.form.retrievalSetting.title')}</div>
             <div className='leading-[18px] text-xs font-normal text-gray-500'>
-              <a target='_blank' rel='noopener noreferrer' href='https://docs.dify.ai/features/retrieval-augment' className='text-[#155eef]'>{t('datasetSettings.form.retrievalSetting.learnMore')}</a>
+              <a target='_blank' rel='noopener noreferrer' href='https://docs.dify.ai/features/retrieval-augment' className='text-[#38A169]'>{t('datasetSettings.form.retrievalSetting.learnMore')}</a>
               {t('datasetSettings.form.retrievalSetting.description')}
             </div>
           </div>

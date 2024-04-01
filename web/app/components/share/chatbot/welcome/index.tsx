@@ -270,7 +270,7 @@ const Welcome: FC<IWelcomeProps> = ({
             />
             <PromptTemplate html={highLightPromoptTemplate} />
             {isFold && (
-              <div className='flex items-center justify-between mt-3 border-t border-indigo-100 pt-4 text-xs text-indigo-600'>
+              <div className='flex items-center justify-between mt-3 border-t border-indigo-100 pt-4 text-xs text-[#006400]'>
                 <span className='text-gray-700'>{t('share.chat.configStatusDes')}</span>
                 <EditBtn onClick={() => setIsFold(false)} />
               </div>
@@ -292,7 +292,7 @@ const Welcome: FC<IWelcomeProps> = ({
       <TemplateVarPanel
         isFold={isFold}
         header={
-          <div className='flex items-center justify-between text-indigo-600'>
+          <div className='flex items-center justify-between text-[#006400]'>
             <PanelTitle
               title={!isFold ? t('share.chat.privatePromptConfigTitle') : t('share.chat.configStatusDes')}
             />

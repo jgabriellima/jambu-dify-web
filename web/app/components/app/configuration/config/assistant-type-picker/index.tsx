@@ -46,7 +46,7 @@ const SelectItem: FC<ItemProps> = ({ text, value, Icon, isChecked, description, 
       <div className='flex items-center justify-between'>
         <div className='flex items-center '>
           <div className='mr-3 p-1 bg-indigo-50 rounded-lg'>
-            <Icon className='w-4 h-4 text-indigo-600' />
+            <Icon className='w-4 h-4 text-[#006400]' />
           </div>
           <div className='leading-5 text-sm font-medium text-gray-900'>{text}</div>
         </div>
@@ -94,11 +94,11 @@ const AssistantTypePicker: FC<Props> = ({
         <div className='flex items-center justify-between'>
           <div className='flex items-center '>
             <div className='mr-3 p-1 bg-gray-200 group-hover:bg-white rounded-lg'>
-              <Settings04 className='w-4 h-4 text-gray-600 group-hover:text-[#155EEF]' />
+              <Settings04 className='w-4 h-4 text-gray-600 group-hover:text-[#38A169]' />
             </div>
-            <div className='leading-5 text-sm font-medium text-gray-900 group-hover:text-[#155EEF]'>{t('appDebug.agent.setting.name')}</div>
+            <div className='leading-5 text-sm font-medium text-gray-900 group-hover:text-[#38A169]'>{t('appDebug.agent.setting.name')}</div>
           </div>
-          <ArrowUpRight className='w-4 h-4 text-gray-500 group-hover:text-[#155EEF]' />
+          <ArrowUpRight className='w-4 h-4 text-gray-500 group-hover:text-[#38A169]' />
         </div>
         <div className='ml-9 leading-[18px] text-xs font-normal text-gray-500'>{t('appDebug.agent.setting.description')}</div>
       </div>
@@ -116,7 +116,7 @@ const AssistantTypePicker: FC<Props> = ({
         }}
       >
         <PortalToFollowElemTrigger onClick={() => setOpen(v => !v)}>
-          <div className={cn(open && 'bg-gray-50', 'flex items-center h-8 px-3 border border-black/5 rounded-lg cursor-pointer select-none space-x-1 text-indigo-600')}>
+          <div className={cn(open && 'bg-gray-50', 'flex items-center h-8 px-3 border border-black/5 rounded-lg cursor-pointer select-none space-x-1 text-[#006400]')}>
             {isAgent ? <BubbleText className='w-3 h-3' /> : <CuteRobote className='w-3 h-3' />}
             <div className='text-xs font-medium'>{t(`appDebug.assistantType.${isAgent ? 'agentAssistant' : 'chatAssistant'}.name`)}</div>
             <ChevronDown className='w-3 h-3' />

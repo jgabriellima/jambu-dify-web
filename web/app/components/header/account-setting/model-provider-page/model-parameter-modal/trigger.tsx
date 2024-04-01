@@ -97,7 +97,7 @@ const Trigger: FC<TriggerProps> = ({
             </TooltipPlus>
           )
           : (
-            <SlidersH className='w-4 h-4 text-indigo-600' />
+            <SlidersH className='w-4 h-4 text-[#006400]' />
           )
       }
     </div>

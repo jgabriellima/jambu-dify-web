@@ -3,7 +3,7 @@
 }
 
 .checked {
-  background: #155eef url(./assets/check.svg) center center no-repeat;
+  background: #38A169 url(./assets/check.svg) center center no-repeat;
   background-size: 12px 12px;
-  border-color: #155eef;
+  border-color: #38A169;
 }

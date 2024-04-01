@@ -65,7 +65,7 @@ const AgentSetting: FC<Props> = ({
           <ItemPanel
             className='mb-4'
             icon={
-              <CuteRobote className='w-4 h-4 text-indigo-600' />
+              <CuteRobote className='w-4 h-4 text-[#006400]' />
             }
             name={t('appDebug.agent.agentMode')}
             description={t('appDebug.agent.agentModeDes')}

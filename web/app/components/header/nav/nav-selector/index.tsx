@@ -49,10 +49,10 @@ const NavSelector = ({ curNav, navs, createText, onCreate, onLoadmore }: INavSel
             className="
               inline-flex items-center w-full h-7 justify-center
               rounded-[10px] pl-2 pr-2.5 text-[14px] font-semibold
-              text-[#1C64F2] hover:bg-[#EBF5FF]
+              text-[#006400] hover:bg-[#EBF5FF]
             "
           >
-            <div className='max-w-[180px] truncate' title={curNav?.name}>{curNav?.name}</div>
+            <div className='max-w-[180px] text-[#006400] truncate' title={curNav?.name}>{curNav?.name}</div>
             <ChevronDownIcon
               className="shrink-0 w-3 h-3 ml-1"
               aria-hidden="true"

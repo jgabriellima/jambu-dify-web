@@ -21,15 +21,15 @@ module.exports = {
           900: '#111928',
         },
         primary: {
-          25: '#F5F8FF',
-          50: '#EBF5FF',
-          100: '#E1EFFE',
-          200: '#C3DDFD',
-          300: '#A4CAFE',
-          400: '#528BFF',
-          500: '#2970FF',
-          600: '#1C64F2',
-          700: '#1A56DB',
+          25: '#F0FFF4', // Very light green, almost white
+          50: '#E6FFEA', // Very light green
+          100: '#C6F6D5', // Light green
+          200: '#9AE6B4', // Light to medium green
+          300: '#68D391', // Medium green
+          400: '#48BB78', // Medium to dark green
+          500: '#38A169', // Dark green
+          600: '#2F855A', // Darker green
+          700: '#276749', // Very dark green
         },
         blue: {
           500: '#E1EFFE',

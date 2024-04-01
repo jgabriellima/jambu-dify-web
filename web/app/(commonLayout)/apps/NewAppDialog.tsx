@@ -153,7 +153,7 @@ const NewAppDialog = ({ show, onSuccess, onClose }: NewAppDialogProps) => {
                     <div className={style.listItemHeading}>
                       <div className={style.listItemHeadingContent}>{t('app.newApp.chatApp')}</div>
                     </div>
-                    <div className='flex items-center h-[18px] border border-indigo-300 px-1 rounded-[5px] text-xs font-medium text-indigo-600 uppercase  truncate'>{t('app.newApp.agentAssistant')}</div>
+                    <div className='flex items-center h-[18px] border border-indigo-300 px-1 rounded-[5px] text-xs font-medium text-[#006400] uppercase  truncate'>{t('app.newApp.agentAssistant')}</div>
                   </div>
                   <div className={`${style.listItemDescription} ${style.noClip}`}>{t('app.newApp.chatAppIntro')}</div>
                   {/* <div className={classNames(style.listItemFooter, 'justify-end')}>
@@ -167,7 +167,7 @@ const NewAppDialog = ({ show, onSuccess, onClose }: NewAppDialogProps) => {
                   <div className={style.listItemTitle}>
                     <span className={style.newItemIcon}>
                       {/* <span className={classNames(style.newItemIconImage, style.newItemIconComplete)} /> */}
-                      <AiText className={classNames('w-5 h-5', newAppMode === 'completion' ? 'text-[#155EEF]' : 'text-gray-700')} />
+                      <AiText className={classNames('w-5 h-5', newAppMode === 'completion' ? 'text-[#38A169]' : 'text-gray-700')} />
                     </span>
                     <div className={style.listItemHeading}>
                       <div className={style.listItemHeadingContent}>{t('app.newApp.completeApp')}</div>
