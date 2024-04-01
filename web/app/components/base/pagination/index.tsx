@@ -35,7 +35,7 @@ const CustomizedPagination: FC<Props> = ({ current, onChange, total, limit = 10 
       <div className={`flex items-center justify-center flex-grow ${s.pagination}`}>
         <Pagination.PageButton
           activeClassName="bg-primary-50 text-primary-600"
-          className="flex items-center justify-center h-8 w-8 rounded-lg cursor-pointer"
+          className="flex items-center justify-center h-8 w-8    cursor-pointer"
           inactiveClassName="text-gray-500"
         />
       </div>

@@ -51,7 +51,7 @@ const ImageList: FC<ImageListProps> = ({
       {list.map(item => (
         <div
           key={item._id}
-          className="group relative mr-1 border-[0.5px] border-black/5 rounded-lg"
+          className="group relative mr-1 border-[0.5px] border-black/5   "
         >
           {item.type === TransferMethod.local_file && item.progress !== 100 && (
             <>
@@ -76,7 +76,7 @@ const ImageList: FC<ImageListProps> = ({
           {item.type === TransferMethod.remote_url && item.progress !== 100 && (
             <div
               className={`
-                  absolute inset-0 flex items-center justify-center rounded-lg z-[1] border
+                  absolute inset-0 flex items-center justify-center    z-[1] border
                   ${
             item.progress === -1
               ? 'bg-[#FEF0C7] border-[#DC6803]'
@@ -97,7 +97,7 @@ const ImageList: FC<ImageListProps> = ({
             </div>
           )}
           <img
-            className="w-16 h-16 rounded-lg object-cover cursor-pointer border-[0.5px] border-black/5"
+            className="w-16 h-16    object-cover cursor-pointer border-[0.5px] border-black/5"
             alt={item.file?.name}
             onLoad={() => handleImageLinkLoadSuccess(item)}
             onError={() => handleImageLinkLoadError(item)}
@@ -120,7 +120,7 @@ const ImageList: FC<ImageListProps> = ({
               type="button"
               className={cn(
                 'absolute z-10 -top-[9px] -right-[9px] items-center justify-center w-[18px] h-[18px]',
-                'bg-white hover:bg-gray-50 border-[0.5px] border-black/[0.02] rounded-2xl shadow-lg',
+                'bg-white hover:bg-gray-50 border-[0.5px] border-black/[0.02]     shadow-lg',
                 item.progress === -1 ? 'flex' : 'hidden group-hover:flex',
               )}
               onClick={() => onRemove && onRemove(item._id)}

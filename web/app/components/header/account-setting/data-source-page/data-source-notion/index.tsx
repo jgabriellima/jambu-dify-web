@@ -44,9 +44,9 @@ const DataSourceNotion = ({
   }, [data])
 
   return (
-    <div className='mb-2 border-[0.5px] border-gray-200 bg-gray-50 rounded-xl'>
+    <div className='mb-2 border-[0.5px] border-gray-200 bg-gray-50  '>
       <div className='flex items-center px-3 py-[9px]'>
-        <div className={cn(s['notion-icon'], 'w-8 h-8 mr-3 border border-gray-100 rounded-lg')} />
+        <div className={cn(s['notion-icon'], 'w-8 h-8 mr-3 border border-gray-100   ')} />
         <div className='grow'>
           <div className='leading-5 text-sm font-medium text-gray-800'>
             {t('common.dataSource.notion.title')}
@@ -65,7 +65,7 @@ const DataSourceNotion = ({
               <div
                 className={
                   `flex items-center ml-3 px-3 h-7 bg-white border border-gray-200
-                  rounded-md text-xs font-medium text-gray-700
+                      text-xs font-medium text-gray-700
                   ${isCurrentWorkspaceManager ? 'cursor-pointer' : 'grayscale opacity-50 cursor-default'}`
                 }
                 onClick={handleConnectNotion}
@@ -76,7 +76,7 @@ const DataSourceNotion = ({
             : (
               <div
                 className={
-                  `flex items-center px-3 py-1 min-h-7 bg-white border-[0.5px] border-gray-200 text-xs font-medium text-primary-600 rounded-md
+                  `flex items-center px-3 py-1 min-h-7 bg-white border-[0.5px] border-gray-200 text-xs font-medium text-primary-600    
                   ${isCurrentWorkspaceManager ? 'cursor-pointer' : 'grayscale opacity-50 cursor-default'}`
                 }
                 onClick={handleConnectNotion}
@@ -102,7 +102,7 @@ const DataSourceNotion = ({
           <div className='px-3 pt-2 pb-3'>
             {
               workspaces.map(workspace => (
-                <div className={cn(s['workspace-item'], 'flex items-center mb-1 py-1 pr-1 bg-white rounded-lg')} key={workspace.id}>
+                <div className={cn(s['workspace-item'], 'flex items-center mb-1 py-1 pr-1 bg-white   ')} key={workspace.id}>
                   <NotionIcon
                     className='ml-3 mr-[6px]'
                     src={workspace.source_info.workspace_icon}

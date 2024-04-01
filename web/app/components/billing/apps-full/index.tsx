@@ -11,8 +11,8 @@ const AppsFull: FC = () => {
   const { t } = useTranslation()
 
   return (
-    <GridMask wrapperClassName='rounded-lg' canvasClassName='rounded-lg' gradientClassName='rounded-lg'>
-      <div className='col-span-1 px-3.5 pt-3.5 border-2 border-solid border-transparent rounded-lg shadow-xs min-h-[160px] flex flex-col transition-all duration-200 ease-in-out cursor-pointer hover:shadow-lg'>
+    <GridMask wrapperClassName='  ' canvasClassName='  ' gradientClassName='  '>
+      <div className='col-span-1 px-3.5 pt-3.5 border-2 border-solid border-transparent    shadow-xs min-h-[160px] flex flex-col transition-all duration-200 ease-in-out cursor-pointer hover:shadow-lg'>
         <div className={cn(s.textGradient, 'leading-[24px] text-base font-semibold')}>
           <div>{t('billing.apps.fullTipLine1')}</div>
           <div>{t('billing.apps.fullTipLine2')}</div>

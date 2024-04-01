@@ -11,14 +11,14 @@
             radial-gradient(at 0% 0%, rgba(34,139,34,0.8) 0%, transparent 70%),
             radial-gradient(at 0% 100%, rgba(34,139,34,0.8) 0%, transparent 70%);
 
-    border-radius: 12px;
+    /*border-radius: 12px;*/
   padding: 2px;
   box-sizing: border-box;
 }
 
 .warningBorder {
   border: 2px solid #F79009;
-  border-radius: 12px;
+  /*border-radius: 12px;*/
 }
 
 .optionWrap {

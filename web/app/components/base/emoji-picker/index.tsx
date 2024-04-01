@@ -97,7 +97,7 @@ const EmojiPicker: FC<IEmojiPickerProps> = ({
         <input
           type="search"
           id="search"
-          className='block w-full h-10 px-3 pl-10 text-sm font-normal bg-gray-100 rounded-lg'
+          className='block w-full h-10 px-3 pl-10 text-sm font-normal bg-gray-100   '
           placeholder="Search emojis..."
           onChange={async (e: ChangeEvent<HTMLInputElement>) => {
             if (e.target.value === '') {
@@ -122,12 +122,12 @@ const EmojiPicker: FC<IEmojiPickerProps> = ({
             {searchedEmojis.map((emoji: string, index: number) => {
               return <div
                 key={`emoji-search-${index}`}
-                className='inline-flex w-10 h-10 rounded-lg items-center justify-center'
+                className='inline-flex w-10 h-10    items-center justify-center'
                 onClick={() => {
                   setSelectedEmoji(emoji)
                 }}
               >
-                <div className='cursor-pointer w-8 h-8 p-1 flex items-center justify-center rounded-lg hover:ring-1 ring-offset-1 ring-gray-300'>
+                <div className='cursor-pointer w-8 h-8 p-1 flex items-center justify-center    hover:ring-1 ring-offset-1 ring-gray-300'>
                   <em-emoji id={emoji} />
                 </div>
               </div>
@@ -143,12 +143,12 @@ const EmojiPicker: FC<IEmojiPickerProps> = ({
             {category.emojis.map((emoji, index: number) => {
               return <div
                 key={`emoji-${index}`}
-                className='inline-flex w-10 h-10 rounded-lg items-center justify-center'
+                className='inline-flex w-10 h-10    items-center justify-center'
                 onClick={() => {
                   setSelectedEmoji(emoji)
                 }}
               >
-                <div className='cursor-pointer w-8 h-8 p-1 flex items-center justify-center rounded-lg hover:ring-1 ring-offset-1 ring-gray-300'>
+                <div className='cursor-pointer w-8 h-8 p-1 flex items-center justify-center    hover:ring-1 ring-offset-1 ring-gray-300'>
                   <em-emoji id={emoji} />
                 </div>
               </div>
@@ -170,7 +170,7 @@ const EmojiPicker: FC<IEmojiPickerProps> = ({
               cn(
                 'cursor-pointer',
                 'hover:ring-1 ring-offset-1',
-                'inline-flex w-10 h-10 rounded-lg items-center justify-center',
+                'inline-flex w-10 h-10    items-center justify-center',
                 color === selectedBackground ? 'ring-1 ring-gray-300' : '',
               )}
             onClick={() => {
@@ -178,7 +178,7 @@ const EmojiPicker: FC<IEmojiPickerProps> = ({
             }}
           >
             <div className={cn(
-              'w-8 h-8 p-1 flex items-center justify-center rounded-lg',
+              'w-8 h-8 p-1 flex items-center justify-center   ',
             )
             } style={{ background: color }}>
               {selectedEmoji !== '' && <em-emoji id={selectedEmoji} />}

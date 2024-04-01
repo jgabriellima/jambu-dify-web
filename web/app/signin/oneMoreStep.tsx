@@ -108,7 +108,7 @@ const OneMoreStep = () => {
                 value={state.invitation_code}
                 type="text"
                 placeholder={t('login.invitationCodePlaceholder') || ''}
-                className={'appearance-none block w-full rounded-lg pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm'}
+                className={'appearance-none block w-full    pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm'}
                 onChange={(e) => {
                   dispatch({ type: 'invitation_code', value: e.target.value.trim() })
                 }}
@@ -119,7 +119,7 @@ const OneMoreStep = () => {
             <label htmlFor="name" className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">
               {t('login.interfaceLanguage')}
             </label>
-            <div className="relative mt-1 rounded-md shadow-sm">
+            <div className="relative mt-1     shadow-sm">
               <SimpleSelect
                 defaultValue={LanguagesSupported[0]}
                 items={languages.filter(item => item.supported)}
@@ -133,7 +133,7 @@ const OneMoreStep = () => {
             <label htmlFor="timezone" className="block text-sm font-medium text-gray-700">
               {t('login.timezone')}
             </label>
-            <div className="relative mt-1 rounded-md shadow-sm">
+            <div className="relative mt-1     shadow-sm">
               <SimpleSelect
                 defaultValue={state.timezone}
                 items={timezones}

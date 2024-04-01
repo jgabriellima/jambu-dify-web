@@ -50,7 +50,7 @@ const PasteImageLinkButton: FC<PasteImageLinkButtonProps> = ({
     >
       <PortalToFollowElemTrigger onClick={handleToggle}>
         <div className={`
-          relative flex items-center justify-center px-3 h-8 bg-gray-100 hover:bg-gray-200 text-xs text-gray-500 rounded-lg
+          relative flex items-center justify-center px-3 h-8 bg-gray-100 hover:bg-gray-200 text-xs text-gray-500   
           ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'}
         `}>
           <Link03 className='mr-2 w-4 h-4' />
@@ -58,7 +58,7 @@ const PasteImageLinkButton: FC<PasteImageLinkButtonProps> = ({
         </div>
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent className='z-10'>
-        <div className='p-2 w-[320px] bg-white border-[0.5px] border-gray-200 rounded-lg shadow-lg'>
+        <div className='p-2 w-[320px] bg-white border-[0.5px] border-gray-200    shadow-lg'>
           <ImageLinkInput onUpload={handleUpload} />
         </div>
       </PortalToFollowElemContent>
@@ -99,7 +99,7 @@ const TextGenerationImageUploader: FC<TextGenerationImageUploaderProps> = ({
         hovering => (
           <div className={`
             flex items-center justify-center px-3 h-8 bg-gray-100
-            text-xs text-gray-500 rounded-lg cursor-pointer
+            text-xs text-gray-500    cursor-pointer
             ${hovering && 'bg-gray-200'}
           `}>
             <ImagePlus className='mr-2 w-4 h-4' />

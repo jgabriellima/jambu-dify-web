@@ -26,7 +26,7 @@ type ItemProps = {
 const SelectItem: FC<ItemProps> = ({ text, value, Icon, onClick }) => {
   return (
     <div
-      className='flex items-center px-3 h-8 rounded-lg hover:bg-gray-50 cursor-pointer'
+      className='flex items-center px-3 h-8    hover:bg-gray-50 cursor-pointer'
       onClick={() => onClick(value)}
     >
       <Icon className='w-4 h-4 text-gray-500' />
@@ -58,7 +58,7 @@ const SelectVarType: FC<Props> = ({
         <OperationBtn type='add' className={cn(open && 'bg-gray-200')} />
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent style={{ zIndex: 1000 }}>
-        <div className='bg-white border border-gray-200 shadow-lg rounded-lg min-w-[192px]'>
+        <div className='bg-white border border-gray-200 shadow-lg    min-w-[192px]'>
           <div className='p-1'>
             <SelectItem Icon={TypeSquare} value='string' text={t('appDebug.variableConig.string')} onClick={handleChange}></SelectItem>
             <SelectItem Icon={Paragraph} value='paragraph' text={t('appDebug.variableConig.paragraph')} onClick={handleChange}></SelectItem>

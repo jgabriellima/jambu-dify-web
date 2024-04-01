@@ -184,7 +184,7 @@ const SegmentCard: FC<ISegmentCardProps> = ({
                   <div className={s.segDataText}>{index_node_hash}</div>
                 </div>
                 {!archived && embeddingAvailable && (
-                  <div className='shrink-0 w-6 h-6 flex items-center justify-center rounded-md hover:bg-red-100 hover:text-red-600 cursor-pointer group/delete' onClick={(e) => {
+                  <div className='shrink-0 w-6 h-6 flex items-center justify-center     hover:bg-red-100 hover:text-red-600 cursor-pointer group/delete' onClick={(e) => {
                     e.stopPropagation()
                     setShowModal(true)
                   }}>

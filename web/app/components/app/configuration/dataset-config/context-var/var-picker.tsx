@@ -61,7 +61,7 @@ const VarPicker: FC<Props> = ({
           notSetVar ? 'bg-[#FFFCF5] border-[#FEDF89] text-[#DC6803]' : ' hover:bg-gray-50 border-gray-200 text-primary-600',
           open ? 'bg-gray-50' : 'bg-white',
           `
-          flex items-center h-8 justify-center px-2 space-x-1 rounded-lg border  shadow-xs cursor-pointer
+          flex items-center h-8 justify-center px-2 space-x-1    border  shadow-xs cursor-pointer
           text-[13px]  font-medium
           `)}>
           <div>
@@ -78,11 +78,11 @@ const VarPicker: FC<Props> = ({
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent style={{ zIndex: 1000 }}>
         {options.length > 0
-          ? (<div className='w-[240px] max-h-[50vh] overflow-y-auto p-1  border bg-white border-gray-200 rounded-lg shadow-lg'>
+          ? (<div className='w-[240px] max-h-[50vh] overflow-y-auto p-1  border bg-white border-gray-200    shadow-lg'>
             {options.map(({ name, value, type }, index) => (
               <div
                 key={index}
-                className='px-3 py-1 flex rounded-lg hover:bg-gray-50 cursor-pointer'
+                className='px-3 py-1 flex    hover:bg-gray-50 cursor-pointer'
                 onClick={() => {
                   onChange(value)
                   setOpen(false)
@@ -93,7 +93,7 @@ const VarPicker: FC<Props> = ({
             ))}
           </div>)
           : (
-            <div className='w-[240px] p-6 bg-white border border-gray-200 rounded-lg shadow-lg'>
+            <div className='w-[240px] p-6 bg-white border border-gray-200    shadow-lg'>
               <div className='mb-1 text-sm font-medium text-gray-700'>{t('appDebug.feature.dataSet.queryVariable.noVar')}</div>
               <div className='text-xs leading-normal text-gray-500'>{t('appDebug.feature.dataSet.queryVariable.noVarTip')}</div>
             </div>

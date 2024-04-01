@@ -57,7 +57,7 @@
 }
 .clockWrapper {
   border: 0.5px solid #eaecf5;
-  @apply rounded-lg w-11 h-11 flex justify-center items-center;
+  @apply    w-11 h-11 flex justify-center items-center;
 }
 .clockIcon {
   mask-image: url(./assets/clock.svg);

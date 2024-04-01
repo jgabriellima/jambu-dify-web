@@ -91,7 +91,7 @@ const ItemComponent = ({ index, style, data }: ListChildComponentProps<{
     if (hasChild) {
       return (
         <div
-          className={cn(s.arrow, current.expand && s['arrow-expand'], 'shrink-0 mr-1 w-5 h-5 hover:bg-gray-200 rounded-md')}
+          className={cn(s.arrow, current.expand && s['arrow-expand'], 'shrink-0 mr-1 w-5 h-5 hover:bg-gray-200    ')}
           style={{ marginLeft: current.deepth * 8 }}
           onClick={() => handleToggle(index)}
         />
@@ -109,7 +109,7 @@ const ItemComponent = ({ index, style, data }: ListChildComponentProps<{
 
   return (
     <div
-      className={cn('group flex items-center pl-2 pr-[2px] rounded-md border border-transparent hover:bg-gray-100 cursor-pointer', previewPageId === current.page_id && s['preview-item'])}
+      className={cn('group flex items-center pl-2 pr-[2px]     border border-transparent hover:bg-gray-100 cursor-pointer', previewPageId === current.page_id && s['preview-item'])}
       style={{ ...style, top: style.top as number + 8, left: 8, right: 8, width: 'calc(100% - 16px)' }}
     >
       <Checkbox
@@ -132,7 +132,7 @@ const ItemComponent = ({ index, style, data }: ListChildComponentProps<{
       {
         canPreview && (
           <div
-            className='shrink-0 hidden group-hover:flex items-center ml-1 px-2 h-6 rounded-md text-xs font-medium text-gray-500 cursor-pointer hover:bg-gray-50 hover:text-gray-700'
+            className='shrink-0 hidden group-hover:flex items-center ml-1 px-2 h-6     text-xs font-medium text-gray-500 cursor-pointer hover:bg-gray-50 hover:text-gray-700'
             onClick={() => handlePreview(index)}>
             {t('common.dataSource.notion.selector.preview')}
           </div>

@@ -15,7 +15,7 @@ const NoSearchRes: FC<Props> = ({
 
   return (
     <div>
-      <div className='inline-flex p-3 rounded-lg  bg-gray-50 border border-[#EAECF5]'>
+      <div className='inline-flex p-3     bg-gray-50 border border-[#EAECF5]'>
         <SearchMd className='w-5 h-5 text-gray-500' />
       </div>
       <div className='mt-2'>

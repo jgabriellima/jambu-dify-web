@@ -25,7 +25,7 @@ export type INavSelectorProps = {
 
 const itemClassName = `
   flex items-center w-full h-10 px-3 text-gray-700 text-[14px]
-  rounded-lg font-normal hover:bg-gray-100 cursor-pointer truncate
+     font-normal hover:bg-gray-100 cursor-pointer truncate
 `
 
 const NavSelector = ({ curNav, navs, createText, onCreate, onLoadmore }: INavSelectorProps) => {
@@ -62,7 +62,7 @@ const NavSelector = ({ curNav, navs, createText, onCreate, onLoadmore }: INavSel
         <Menu.Items
           className="
             absolute -left-11 right-0 mt-1.5 w-60 max-w-80
-            divide-y divide-gray-100 origin-top-right rounded-lg bg-white
+            divide-y divide-gray-100 origin-top-right    bg-white
             shadow-lg
           "
         >
@@ -86,7 +86,7 @@ const NavSelector = ({ curNav, navs, createText, onCreate, onLoadmore }: INavSel
           {isCurrentWorkspaceManager && <Menu.Item>
             <div className='p-1' onClick={onCreate}>
               <div
-                className='flex items-center h-12 rounded-lg cursor-pointer hover:bg-gray-100'
+                className='flex items-center h-12    cursor-pointer hover:bg-gray-100'
               >
                 <div
                   className='

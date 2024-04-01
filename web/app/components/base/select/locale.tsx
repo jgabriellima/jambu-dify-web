@@ -22,7 +22,7 @@ export default function Select({
       <Menu as="div" className="relative inline-block text-left">
         <div>
           <Menu.Button className="inline-flex w-full h-[44px]justify-center items-center
-          rounded-lg px-[10px] py-[6px]
+             px-[10px] py-[6px]
           text-gray-900 text-[13px] font-medium
           border border-gray-200
           hover:bg-gray-100">
@@ -39,14 +39,14 @@ export default function Select({
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute right-0 mt-2 w-[200px] origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
+          <Menu.Items className="absolute right-0 mt-2 w-[200px] origin-top-right divide-y divide-gray-100     bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
             <div className="px-1 py-1 ">
               {items.map((item) => {
                 return <Menu.Item key={item.value}>
                   {({ active }) => (
                     <button
                       className={`${active ? 'bg-gray-100' : ''
-                      } group flex w-full items-center rounded-lg px-3 py-2 text-sm text-gray-700`}
+                      } group flex w-full items-center    px-3 py-2 text-sm text-gray-700`}
                       onClick={(evt) => {
                         evt.preventDefault()
                         onChange && onChange(item.value)
@@ -77,7 +77,7 @@ export function InputSelect({
     <div className="w-full">
       <Menu as="div" className="w-full">
         <div>
-          <Menu.Button className="iappearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 sm:text-sm h-[38px] text-left">
+          <Menu.Button className="iappearance-none block w-full px-3 py-2 border border-gray-300     shadow-sm placeholder-gray-400 sm:text-sm h-[38px] text-left">
             {item?.name}
           </Menu.Button>
         </div>
@@ -90,14 +90,14 @@ export function InputSelect({
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute right-0 mt-2 w-full origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
+          <Menu.Items className="absolute right-0 mt-2 w-full origin-top-right divide-y divide-gray-100     bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
             <div className="px-1 py-1 ">
               {items.map((item) => {
                 return <Menu.Item key={item.value}>
                   {({ active }) => (
                     <button
                       className={`${active ? 'bg-gray-100' : ''
-                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                      } group flex w-full items-center     px-2 py-2 text-sm`}
                       onClick={() => {
                         onChange && onChange(item.value)
                       }}

@@ -148,7 +148,7 @@ const SettingBuiltInTool: FC<Props> = ({
           {collection.icon === 'string'
             ? (
               <div
-                className='w-6 h-6 bg-cover bg-center rounded-md'
+                className='w-6 h-6 bg-cover bg-center    '
                 style={{
                   backgroundImage: `url(${collection.icon})`,
                 }}
@@ -156,7 +156,7 @@ const SettingBuiltInTool: FC<Props> = ({
             )
             : (
               <AppIcon
-                className='rounded-md'
+                className='   '
                 size='tiny'
                 icon={(collection.icon as any)?.content}
                 background={(collection.icon as any)?.background}

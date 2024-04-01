@@ -38,7 +38,7 @@ const EmptyElement: FC<{ appUrl: string }> = ({ appUrl }) => {
   const pathSegments = pathname.split('/')
   pathSegments.pop()
   return <div className='flex items-center justify-center h-full'>
-    <div className='bg-gray-50 w-[560px] h-fit box-border px-5 py-4 rounded-2xl'>
+    <div className='bg-gray-50 w-[560px] h-fit box-border px-5 py-4    '>
       <span className='text-gray-700 font-semibold'>{t('appLog.table.empty.element.title')}<ThreeDotsIcon className='inline relative -top-3 -left-1.5' /></span>
       <div className='mt-2 text-gray-500 text-sm font-normal'>
         <Trans

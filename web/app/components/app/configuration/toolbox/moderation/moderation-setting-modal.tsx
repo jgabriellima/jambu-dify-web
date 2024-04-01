@@ -252,7 +252,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
               <div
                 key={provider.key}
                 className={`
-                  flex items-center px-3 py-2 rounded-lg text-sm text-gray-900 cursor-pointer
+                  flex items-center px-3 py-2    text-sm text-gray-900 cursor-pointer
                   ${localeData.type === provider.key ? 'bg-white border-[1.5px] border-primary-400 shadow-sm' : 'border border-gray-100 bg-gray-25'}
                   ${localeData.type === 'openai_moderation' && provider.key === 'openai_moderation' && !openaiProviderConfiged && 'opacity-50'}
                 `}
@@ -268,7 +268,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
         </div>
         {
           !isLoading && !openaiProviderConfiged && localeData.type === 'openai_moderation' && (
-            <div className='flex items-center mt-2 px-3 py-2 bg-[#FFFAEB] rounded-lg border border-[#FEF0C7]'>
+            <div className='flex items-center mt-2 px-3 py-2 bg-[#FFFAEB]    border border-[#FEF0C7]'>
               <InfoCircle className='mr-1 w-4 h-4 text-[#F79009]' />
               <div className='flex items-center text-xs font-medium text-gray-700'>
                 {t('appDebug.feature.moderation.modal.openaiNotConfig.before')}
@@ -289,14 +289,14 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
           <div className='py-2'>
             <div className='mb-1 text-sm font-medium text-gray-900'>{t('appDebug.feature.moderation.modal.provider.keywords')}</div>
             <div className='mb-2 text-xs text-gray-500'>{t('appDebug.feature.moderation.modal.keywords.tip')}</div>
-            <div className='relative px-3 py-2 h-[88px] bg-gray-100 rounded-lg'>
+            <div className='relative px-3 py-2 h-[88px] bg-gray-100   '>
               <textarea
                 value={localeData.config?.keywords || ''}
                 onChange={handleDataKeywordsChange}
                 className='block w-full h-full bg-transparent text-sm outline-none appearance-none resize-none'
                 placeholder={t('appDebug.feature.moderation.modal.keywords.placeholder') || ''}
               />
-              <div className='absolute bottom-2 right-2 flex items-center px-1 h-5 rounded-md bg-gray-50 text-xs font-medium text-gray-300'>
+              <div className='absolute bottom-2 right-2 flex items-center px-1 h-5     bg-gray-50 text-xs font-medium text-gray-300'>
                 <span>{(localeData.config?.keywords || '').split('\n').filter(Boolean).length}</span>/<span className='text-gray-500'>100 {t('appDebug.feature.moderation.modal.keywords.line')}</span>
               </div>
             </div>

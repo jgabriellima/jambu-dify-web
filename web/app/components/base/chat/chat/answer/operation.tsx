@@ -112,9 +112,9 @@ const Operation: FC<OperationProps> = ({
       {
         annotation?.id && (
           <div
-            className='relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-white cursor-pointer text-[#444CE7] shadow-md'
+            className='relative box-border flex items-center justify-center h-7 w-7 p-0.5    bg-white cursor-pointer text-[#38A169] shadow-md'
           >
-            <div className='p-1 rounded-lg bg-[#EEF4FF] '>
+            <div className='p-1    bg-[#EEF4FF] '>
               <MessageFast className='w-4 h-4' />
             </div>
           </div>
@@ -122,10 +122,10 @@ const Operation: FC<OperationProps> = ({
       }
       {
         config?.supportFeedback && !localFeedback?.rating && onFeedback && !isOpeningStatement && (
-          <div className='hidden group-hover:flex ml-1 shrink-0 items-center px-0.5 bg-white border-[0.5px] border-gray-100 shadow-md text-gray-500 rounded-lg'>
+          <div className='hidden group-hover:flex ml-1 shrink-0 items-center px-0.5 bg-white border-[0.5px] border-gray-100 shadow-md text-gray-500   '>
             <TooltipPlus popupContent={t('appDebug.operation.agree')}>
               <div
-                className='flex items-center justify-center mr-0.5 w-6 h-6 rounded-md hover:bg-black/5 hover:text-gray-800 cursor-pointer'
+                className='flex items-center justify-center mr-0.5 w-6 h-6     hover:bg-black/5 hover:text-gray-800 cursor-pointer'
                 onClick={() => handleFeedback('like')}
               >
                 <ThumbsUp className='w-4 h-4' />
@@ -133,7 +133,7 @@ const Operation: FC<OperationProps> = ({
             </TooltipPlus>
             <TooltipPlus popupContent={t('appDebug.operation.disagree')}>
               <div
-                className='flex items-center justify-center w-6 h-6 rounded-md hover:bg-black/5 hover:text-gray-800 cursor-pointer'
+                className='flex items-center justify-center w-6 h-6     hover:bg-black/5 hover:text-gray-800 cursor-pointer'
                 onClick={() => handleFeedback('dislike')}
               >
                 <ThumbsDown className='w-4 h-4' />

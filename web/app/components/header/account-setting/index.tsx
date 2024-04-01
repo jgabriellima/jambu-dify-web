@@ -173,7 +173,7 @@ export default function AccountSetting({
                         <div
                           key={item.key}
                           className={`
-                            flex items-center h-[37px] mb-[2px] text-sm cursor-pointer rounded-lg
+                            flex items-center h-[37px] mb-[2px] text-sm cursor-pointer   
                             ${activeMenu === item.key ? 'font-semibold text-primary-600 bg-primary-50' : 'font-light text-gray-700'}
                           `}
                           title={item.name}

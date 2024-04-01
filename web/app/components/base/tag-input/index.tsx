@@ -64,12 +64,12 @@ const TagInput: FC<TagInputProps> = ({
   }
 
   return (
-    <div className={cn('flex flex-wrap', isSpecialMode ? 'bg-gray-100 min-w-[200px] rounded-lg pb-1 pl-1' : '')}>
+    <div className={cn('flex flex-wrap', isSpecialMode ? 'bg-gray-100 min-w-[200px]    pb-1 pl-1' : '')}>
       {
         items.map((item, index) => (
           <div
             key={item}
-            className={cn('flex items-center mr-1 mt-1 px-2 py-1 text-sm text-gray-700 border border-gray-200', isSpecialMode ? 'bg-white rounded-md' : 'rounded-lg')}>
+            className={cn('flex items-center mr-1 mt-1 px-2 py-1 text-sm text-gray-700 border border-gray-200', isSpecialMode ? 'bg-white    ' : '  ')}>
             {item}
             {
               !disableRemove && (
@@ -87,7 +87,7 @@ const TagInput: FC<TagInputProps> = ({
           <AutosizeInput
             inputClassName={cn('outline-none appearance-none placeholder:text-gray-300 caret-primary-600 hover:placeholder:text-gray-400', isSpecialMode ? 'bg-transparent' : '')}
             className={`
-              mt-1 py-1 rounded-lg border border-transparent text-sm max-w-[300px] overflow-hidden
+              mt-1 py-1    border border-transparent text-sm max-w-[300px] overflow-hidden
               ${focused && 'px-2 border !border-dashed !border-gray-200'}
             `}
             onFocus={() => setFocused(true)}

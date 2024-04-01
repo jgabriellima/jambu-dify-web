@@ -78,13 +78,13 @@
 }
 
 .stepItem.active .stepNum {
-  color: #1c64f2;
+  color:  #2F9E44;
   background-color: #EFF4FF;
   border: none;
 }
 
 .stepItem.active .stepName {
-  color: #1c64f2;
+  color:  #2F9E44;
 }
 
 .stepItem.done .stepNum {

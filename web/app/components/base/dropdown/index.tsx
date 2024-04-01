@@ -45,7 +45,7 @@ const Dropdown: FC<DropdownProps> = ({
             : (
               <div
                 className={`
-                  flex items-center justify-center w-6 h-6 cursor-pointer rounded-md
+                  flex items-center justify-center w-6 h-6 cursor-pointer    
                   ${open && 'bg-black/5'}
                 `}
               >
@@ -55,7 +55,7 @@ const Dropdown: FC<DropdownProps> = ({
         }
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent className={popupClassName}>
-        <div className='rounded-lg border-[0.5px] border-gray-200 bg-white shadow-lg text-sm text-gray-700'>
+        <div className='   border-[0.5px] border-gray-200 bg-white shadow-lg text-sm text-gray-700'>
           {
             !!items.length && (
               <div className='p-1'>
@@ -63,7 +63,7 @@ const Dropdown: FC<DropdownProps> = ({
                   items.map(item => (
                     <div
                       key={item.value}
-                      className='flex items-center px-3 h-8 rounded-lg cursor-pointer hover:bg-gray-100'
+                      className='flex items-center px-3 h-8    cursor-pointer hover:bg-gray-100'
                       onClick={() => handleSelect(item)}
                     >
                       {item.text}
@@ -85,7 +85,7 @@ const Dropdown: FC<DropdownProps> = ({
                   secondItems.map(item => (
                     <div
                       key={item.value}
-                      className='flex items-center px-3 h-8 rounded-lg cursor-pointer hover:bg-gray-100'
+                      className='flex items-center px-3 h-8    cursor-pointer hover:bg-gray-100'
                       onClick={() => handleSelect(item)}
                     >
                       {item.text}

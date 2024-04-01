@@ -10,8 +10,8 @@ const NoCustomToolPlaceHolder: FC = () => {
 
   return (
     <div className='h-full flex items-center justify-center'>
-      <div className='p-6 rounded-xl bg-gray-50'>
-        <div className='inline-flex p-2 border border-gray-200 rounded-md'>
+      <div className='p-6   bg-gray-50'>
+        <div className='inline-flex p-2 border border-gray-200    '>
           <BookOpen01 className='w-4 h-4 text-primary-600' />
         </div>
         <div className='mt-3 leading-6 text-base font-medium text-gray-700'>

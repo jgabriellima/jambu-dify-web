@@ -75,7 +75,7 @@ export const ImageGalleryTest = () => {
   return (
     <div className='space-y-2'>
       {imgGallerySrcs.map((_, index) => (
-        <div key={index} className='p-4 pb-2 rounded-lg bg-[#D1E9FF80]'>
+        <div key={index} className='p-4 pb-2    bg-[#D1E9FF80]'>
           <ImageGallery srcs={imgGallerySrcs.slice(0, index + 1)} />
         </div>
       ))}

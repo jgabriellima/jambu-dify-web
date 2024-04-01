@@ -20,7 +20,7 @@ const VarPanel: FC<Props> = ({
   const [imagePreviewUrl, setImagePreviewUrl] = useState('')
 
   return (
-    <div className='rounded-xl border border-color-indigo-100 bg-indigo-25'>
+    <div className='  border border-color-indigo-100 bg-indigo-25'>
       <div
         className='flex items-center h-6 pl-2 py-6 space-x-1 cursor-pointer'
         onClick={toggleCollapse}
@@ -52,7 +52,7 @@ const VarPanel: FC<Props> = ({
                 {message_files.map((url, index) => (
                   <div
                     key={index}
-                    className="ml-2.5 w-16 h-16 rounded-lg bg-no-repeat bg-cover bg-center cursor-pointer"
+                    className="ml-2.5 w-16 h-16    bg-no-repeat bg-cover bg-center cursor-pointer"
                     style={{ backgroundImage: `url(${url})` }}
                     onClick={() => setImagePreviewUrl(url)}
                   />

@@ -277,8 +277,8 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
         <div className='pt-2 pb-1 text-xs text-gray-500'>{t('appDebug.notSetVar')}</div>
       )}
       {hasVar && (
-        <div className='rounded-lg border border-gray-200 bg-white overflow-x-auto'>
-          <table className={`${s.table} min-w-[440px] w-full max-w-full border-collapse border-0 rounded-lg text-sm`}>
+        <div className='   border border-gray-200 bg-white overflow-x-auto'>
+          <table className={`${s.table} min-w-[440px] w-full max-w-full border-collapse border-0    text-sm`}>
             <thead className="border-b  border-gray-200 text-gray-500 text-xs font-medium">
               <tr className='uppercase'>
                 <td>{t('appDebug.variableTable.key')}</td>
@@ -307,7 +307,7 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
                             onChange={e => updatePromptKey(index, e.target.value)}
                             onBlur={e => updatePromptNameIfNameEmpty(index, e.target.value)}
                             maxLength={getMaxVarNameLength(name)}
-                            className="h-6 leading-6 block w-full rounded-md border-0 py-1.5 text-gray-900  placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-200"
+                            className="h-6 leading-6 block w-full     border-0 py-1.5 text-gray-900  placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-200"
                           />
                         )
                         : (
@@ -324,7 +324,7 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
                           value={name}
                           onChange={e => updatePromptVariable(key, 'name', e.target.value)}
                           maxLength={getMaxVarNameLength(name)}
-                          className="h-6 leading-6 block w-full rounded-md border-0 py-1.5 text-gray-900  placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-200"
+                          className="h-6 leading-6 block w-full     border-0 py-1.5 text-gray-900  placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-200"
                         />)
                       : (
                         <div className='h-6 leading-6 text-[13px] text-gray-700'>{name}</div>
@@ -339,10 +339,10 @@ const ConfigVar: FC<IConfigVarProps> = ({ promptVariables, readonly, onPromptVar
                       </td>
                       <td className='w-20  border-b border-gray-100'>
                         <div className='flex h-full items-center space-x-1'>
-                          <div className=' p-1 rounded-md hover:bg-black/5 w-6 h-6 cursor-pointer' onClick={() => handleConfig({ type, key, index, name, config, icon, icon_background })}>
+                          <div className=' p-1     hover:bg-black/5 w-6 h-6 cursor-pointer' onClick={() => handleConfig({ type, key, index, name, config, icon, icon_background })}>
                             <Settings01 className='w-4 h-4 text-gray-500' />
                           </div>
-                          <div className=' p-1 rounded-md hover:bg-black/5 w-6 h-6 cursor-pointer' onClick={() => handleRemoveVar(index)} >
+                          <div className=' p-1     hover:bg-black/5 w-6 h-6 cursor-pointer' onClick={() => handleRemoveVar(index)} >
                             <Trash03 className='w-4 h-4 text-gray-500' />
                           </div>
                         </div>

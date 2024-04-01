@@ -157,7 +157,7 @@ const Annotation: FC<Props> = ({
           <div className='flex items-center space-x-2'>
             {isChatApp && (
               <>
-                <div className={cn(!annotationConfig?.enabled && 'pr-2', 'flex items-center h-7 rounded-lg border border-gray-200 pl-2 space-x-1')}>
+                <div className={cn(!annotationConfig?.enabled && 'pr-2', 'flex items-center h-7    border border-gray-200 pl-2 space-x-1')}>
                   <div className='leading-[18px] text-[13px] font-medium text-gray-900'>{t('appAnnotation.name')}</div>
                   <Switch
                     key={controlRefreshSwitch}
@@ -193,7 +193,7 @@ const Annotation: FC<Props> = ({
                     `}
                         onClick={() => { setIsShowEdit(true) }}
                       >
-                        <div className='flex h-6 w-6 items-center justify-center rounded-md cursor-pointer hover:bg-gray-200'>
+                        <div className='flex h-6 w-6 items-center justify-center     cursor-pointer hover:bg-gray-200'>
                           <Settings04 className='w-4 h-4' />
                         </div>
                       </div>

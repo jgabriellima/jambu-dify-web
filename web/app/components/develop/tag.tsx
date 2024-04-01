@@ -2,7 +2,7 @@
 import classNames from 'classnames'
 
 const variantStyles = {
-  medium: 'rounded-lg px-1.5 ring-1 ring-inset',
+  medium: '   px-1.5 ring-1 ring-inset',
 } as { [key: string]: string }
 
 const colorStyles = {

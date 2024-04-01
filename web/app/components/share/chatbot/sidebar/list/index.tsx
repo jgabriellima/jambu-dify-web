@@ -79,7 +79,7 @@ const List: FC<IListProps> = ({
               isCurrent
                 ? 'bg-primary-50 text-primary-600'
                 : 'text-gray-700 hover:bg-gray-200 hover:text-gray-700',
-              'group flex justify-between items-center rounded-md px-2 py-2 text-sm font-medium cursor-pointer',
+              'group flex justify-between items-center     px-2 py-2 text-sm font-medium cursor-pointer',
             )}
           >
             <div className='flex items-center w-0 grow'>

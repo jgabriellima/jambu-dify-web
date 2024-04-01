@@ -60,7 +60,7 @@ const ContextBlockComponent: FC<ContextBlockComponentProps> = ({
           `}>{localDatasets.length}</div>
         </PortalToFollowElemTrigger>
         <PortalToFollowElemContent style={{ zIndex: 100 }}>
-          <div className='w-[360px] bg-white rounded-xl shadow-lg'>
+          <div className='w-[360px] bg-white   shadow-lg'>
             <div className='p-4'>
               <div className='mb-2 text-xs font-medium text-gray-500'>
                 {t('common.promptEditor.context.modal.title', { num: localDatasets.length })}
@@ -69,8 +69,8 @@ const ContextBlockComponent: FC<ContextBlockComponentProps> = ({
                 {
                   localDatasets.map(dataset => (
                     <div key={dataset.id} className='flex items-center h-8'>
-                      <div className='flex items-center justify-center shrink-0 mr-2 w-6 h-6 bg-[#F5F8FF] rounded-md border-[0.5px] border-[#EAECF5]'>
-                        <Folder className='w-4 h-4 text-[#444CE7]' />
+                      <div className='flex items-center justify-center shrink-0 mr-2 w-6 h-6 bg-[#F5F8FF]     border-[0.5px] border-[#EAECF5]'>
+                        <Folder className='w-4 h-4 text-[#38A169]' />
                       </div>
                       <div className='text-sm text-gray-800 truncate' title=''>{dataset.name}</div>
                     </div>
@@ -78,7 +78,7 @@ const ContextBlockComponent: FC<ContextBlockComponentProps> = ({
                 }
               </div>
               <div className='flex items-center h-8 text-[#38A169] cursor-pointer' onClick={onAddContext}>
-                <div className='shrink-0 flex justify-center items-center mr-2 w-6 h-6 rounded-md border-[0.5px] border-gray-100'>
+                <div className='shrink-0 flex justify-center items-center mr-2 w-6 h-6     border-[0.5px] border-gray-100'>
                   <Plus className='w-[14px] h-[14px]' />
                 </div>
                 <div className='text-[13px] font-medium' title=''>{t('common.promptEditor.context.modal.add')}</div>

@@ -10,7 +10,7 @@ const Contribute: FC = () => {
 
   return (
     <div className='shrink-0 p-2'>
-      <div className='inline-block p-2 bg-white shadow-lg rounded-lg'>
+      <div className='inline-block p-2 bg-white shadow-lg   '>
         <Heart02 className='w-3 h-3 text-[#EE46BC]' />
       </div>
       <div className='mt-2'>

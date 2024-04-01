@@ -136,7 +136,7 @@ const Prompt: FC<ISimplePromptInput> = ({
 
   return (
     <div className={cn(!readonly ? `${s.gradientBorder}` : 'bg-gray-50', ' relative shadow-md')}>
-      <div className='rounded-xl bg-[#EEF4112]'>
+      <div className='  bg-[#EEF4112]'>
         <div className="flex justify-between items-center h-11 px-3">
           <div className="flex items-center space-x-1">
             <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,7 +159,7 @@ const Prompt: FC<ISimplePromptInput> = ({
               <>
                 <div className='mx-1 w-px h-3.5 bg-black/5'></div>
                 <div
-                  className='flex items-center px-2 space-x-1 text-xs font-semibold text-[#444CE7] cursor-pointer'
+                  className='flex items-center px-2 space-x-1 text-xs font-semibold text-[#38A169] cursor-pointer'
                   onClick={() => setPromptMode(PromptMode.advanced)}
                 >
                   <div>{t('appDebug.promptMode.advanced')}</div>
@@ -170,7 +170,7 @@ const Prompt: FC<ISimplePromptInput> = ({
           </div>
         </div>
         <PromptEditorHeightResizeWrap
-          className='px-4 py-2 min-h-[228px] bg-white rounded-xl text-sm text-gray-700'
+          className='px-4 py-2 min-h-[228px] bg-white   text-sm text-gray-700'
           height={editorHeight}
           minHeight={minHeight}
           onHeightChange={setEditorHeight}

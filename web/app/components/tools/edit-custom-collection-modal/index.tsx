@@ -168,7 +168,7 @@ const EditCustomCollectionModal: FC<Props> = ({
                 <div className='flex items-center justify-between gap-3'>
                   <AppIcon size='large' onClick={() => { setShowEmojiPicker(true) }} className='cursor-pointer' icon={emoji.content} background={emoji.background} />
                   <input
-                    className='h-10 px-3 text-sm font-normal bg-gray-100 rounded-lg grow' placeholder={t('tools.createTool.toolNamePlaceHolder')!}
+                    className='h-10 px-3 text-sm font-normal bg-gray-100    grow' placeholder={t('tools.createTool.toolNamePlaceHolder')!}
                     value={customCollection.provider}
                     onChange={(e) => {
                       const newCollection = produce(customCollection, (draft) => {
@@ -201,7 +201,7 @@ const EditCustomCollectionModal: FC<Props> = ({
                 <textarea
                   value={schema}
                   onChange={e => setSchema(e.target.value)}
-                  className='w-full h-[240px] px-3 py-2 leading-4 text-xs font-normal text-gray-900 bg-gray-100 rounded-lg overflow-y-auto'
+                  className='w-full h-[240px] px-3 py-2 leading-4 text-xs font-normal text-gray-900 bg-gray-100    overflow-y-auto'
                   placeholder={t('tools.createTool.schemaPlaceHolder')!}
                 ></textarea>
               </div>
@@ -209,7 +209,7 @@ const EditCustomCollectionModal: FC<Props> = ({
               {/* Available Tools  */}
               <div>
                 <div className={fieldNameClassNames}>{t('tools.createTool.availableTools.title')}</div>
-                <div className='rounded-lg border border-gray-200 w-full overflow-x-auto'>
+                <div className='   border border-gray-200 w-full overflow-x-auto'>
                   <table className='w-full leading-[18px] text-xs text-gray-700 font-normal'>
                     <thead className='text-gray-500 uppercase'>
                       <tr className={cn(paramsSchemas.length > 0 && 'border-b', 'border-gray-200')}>
@@ -248,7 +248,7 @@ const EditCustomCollectionModal: FC<Props> = ({
               {/* Authorization method */}
               <div>
                 <div className={fieldNameClassNames}>{t('tools.createTool.authMethod.title')}</div>
-                <div className='flex items-center h-9 justify-between px-2.5 bg-gray-100 rounded-lg cursor-pointer' onClick={() => setCredentialsModalShow(true)}>
+                <div className='flex items-center h-9 justify-between px-2.5 bg-gray-100    cursor-pointer' onClick={() => setCredentialsModalShow(true)}>
                   <div className='text-sm font-normal text-gray-900'>{t(`tools.createTool.authMethod.types.${credential.auth_type}`)}</div>
                   <Settings01 className='w-4 h-4 text-gray-700 opacity-60' />
                 </div>
@@ -264,7 +264,7 @@ const EditCustomCollectionModal: FC<Props> = ({
                     })
                     setCustomCollection(newCollection)
                   }}
-                  className='w-full h-10 px-3 text-sm font-normal bg-gray-100 rounded-lg grow' placeholder={t('tools.createTool.privacyPolicyPlaceholder') || ''} />
+                  className='w-full h-10 px-3 text-sm font-normal bg-gray-100    grow' placeholder={t('tools.createTool.privacyPolicyPlaceholder') || ''} />
               </div>
 
             </div>

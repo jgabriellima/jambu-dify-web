@@ -77,7 +77,7 @@ const InviteModal = ({
           <div className='mb-8 h-36 flex items-stretch'>
             <ReactMultiEmail
               className={cn('w-full pt-2 px-3 outline-none border-none',
-                'appearance-none text-sm text-gray-900 rounded-lg overflow-y-auto',
+                'appearance-none text-sm text-gray-900    overflow-y-auto',
                 s.emailsInput,
               )}
               autoFocus
@@ -97,7 +97,7 @@ const InviteModal = ({
           </div>
           <Listbox value={role} onChange={setRole}>
             <div className="relative pb-6">
-              <Listbox.Button className="relative w-full py-2 pl-3 pr-10 text-left bg-gray-100 outline-none border-none appearance-none text-sm text-gray-900 rounded-lg">
+              <Listbox.Button className="relative w-full py-2 pl-3 pr-10 text-left bg-gray-100 outline-none border-none appearance-none text-sm text-gray-900   ">
                 <span className="block truncate capitalize">{t('common.members.invitedAsRole', { role: t(`common.members.${role.name}`) })}</span>
               </Listbox.Button>
               <Transition
@@ -106,12 +106,12 @@ const InviteModal = ({
                 leaveFrom="opacity-200"
                 leaveTo="opacity-0"
               >
-                <Listbox.Options className="absolute w-full py-1 my-2 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                <Listbox.Options className="absolute w-full py-1 my-2 overflow-auto text-base bg-white     shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                   {InvitingRoles.map(role =>
                     <Listbox.Option
                       key={role.name}
                       className={({ active }) =>
-                        `${active ? ' bg-gray-50 rounded-xl' : ' bg-transparent'}
+                        `${active ? ' bg-gray-50  ' : ' bg-transparent'}
                           cursor-default select-none relative py-2 px-4 mx-2 flex flex-col`
                       }
                       value={role}

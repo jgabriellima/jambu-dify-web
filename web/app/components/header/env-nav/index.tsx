@@ -20,7 +20,7 @@ const EnvNav = () => {
 
   return (
     <div className={`
-      flex items-center h-[22px] mr-4 rounded-md px-2 text-xs font-medium border
+      flex items-center h-[22px] mr-4     px-2 text-xs font-medium border
       ${headerEnvClassName[langeniusVersionInfo.current_env]}
     `}>
       {

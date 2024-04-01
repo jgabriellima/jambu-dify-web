@@ -14,8 +14,8 @@ const CustomAppHeaderBrand = () => {
   return (
     <div className='py-3'>
       <div className='mb-2 text-sm font-medium text-gray-900'>{t('custom.app.title')}</div>
-      <div className='relative mb-4 rounded-xl bg-gray-100 border-[0.5px] border-black/[0.08] shadow-xs'>
-        <div className={`${s.mask} absolute inset-0 rounded-xl`}></div>
+      <div className='relative mb-4   bg-gray-100 border-[0.5px] border-black/[0.08] shadow-xs'>
+        <div className={`${s.mask} absolute inset-0  `}></div>
         <div className='flex items-center pl-5 h-14 rounded-t-xl'>
           <div className='relative flex items-center mr-[199px] w-[120px] h-10 bg-[rgba(217,45,32,0.12)]'>
             <div className='ml-[1px] mr-[3px] w-[34px] h-[34px] border-8 border-black/[0.16] rounded-full'></div>
@@ -25,7 +25,7 @@ const CustomAppHeaderBrand = () => {
             <div className='absolute left-0 right-0 top-0.5 h-[0.5px] bg-[#F97066] opacity-50'></div>
             <div className='absolute left-0 right-0 bottom-0.5 h-[0.5px] bg-[#F97066] opacity-50'></div>
           </div>
-          <div className='flex items-center mr-3 px-3 h-7 rounded-xl bg-white shadow-xs'>
+          <div className='flex items-center mr-3 px-3 h-7   bg-white shadow-xs'>
             <Grid01 className='shrink-0 mr-2 w-4 h-4 text-[#38A169]' />
             <div className='w-12 h-1.5 rounded-[5px] bg-[#38A169] opacity-80'></div>
           </div>

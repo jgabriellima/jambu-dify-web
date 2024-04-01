@@ -71,7 +71,7 @@ const Editor: FC<Props> = ({
   }
   return (
     <div className={cn(className, s.gradientBorder, 'relative')}>
-      <div className='rounded-xl bg-white'>
+      <div className='  bg-white'>
         <div className={cn(s.boxHeader, 'flex justify-between items-center h-11 pt-2 pr-3 pb-1 pl-4 rounded-tl-xl rounded-tr-xl bg-white hover:shadow-xs')}>
           <div className='text-sm font-semibold uppercase text-indigo-800'>{t(`appDebug.agent.${isFirstPrompt ? 'firstPrompt' : 'nextIteration'}`)}</div>
           <div className={cn(s.optionWrap, 'items-center space-x-1')}>
@@ -132,7 +132,7 @@ const Editor: FC<Props> = ({
           />
         </div>
         <div className='pl-4 pb-2 flex'>
-          <div className="h-[18px] leading-[18px] px-1 rounded-md bg-gray-100 text-xs text-gray-500">{value.length}</div>
+          <div className="h-[18px] leading-[18px] px-1     bg-gray-100 text-xs text-gray-500">{value.length}</div>
         </div>
       </div>
     </div>

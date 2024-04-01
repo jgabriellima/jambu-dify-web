@@ -114,7 +114,7 @@ const ChatInput: FC<ChatInputProps> = ({
   const isMobile = media === MediaType.mobile
   const sendBtn = (
     <div
-      className='group flex items-center justify-center w-8 h-8 rounded-lg hover:bg-[#EBF5FF] cursor-pointer'
+      className='group flex items-center justify-center w-8 h-8    hover:bg-[#EBF5FF] cursor-pointer'
       onClick={handleSend}
     >
       <Send03
@@ -130,7 +130,7 @@ const ChatInput: FC<ChatInputProps> = ({
     <div className='relative'>
       <div
         className={`
-          p-[5.5px] max-h-[150px] bg-white border-[1.5px] border-gray-200 rounded-xl overflow-y-auto
+          p-[5.5px] max-h-[150px] bg-white border-[1.5px] border-gray-200   overflow-y-auto
           ${isDragActive && 'border-primary-600'}
         `}
       >
@@ -174,20 +174,20 @@ const ChatInput: FC<ChatInputProps> = ({
           autoSize
         />
         <div className='absolute bottom-[7px] right-2 flex items-center h-8'>
-          <div className='flex items-center px-1 h-5 rounded-md bg-gray-100 text-xs font-medium text-gray-500'>
+          <div className='flex items-center px-1 h-5     bg-gray-100 text-xs font-medium text-gray-500'>
             {query.trim().length}
           </div>
           {
             query
               ? (
-                <div className='flex justify-center items-center ml-2 w-8 h-8 cursor-pointer hover:bg-gray-100 rounded-lg' onClick={() => setQuery('')}>
+                <div className='flex justify-center items-center ml-2 w-8 h-8 cursor-pointer hover:bg-gray-100   ' onClick={() => setQuery('')}>
                   <XCircle className='w-4 h-4 text-[#98A2B3]' />
                 </div>
               )
               : speechToTextConfig?.enabled
                 ? (
                   <div
-                    className='group flex justify-center items-center ml-2 w-8 h-8 hover:bg-primary-50 rounded-lg cursor-pointer'
+                    className='group flex justify-center items-center ml-2 w-8 h-8 hover:bg-primary-50    cursor-pointer'
                     onClick={handleVoiceInputShow}
                   >
                     <Microphone01 className='block w-4 h-4 text-gray-500 group-hover:hidden' />

@@ -28,14 +28,14 @@ const Operate = ({
       <div className='flex items-center'>
         <div className='
           flex items-center
-          mr-[5px] px-3 h-7 rounded-md cursor-pointer
+          mr-[5px] px-3 h-7     cursor-pointer
           text-xs font-medium text-gray-700
         ' onClick={onCancel} >
           {t('common.operation.cancel')}
         </div>
         <div className='
           flex items-center
-          px-3 h-7 rounded-md cursor-pointer bg-primary-700
+          px-3 h-7     cursor-pointer bg-primary-700
           text-xs font-medium text-white
         ' onClick={onSave}>
           {t('common.operation.save')}
@@ -47,7 +47,7 @@ const Operate = ({
   if (status === 'add') {
     return (
       <div className={
-        `px-3 h-[28px] bg-white border border-gray-200 rounded-md cursor-pointer
+        `px-3 h-[28px] bg-white border border-gray-200     cursor-pointer
         text-xs font-medium text-gray-700 flex items-center ${disabled && 'opacity-50 cursor-default'}}`
       } onClick={() => !disabled && onAdd()}>
         {t('common.provider.addKey')}
@@ -72,7 +72,7 @@ const Operate = ({
           )
         }
         <div className={
-          `px-3 h-[28px] bg-white border border-gray-200 rounded-md cursor-pointer
+          `px-3 h-[28px] bg-white border border-gray-200     cursor-pointer
           text-xs font-medium text-gray-700 flex items-center ${disabled && 'opacity-50 cursor-default'}}`
         } onClick={() => !disabled && onEdit()}>
           {t('common.provider.editKey')}

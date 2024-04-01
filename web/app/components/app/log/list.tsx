@@ -57,8 +57,8 @@ const DrawerContext = createContext<IDrawerContext>({} as IDrawerContext)
 const HandThumbIconWithCount: FC<{ count: number; iconType: 'up' | 'down' }> = ({ count, iconType }) => {
   const classname = iconType === 'up' ? 'text-primary-600 bg-primary-50' : 'text-red-600 bg-red-50'
   const Icon = iconType === 'up' ? HandThumbUpIcon : HandThumbDownIcon
-  return <div className={`inline-flex items-center w-fit rounded-md p-1 text-xs ${classname} mr-1 last:mr-0`}>
-    <Icon className={'h-3 w-3 mr-0.5 rounded-md'} />
+  return <div className={`inline-flex items-center w-fit     p-1 text-xs ${classname} mr-1 last:mr-0`}>
+    <Icon className={'h-3 w-3 mr-0.5    '} />
     {count > 0 ? count : null}
   </div>
 }
@@ -220,7 +220,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
     return value
   }
 
-  return (<div className='rounded-xl border-[0.5px] border-gray-200 h-full flex flex-col overflow-auto'>
+  return (<div className='  border-[0.5px] border-gray-200 h-full flex flex-col overflow-auto'>
     {/* Panel Header */}
     <div className='border-b border-gray-100 py-4 px-6 flex items-center justify-between'>
       <div>
@@ -229,7 +229,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
       </div>
       <div className='flex items-center flex-wrap gap-y-1 justify-end'>
         <div
-          className={cn('mr-2 flex items-center border h-8 px-2 space-x-2 rounded-lg bg-indigo-25 border-[#2A87F5]')}
+          className={cn('mr-2 flex items-center border h-8 px-2 space-x-2    bg-indigo-25 border-[#2A87F5]')}
         >
           <ModelIcon
             className='!w-5 !h-5'
@@ -262,7 +262,7 @@ function DetailPanel<T extends ChatConversationFullDetailResponse | CompletionCo
             })}
           </div>}
         />
-        <div className='w-6 h-6 rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-gray-100'>
+        <div className='w-6 h-6    flex items-center justify-center hover:cursor-pointer hover:bg-gray-100'>
           <XMarkIcon className='w-4 h-4 text-gray-500' onClick={onClose} />
         </div>
       </div>
@@ -552,7 +552,7 @@ const ConversationList: FC<IConversationList> = ({ logs, appDetail, onRefresh })
         onClose={onCloseDrawer}
         mask={isMobile}
         footer={null}
-        panelClassname='mt-16 mx-2 sm:mr-2 mb-3 !p-0 !max-w-[640px] rounded-xl'
+        panelClassname='mt-16 mx-2 sm:mr-2 mb-3 !p-0 !max-w-[640px]  '
       >
         <DrawerContext.Provider value={{
           onClose: onCloseDrawer,

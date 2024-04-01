@@ -28,7 +28,7 @@ const Search: FC<Props> = ({
       <input
         type="text"
         name="query"
-        className="block w-0 grow bg-gray-200 shadow-sm rounded-md border-0 pl-10 text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-gray-200 focus-visible:outline-none sm:text-sm sm:leading-8"
+        className="block w-0 grow bg-gray-200 shadow-sm     border-0 pl-10 text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-gray-200 focus-visible:outline-none sm:text-sm sm:leading-8"
         placeholder={t('common.operation.search')!}
         value={value}
         onChange={(e) => {

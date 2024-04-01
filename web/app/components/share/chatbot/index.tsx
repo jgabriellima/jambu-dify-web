@@ -763,7 +763,7 @@ const Main: FC<IMainProps> = ({
                   {t('share.chat.temporarySystemIssue')}
                 </div>
                 <div
-                  className='flex items-center px-3 h-7 bg-white shadow-xs rounded-md text-xs font-medium text-gray-700 cursor-pointer'
+                  className='flex items-center px-3 h-7 bg-white shadow-xs     text-xs font-medium text-gray-700 cursor-pointer'
                   onClick={handleReload}
                 >
                   {t('share.chat.tryToSolve')}

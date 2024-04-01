@@ -85,7 +85,7 @@ const Select: FC<ISelectProps> = ({
         <div className='group text-gray-800'>
           {allowSearch
             ? <Combobox.Input
-              className={`w-full rounded-lg border-0 ${bgClassName} py-1.5 pl-3 pr-10 shadow-sm sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200 cursor-not-allowed`}
+              className={`w-full    border-0 ${bgClassName} py-1.5 pl-3 pr-10 shadow-sm sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200 cursor-not-allowed`}
               onChange={(event) => {
                 if (!disabled)
                   setQuery(event.target.value)
@@ -97,7 +97,7 @@ const Select: FC<ISelectProps> = ({
                 if (!disabled)
                   setOpen(!open)
               }
-            } className={`flex items-center h-9 w-full rounded-lg border-0 ${bgClassName} py-1.5 pl-3 pr-10 shadow-sm sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200`}>
+            } className={`flex items-center h-9 w-full    border-0 ${bgClassName} py-1.5 pl-3 pr-10 shadow-sm sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200`}>
               <div className='w-0 grow text-left truncate' title={selectedItem?.name}>{selectedItem?.name}</div>
             </Combobox.Button>}
           <Combobox.Button className="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none group-hover:bg-gray-200" onClick={
@@ -111,14 +111,14 @@ const Select: FC<ISelectProps> = ({
         </div>
 
         {filteredItems.length > 0 && (
-          <Combobox.Options className={`absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm ${overlayClassName}`}>
+          <Combobox.Options className={`absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto     bg-white py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm ${overlayClassName}`}>
             {filteredItems.map((item: Item) => (
               <Combobox.Option
                 key={item.value}
                 value={item}
                 className={({ active }: { active: boolean }) =>
                   classNames(
-                    'relative cursor-default select-none py-2 pl-3 pr-9 rounded-lg hover:bg-gray-100 text-gray-700',
+                    'relative cursor-default select-none py-2 pl-3 pr-9    hover:bg-gray-100 text-gray-700',
                     active ? 'bg-gray-100' : '',
                   )
                 }
@@ -179,7 +179,7 @@ const SimpleSelect: FC<ISelectProps> = ({
       }}
     >
       <div className={`relative h-9 ${wrapperClassName}`}>
-        <Listbox.Button className={`w-full h-full rounded-lg border-0 bg-gray-100 py-1.5 pl-3 pr-10 sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200 ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'} ${className}`}>
+        <Listbox.Button className={`w-full h-full    border-0 bg-gray-100 py-1.5 pl-3 pr-10 sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200 ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'} ${className}`}>
           <span className={classNames('block truncate text-left', !selectedItem?.name && 'text-gray-400')}>{selectedItem?.name ?? localPlaceholder}</span>
           <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
             <ChevronDownIcon
@@ -196,12 +196,12 @@ const SimpleSelect: FC<ISelectProps> = ({
             leaveTo="opacity-0"
           >
 
-            <Listbox.Options className="absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm">
+            <Listbox.Options className="absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto     bg-white py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm">
               {items.map((item: Item) => (
                 <Listbox.Option
                   key={item.value}
                   className={({ active }) =>
-                    `relative cursor-pointer select-none py-2 pl-3 pr-9 rounded-lg hover:bg-gray-100 text-gray-700 ${active ? 'bg-gray-100' : ''
+                    `relative cursor-pointer select-none py-2 pl-3 pr-9    hover:bg-gray-100 text-gray-700 ${active ? 'bg-gray-100' : ''
                     }`
                   }
                   value={item}
@@ -260,7 +260,7 @@ const PortalSelect: FC<PortalSelectProps> = ({
       <PortalToFollowElemTrigger onClick={() => setOpen(v => !v)} className='w-full'>
         <div
           className={`
-            flex items-center justify-between px-2.5 h-9 rounded-lg border-0 bg-gray-100 text-sm cursor-pointer 
+            flex items-center justify-between px-2.5 h-9    border-0 bg-gray-100 text-sm cursor-pointer 
           `}
           title={selectedItem?.name}
         >
@@ -277,13 +277,13 @@ const PortalSelect: FC<PortalSelectProps> = ({
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent className={`z-20 ${popupClassName}`}>
         <div
-          className='px-1 py-1 max-h-60 overflow-auto rounded-md bg-white text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm'
+          className='px-1 py-1 max-h-60 overflow-auto     bg-white text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm'
         >
           {items.map((item: Item) => (
             <div
               key={item.value}
               className={`
-                flex items-center justify-between px-2.5 h-9 cursor-pointer rounded-lg hover:bg-gray-100 text-gray-700
+                flex items-center justify-between px-2.5 h-9 cursor-pointer    hover:bg-gray-100 text-gray-700
                 ${item.value === value && 'bg-gray-100'}
               `}
               title={item.name}

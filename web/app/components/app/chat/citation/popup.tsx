@@ -47,26 +47,26 @@ const Popup: FC<PopupProps> = ({
       }}
     >
       <PortalToFollowElemTrigger onClick={() => setOpen(v => !v)}>
-        <div className='flex items-center px-2 max-w-[240px] h-7 bg-white rounded-lg'>
+        <div className='flex items-center px-2 max-w-[240px] h-7 bg-white   '>
           <FileIcon type={fileType} className='shrink-0 mr-1 w-4 h-4' />
           <div className='text-xs text-gray-600 truncate'>{data.documentName}</div>
         </div>
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent style={{ zIndex: 1000 }}>
-        <div className='w-[360px] bg-gray-50 rounded-xl shadow-lg'>
+        <div className='w-[360px] bg-gray-50   shadow-lg'>
           <div className='px-4 pt-3 pb-2'>
             <div className='flex items-center h-[18px]'>
               <FileIcon type={fileType} className='shrink-0 mr-1 w-4 h-4' />
               <div className='text-xs font-medium text-gray-600 truncate'>{data.documentName}</div>
             </div>
           </div>
-          <div className='px-4 py-0.5 max-h-[450px] bg-white rounded-lg overflow-auto'>
+          <div className='px-4 py-0.5 max-h-[450px] bg-white    overflow-auto'>
             {
               data.sources.map((source, index) => (
                 <Fragment key={index}>
                   <div className='group py-3'>
                     <div className='flex items-center justify-between mb-2'>
-                      <div className='flex items-center px-1.5 h-5 border border-gray-200 rounded-md'>
+                      <div className='flex items-center px-1.5 h-5 border border-gray-200    '>
                         <Hash02 className='mr-0.5 w-3 h-3 text-gray-400' />
                         <div className='text-[11px] font-medium text-gray-500'>
                           {source.segment_position || index + 1}

@@ -25,13 +25,13 @@ const ParamsConfig: FC = () => {
       }}
     >
       <PortalToFollowElemTrigger onClick={() => setOpen(v => !v)}>
-        <div className={cn('flex items-center rounded-md h-7 px-3 space-x-1 text-gray-700 cursor-pointer hover:bg-gray-200', open && 'bg-gray-200')}>
+        <div className={cn('flex items-center     h-7 px-3 space-x-1 text-gray-700 cursor-pointer hover:bg-gray-200', open && 'bg-gray-200')}>
           <Settings01 className='w-3.5 h-3.5 ' />
           <div className='ml-1 leading-[18px] text-xs font-medium '>{t('appDebug.voice.settings')}</div>
         </div>
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent style={{ zIndex: 50 }}>
-        <div className='w-80 sm:w-[412px] p-4 bg-white rounded-lg border-[0.5px] border-gray-200 shadow-lg space-y-3'>
+        <div className='w-80 sm:w-[412px] p-4 bg-white    border-[0.5px] border-gray-200 shadow-lg space-y-3'>
           <VoiceParamConfig />
         </div>
       </PortalToFollowElemContent>

@@ -40,8 +40,8 @@ const Trigger: FC<TriggerProps> = ({
   return (
     <div
       className={`
-        flex items-center px-2 h-8 rounded-lg border cursor-pointer hover:border-[1.5px]
-        ${disabled ? 'border-[#F79009] bg-[#FFFAEB]' : 'border-[#444CE7] bg-primary-50'}
+        flex items-center px-2 h-8    border cursor-pointer hover:border-[1.5px]
+        ${disabled ? 'border-[#F79009] bg-[#FFFAEB]' : 'border-[#38A169] bg-primary-50'}
       `}
     >
       {
@@ -68,9 +68,9 @@ const Trigger: FC<TriggerProps> = ({
             className='mr-1.5 text-gray-900'
             modelItem={currentModel}
             showMode
-            modeClassName='!text-[#444CE7] !border-[#A4BCFD]'
+            modeClassName='!text-[#38A169] !border-[#A4BCFD]'
             showFeatures
-            featuresClassName='!text-[#444CE7] !border-[#A4BCFD]'
+            featuresClassName='!text-[#38A169] !border-[#A4BCFD]'
           />
         )
       }

@@ -57,7 +57,7 @@ const style = {
   [Plan.team]: {
     bg: 'bg-[#E0EAFF]',
     title: 'text-[#3538CD]',
-    hoverAndActive: 'hover:shadow-lg hover:!text-white hover:!bg-[#444CE7] hover:!border-[#3538CD] active:!text-white active:!bg-[#3538CD] active:!border-[#3538CD]',
+    hoverAndActive: 'hover:shadow-lg hover:!text-white hover:!bg-[#38A169] hover:!border-[#3538CD] active:!text-white active:!bg-[#3538CD] active:!border-[#3538CD]',
   },
   [Plan.enterprise]: {
     bg: 'bg-[#FFEED3]',
@@ -208,7 +208,7 @@ const PlanItem: FC<Props> = ({
     }
   }
   return (
-    <div className={cn(isMostPopularPlan ? 'bg-[#0086C9] p-0.5' : 'pt-7', 'flex flex-col min-w-[290px] w-[290px] rounded-xl')}>
+    <div className={cn(isMostPopularPlan ? 'bg-[#0086C9] p-0.5' : 'pt-7', 'flex flex-col min-w-[290px] w-[290px]  ')}>
       {isMostPopularPlan && (
         <div className='flex items-center h-7 justify-center leading-[12px] text-xs font-medium text-[#F5F8FF]'>{t('billing.plansCommon.mostPopular')}</div>
       )}
@@ -234,7 +234,7 @@ const PlanItem: FC<Props> = ({
         )}
 
         <div
-          className={cn(isMostPopularPlan && !isCurrent && '!bg-[#444CE7] !text-white !border !border-[#3538CD] shadow-sm', isPlanDisabled ? 'opacity-30' : `${style[plan].hoverAndActive} cursor-pointer`, 'mt-4 flex h-11 items-center justify-center border-[2px] border-gray-900 rounded-3xl text-sm font-semibold text-gray-900')}
+          className={cn(isMostPopularPlan && !isCurrent && '!bg-[#38A169] !text-white !border !border-[#3538CD] shadow-sm', isPlanDisabled ? 'opacity-30' : `${style[plan].hoverAndActive} cursor-pointer`, 'mt-4 flex h-11 items-center justify-center border-[2px] border-gray-900 rounded-3xl text-sm font-semibold text-gray-900')}
           onClick={handleGetPayUrl}
         >
           {btnText}

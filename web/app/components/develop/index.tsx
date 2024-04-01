@@ -26,7 +26,7 @@ const DevelopMain = ({ appId }: IDevelopMainProps) => {
               {t('appApi.apiServer')}
             </div>
           </InputCopy>
-          <div className={`flex items-center h-9 px-3 rounded-lg 
+          <div className={`flex items-center h-9 px-3    
                         text-[13px] font-normal  mr-2 ${appDetail?.enable_api ? 'text-green-500 bg-green-50' : 'text-yellow-500 bg-yellow-50'}`}>
             <div className='mr-1'>{t('appApi.status')}</div>
             <div className='font-semibold'>{appDetail?.enable_api ? `${t('appApi.ok')}` : `${t('appApi.disabled')}`}</div>

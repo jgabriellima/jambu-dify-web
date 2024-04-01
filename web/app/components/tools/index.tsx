@@ -222,7 +222,7 @@ const Tools: FC<Props> = ({
 
         {/* tools */}
         <div className={cn('grow h-full overflow-hidden p-2')}>
-          <div className='h-full bg-white rounded-2xl'>
+          <div className='h-full bg-white    '>
             {!(collectionType === CollectionType.custom && hasNoCustomCollection) && showCollectionList.length > 0 && (
               <ToolList
                 collection={currCollection}

@@ -35,7 +35,7 @@ const SegmentAdd: FC<ISegmentAddProps> = ({
     return (
       <>
         {(importStatus === ProcessStatus.WAITING || importStatus === ProcessStatus.PROCESSING) && (
-          <div className='relative overflow-hidden inline-flex items-center mr-2 px-3 py-[6px] text-blue-700 bg-[#F5F8FF] rounded-lg border border-black/5'>
+          <div className='relative overflow-hidden inline-flex items-center mr-2 px-3 py-[6px] text-blue-700 bg-[#F5F8FF]    border border-black/5'>
             {importStatus === ProcessStatus.WAITING && <div className='absolute left-0 top-0 w-3/12 h-full bg-[#D1E0FF] z-0'/>}
             {importStatus === ProcessStatus.PROCESSING && <div className='absolute left-0 top-0 w-2/3 h-full bg-[#D1E0FF] z-0'/>}
             <Loading02 className='animate-spin mr-2 w-4 h-4' />
@@ -43,14 +43,14 @@ const SegmentAdd: FC<ISegmentAddProps> = ({
           </div>
         )}
         {importStatus === ProcessStatus.COMPLETED && (
-          <div className='inline-flex items-center mr-2 px-3 py-[6px] text-gray-700 bg-[#F6FEF9] rounded-lg border border-black/5'>
+          <div className='inline-flex items-center mr-2 px-3 py-[6px] text-gray-700 bg-[#F6FEF9]    border border-black/5'>
             <CheckCircle className='mr-2 w-4 h-4 text-[#039855]' />
             <span className='font-medium text-[13px] leading-[18px]'>{t('datasetDocuments.list.batchModal.completed')}</span>
             <span className='pl-2 font-medium text-[13px] leading-[18px] text-[#38A169] cursor-pointer' onClick={clearProcessStatus}>{t('datasetDocuments.list.batchModal.ok')}</span>
           </div>
         )}
         {importStatus === ProcessStatus.ERROR && (
-          <div className='inline-flex items-center mr-2 px-3 py-[6px] text-red-600 bg-red-100 rounded-lg border border-black/5'>
+          <div className='inline-flex items-center mr-2 px-3 py-[6px] text-red-600 bg-red-100    border border-black/5'>
             <AlertCircle className='mr-2 w-4 h-4 text-[#D92D20]' />
             <span className='font-medium text-[13px] leading-[18px]'>{t('datasetDocuments.list.batchModal.error')}</span>
             <span className='pl-2 font-medium text-[13px] leading-[18px] text-[#38A169] cursor-pointer' onClick={clearProcessStatus}>{t('datasetDocuments.list.batchModal.ok')}</span>
@@ -66,8 +66,8 @@ const SegmentAdd: FC<ISegmentAddProps> = ({
       trigger='click'
       htmlContent={
         <div className='w-full py-1'>
-          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 rounded-lg cursor-pointer text-gray-700 text-sm' onClick={showNewSegmentModal}>{t('datasetDocuments.list.action.add')}</div>
-          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100 rounded-lg cursor-pointer text-gray-700 text-sm' onClick={showBatchModal}>{t('datasetDocuments.list.action.batchAdd')}</div>
+          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100    cursor-pointer text-gray-700 text-sm' onClick={showNewSegmentModal}>{t('datasetDocuments.list.action.add')}</div>
+          <div className='py-2 px-3 mx-1 flex items-center gap-2 hover:bg-gray-100    cursor-pointer text-gray-700 text-sm' onClick={showBatchModal}>{t('datasetDocuments.list.action.batchAdd')}</div>
         </div>
       }
       btnElement={

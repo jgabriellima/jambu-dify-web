@@ -13,7 +13,12 @@ const LogoSite: FC<LogoSiteProps> = ({
     //   className={classNames('block w-auto h-10', className)}
     //   alt='logo'
     // />
-    <h1 className="text-[#006400]">Jambu.AI</h1>
+    <>
+      <h1 className="hidden md:block text-[#006400] font-weight-bold text-2xl">Jambu.ai </h1>
+      <br/>
+      <code className="hidden md:block"> | Business Consulting</code>
+    </>
+
   )
 }
 

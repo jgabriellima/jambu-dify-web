@@ -46,7 +46,7 @@ const MembersPage = () => {
   return (
     <>
       <div className='flex flex-col'>
-        <div className='flex items-center mb-4 p-3 bg-gray-50 rounded-2xl'>
+        <div className='flex items-center mb-4 p-3 bg-gray-50    '>
           <LogoEmbededChatHeader className='!w-10 !h-10' />
           <div className='grow mx-2'>
             <div className='text-sm font-medium text-gray-900'>{currentWorkspace?.name}</div>
@@ -77,7 +77,7 @@ const MembersPage = () => {
           <div className={
             `shrink-0 flex items-center py-[7px] px-3 border-[0.5px] border-gray-200
             text-[13px] font-medium text-primary-600 bg-white
-            shadow-xs rounded-lg ${(isCurrentWorkspaceManager && !isMemberFull) ? 'cursor-pointer' : 'grayscale opacity-50 cursor-default'}`
+            shadow-xs    ${(isCurrentWorkspaceManager && !isMemberFull) ? 'cursor-pointer' : 'grayscale opacity-50 cursor-default'}`
           } onClick={() => (isCurrentWorkspaceManager && !isMemberFull) && setInviteModalVisible(true)}>
             <UserPlusIcon className='w-4 h-4 mr-2 ' />
             {t('common.members.invite')}

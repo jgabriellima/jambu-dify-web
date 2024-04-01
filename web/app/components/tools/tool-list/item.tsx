@@ -43,7 +43,7 @@ const Item: FC<Props> = ({
   return (
     <>
       <div
-        className={cn(canShowDetail && 'cursor-pointer', 'flex justify-between items-start p-4 rounded-xl border border-gray-200 bg-gray-50 shadow-xs')}
+        className={cn(canShowDetail && 'cursor-pointer', 'flex justify-between items-start p-4   border border-gray-200 bg-gray-50 shadow-xs')}
         onClick={() => canShowDetail && setShowDetail(true)}
       >
         <div className='flex items-start w-full'>

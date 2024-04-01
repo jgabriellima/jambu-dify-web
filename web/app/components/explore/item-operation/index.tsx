@@ -48,14 +48,14 @@ const ItemOperation: FC<IItemOperationProps> = ({
       <PortalToFollowElemTrigger
         onClick={() => setOpen(v => !v)}
       >
-        <div className={cn(className, s.btn, 'h-6 w-6 rounded-md border-none py-1', (isItemHovering || open) && `${s.open} !bg-gray-100 !shadow-none`)}></div>
+        <div className={cn(className, s.btn, 'h-6 w-6     border-none py-1', (isItemHovering || open) && `${s.open} !bg-gray-100 !shadow-none`)}></div>
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent
         className="z-50"
       >
         <div
           ref={ref}
-          className={'min-w-[120px] p-1 bg-white rounded-lg border border--gray-200 shadow-lg'}
+          className={'min-w-[120px] p-1 bg-white    border border--gray-200 shadow-lg'}
           onMouseEnter={setIsHovering}
           onMouseLeave={setNotHovering}
           onClick={(e) => {

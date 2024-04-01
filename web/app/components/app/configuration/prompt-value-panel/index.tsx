@@ -92,7 +92,7 @@ const PromptValuePanel: FC<IPromptValuePanelProps> = ({
   }
 
   return (
-    <div className="pb-3 border border-gray-200 bg-white rounded-xl" style={{
+    <div className="pb-3 border border-gray-200 bg-white  " style={{
       boxShadow: '0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06)',
     }}>
       <div className={'mt-3 px-4 bg-white'}>
@@ -133,7 +133,7 @@ const PromptValuePanel: FC<IPromptValuePanelProps> = ({
                         }
                         {type === 'string' && (
                           <input
-                            className="w-full px-3 text-sm leading-9 text-gray-900 border-0 rounded-lg grow h-9 bg-gray-50 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-200"
+                            className="w-full px-3 text-sm leading-9 text-gray-900 border-0    grow h-9 bg-gray-50 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-200"
                             placeholder={`${name}${!required ? `(${t('appDebug.variableTable.optional')})` : ''}`}
                             type="text"
                             value={inputs[key] ? `${inputs[key]}` : ''}
@@ -143,7 +143,7 @@ const PromptValuePanel: FC<IPromptValuePanelProps> = ({
                         )}
                         {type === 'paragraph' && (
                           <textarea
-                            className="w-full px-3 text-sm leading-9 text-gray-900 border-0 rounded-lg grow h-[120px] bg-gray-50 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-200"
+                            className="w-full px-3 text-sm leading-9 text-gray-900 border-0    grow h-[120px] bg-gray-50 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-gray-200"
                             placeholder={`${name}${!required ? `(${t('appDebug.variableTable.optional')})` : ''}`}
                             value={inputs[key] ? `${inputs[key]}` : ''}
                             onChange={(e) => { handleInputValueChange(key, e.target.value) }}
@@ -215,11 +215,11 @@ function replaceStringWithValuesWithFormat(str: string, promptVariables: PromptV
   return str.replace(/\{\{([^}]+)\}\}/g, (match, key) => {
     const name = inputs[key]
     if (name) { // has set value
-      return `<div class='inline-block px-1 rounded-md text-gray-900' style='background: rgba(16, 24, 40, 0.1)'>${name}</div>`
+      return `<div class='inline-block px-1     text-gray-900' style='background: rgba(16, 24, 40, 0.1)'>${name}</div>`
     }
 
     const valueObj: PromptVariable | undefined = promptVariables.find(v => v.key === key)
-    return `<div class='inline-block px-1 rounded-md text-gray-500' style='background: rgba(16, 24, 40, 0.05)'>${valueObj ? valueObj.name : match}</div>`
+    return `<div class='inline-block px-1     text-gray-500' style='background: rgba(16, 24, 40, 0.05)'>${valueObj ? valueObj.name : match}</div>`
   })
 }
 

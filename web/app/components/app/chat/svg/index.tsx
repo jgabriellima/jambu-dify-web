@@ -12,10 +12,10 @@ const SVGBtn = ({
 }: ISVGBtnProps) => {
   return (
     <div
-      className={'box-border p-0.5 flex items-center justify-center rounded-md bg-white cursor-pointer'}
+      className={'box-border p-0.5 flex items-center justify-center     bg-white cursor-pointer'}
       onClick={() => { setIsSVG(prevIsSVG => !prevIsSVG) }}
     >
-      <div className={`w-6 h-6 rounded-md hover:bg-gray-50 ${s.svgIcon} ${isSVG ? s.svgIconed : ''}`}></div>
+      <div className={`w-6 h-6     hover:bg-gray-50 ${s.svgIcon} ${isSVG ? s.svgIconed : ''}`}></div>
     </div>
   )
 }

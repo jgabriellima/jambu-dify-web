@@ -62,7 +62,7 @@ const ConfigSelect: FC<IConfigSelectProps> = ({
                   className={'w-full pl-1.5 pr-8 text-sm leading-9 text-gray-900 border-0 grow h-9 bg-transparent focus:outline-none cursor-pointer'}
                 />
                 <RemoveIcon
-                  className={`${s.deleteBtn} absolute top-1/2 translate-y-[-50%] right-1.5 items-center justify-center w-6 h-6 rounded-md cursor-pointer hover:bg-[#FEE4E2]`}
+                  className={`${s.deleteBtn} absolute top-1/2 translate-y-[-50%] right-1.5 items-center justify-center w-6 h-6     cursor-pointer hover:bg-[#FEE4E2]`}
                   onClick={() => {
                     onChange(options.filter((_, i) => index !== i))
                   }}
@@ -75,7 +75,7 @@ const ConfigSelect: FC<IConfigSelectProps> = ({
 
       <div
         onClick={() => { onChange([...options, '']) }}
-        className='flex items-center h-9 px-3 gap-2 rounded-lg cursor-pointer text-gray-400  bg-gray-100'>
+        className='flex items-center h-9 px-3 gap-2    cursor-pointer text-gray-400  bg-gray-100'>
         <PlusIcon width={16} height={16}></PlusIcon>
         <div className='text-gray-500 text-[13px]'>{t('appDebug.variableConig.addOption')}</div>
       </div>

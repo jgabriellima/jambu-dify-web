@@ -135,14 +135,14 @@ const SecretKeyModal = ({
                       content={copyValue === api.token ? `${t('appApi.copied')}` : `${t('appApi.copy')}`}
                       className='z-10'
                     >
-                      <div className={`flex items-center justify-center flex-shrink-0 w-6 h-6 mr-1 rounded-lg cursor-pointer hover:bg-gray-100 ${s.copyIcon} ${copyValue === api.token ? s.copied : ''}`} onClick={() => {
+                      <div className={`flex items-center justify-center flex-shrink-0 w-6 h-6 mr-1    cursor-pointer hover:bg-gray-100 ${s.copyIcon} ${copyValue === api.token ? s.copied : ''}`} onClick={() => {
                         // setIsCopied(true)
                         copy(api.token)
                         setCopyValue(api.token)
                       }}></div>
                     </Tooltip>
                     { isCurrentWorkspaceManager
-                      && <div className={`flex items-center justify-center flex-shrink-0 w-6 h-6 rounded-lg cursor-pointer ${s.trashIcon}`} onClick={() => {
+                      && <div className={`flex items-center justify-center flex-shrink-0 w-6 h-6    cursor-pointer ${s.trashIcon}`} onClick={() => {
                         setDelKeyId(api.id)
                         setShowConfirmDelete(true)
                       }}>

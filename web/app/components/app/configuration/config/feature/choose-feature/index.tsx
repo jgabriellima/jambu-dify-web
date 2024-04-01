@@ -156,7 +156,7 @@ const ChooseFeature: FC<IChooseFeatureProps> = ({
             />
             {isChatApp && (
               <FeatureItem
-                icon={<MessageFast className='w-4 h-4 text-[#444CE7]' />}
+                icon={<MessageFast className='w-4 h-4 text-[#38A169]' />}
                 title={t('appDebug.feature.annotation.title')}
                 description={t('appDebug.feature.annotation.description')}
                 value={config.annotation}

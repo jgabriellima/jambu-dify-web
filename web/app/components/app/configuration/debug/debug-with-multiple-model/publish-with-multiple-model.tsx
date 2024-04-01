@@ -73,7 +73,7 @@ const PublishWithMultipleModel: FC<PublishWithMultipleModelProps> = ({
         </Button>
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent>
-        <div className='p-1 w-[168px] rounded-lg border-[0.5px] border-gray-200 shadow-lg bg-white'>
+        <div className='p-1 w-[168px]    border-[0.5px] border-gray-200 shadow-lg bg-white'>
           <div className='flex items-center px-3 h-[22px] text-xs font-medium text-gray-500'>
             {t('appDebug.publishAs')}
           </div>
@@ -81,7 +81,7 @@ const PublishWithMultipleModel: FC<PublishWithMultipleModelProps> = ({
             validModelConfigs.map((item, index) => (
               <div
                 key={item.id}
-                className='flex items-center px-3 h-8 rounded-lg hover:bg-gray-100 cursor-pointer text-sm text-gray-500'
+                className='flex items-center px-3 h-8    hover:bg-gray-100 cursor-pointer text-sm text-gray-500'
                 onClick={() => handleSelect(item)}
               >
                 #{index + 1}

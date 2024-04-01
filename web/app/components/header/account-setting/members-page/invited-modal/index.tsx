@@ -31,7 +31,7 @@ const InvitedModal = ({
       <Modal isShow onClose={() => {}} className={s.modal} wrapperClassName='z-20'>
         <div className='flex justify-between mb-3'>
           <div className='
-            w-12 h-12 flex items-center justify-center rounded-xl
+            w-12 h-12 flex items-center justify-center
             bg-white border-[0.5px] border-gray-100
             shadow-xl
           '>
@@ -62,7 +62,7 @@ const InvitedModal = ({
                     <div className='flex flex-wrap justify-between gap-y-1'>
                       {
                         failedInvationResults.map(item =>
-                          <div key={item.email} className='flex justify-center border border-red-300 rounded-md px-1 bg-orange-50'>
+                          <div key={item.email} className='flex justify-center border border-red-300     px-1 bg-orange-50'>
                             <Tooltip
                               selector={`invitation-tag-${item.email}`}
                               htmlContent={item.message}

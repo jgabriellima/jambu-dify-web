@@ -1,5 +1,5 @@
 .listItem {
-  @apply col-span-1 bg-white border-2 border-solid border-transparent rounded-lg shadow-xs min-h-[160px] flex flex-col transition-all duration-200 ease-in-out cursor-pointer hover:shadow-lg;
+  @apply col-span-1 bg-white border-2 border-solid border-transparent    shadow-xs min-h-[160px] flex flex-col transition-all duration-200 ease-in-out cursor-pointer hover:shadow-lg;
 }
 
 .listItem.newItemCard {
@@ -17,7 +17,7 @@
 
 .listItem.selectable::before {
   content: "";
-  @apply absolute top-0 left-0 block w-full h-full rounded-lg pointer-events-none opacity-0 transition-opacity duration-200 ease-in-out hover:opacity-100;
+  @apply absolute top-0 left-0 block w-full h-full    pointer-events-none opacity-0 transition-opacity duration-200 ease-in-out hover:opacity-100;
   background: linear-gradient(0deg,
       rgba(235, 245, 255, 0.5),
       rgba(235, 245, 255, 0.5)),
@@ -37,7 +37,7 @@
 }
 
 .appIcon {
-  @apply flex items-center justify-center w-8 h-8 bg-pink-100 rounded-lg grow-0 shrink-0;
+  @apply flex items-center justify-center w-8 h-8 bg-pink-100    grow-0 shrink-0;
 }
 
 .appIcon.medium {
@@ -49,7 +49,7 @@
 }
 
 .newItemIcon {
-  @apply flex items-center justify-center w-8 h-8 transition-colors duration-200 ease-in-out border border-gray-200 rounded-lg hover:bg-white grow-0 shrink-0;
+  @apply flex items-center justify-center w-8 h-8 transition-colors duration-200 ease-in-out border border-gray-200    hover:bg-white grow-0 shrink-0;
 }
 
 .listItem:hover .newItemIcon {
@@ -110,7 +110,7 @@
 }
 
 .actionIconWrapper {
-  @apply hidden h-8 w-8 p-2 rounded-md border-none hover:bg-gray-100 !important;
+  @apply hidden h-8 w-8 p-2     border-none hover:bg-gray-100 !important;
 }
 
 .listItem:hover .actionIconWrapper {
@@ -118,7 +118,7 @@
 }
 
 .deleteDatasetIcon {
-  @apply hidden grow-0 shrink-0 basis-8 w-8 h-8 rounded-lg transition-colors duration-200 ease-in-out bg-white border border-gray-200 hover:bg-gray-100 bg-center bg-no-repeat;
+  @apply hidden grow-0 shrink-0 basis-8 w-8 h-8    transition-colors duration-200 ease-in-out bg-white border border-gray-200 hover:bg-gray-100 bg-center bg-no-repeat;
   background-size: 16px;
   background-image: url('~@/assets/delete.svg');
 }

@@ -52,7 +52,7 @@ export default function Modal({
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className={`w-full max-w-md transform ${overflowVisible ? 'overflow-visible' : 'overflow-hidden'} rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all ${className}`}>
+              <Dialog.Panel className={`w-full max-w-md transform ${overflowVisible ? 'overflow-visible' : 'overflow-hidden'}     bg-white p-6 text-left align-middle shadow-xl transition-all ${className}`}>
                 {title && <Dialog.Title
                   as="h3"
                   className="text-lg font-medium leading-6 text-gray-900"
@@ -63,7 +63,7 @@ export default function Modal({
                   {description}
                 </Dialog.Description>}
                 {closable
-                  && <div className='absolute z-10 top-6 right-6 w-5 h-5 rounded-2xl flex items-center justify-center hover:cursor-pointer hover:bg-gray-100'>
+                  && <div className='absolute z-10 top-6 right-6 w-5 h-5     flex items-center justify-center hover:cursor-pointer hover:bg-gray-100'>
                     <XMarkIcon className='w-4 h-4 text-gray-500' onClick={
                       (e) => {
                         e.stopPropagation()

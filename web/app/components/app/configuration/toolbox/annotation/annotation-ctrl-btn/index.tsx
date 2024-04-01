@@ -74,13 +74,13 @@ const CacheCtrlBtn: FC<Props> = ({
   }
   return (
     <div className={cn(className, 'inline-block')}>
-      <div className='inline-flex p-0.5 space-x-0.5 rounded-lg bg-white border border-gray-100 shadow-md text-gray-500 cursor-pointer'>
+      <div className='inline-flex p-0.5 space-x-0.5    bg-white border border-gray-100 shadow-md text-gray-500 cursor-pointer'>
         {cached
           ? (
             <div>
               <div
                 ref={cachedBtnRef}
-                className={cn(isCachedBtnHovering ? 'bg-[#FEF3F2] text-[#D92D20]' : 'bg-[#EEF4FF] text-[#444CE7]', 'flex p-1 space-x-1 items-center rounded-md leading-4 text-xs font-medium')}
+                className={cn(isCachedBtnHovering ? 'bg-[#FEF3F2] text-[#D92D20]' : 'bg-[#EEF4FF] text-[#38A169]', 'flex p-1 space-x-1 items-center     leading-4 text-xs font-medium')}
                 onClick={() => setShowModal(true)}
               >
                 {!isCachedBtnHovering
@@ -103,7 +103,7 @@ const CacheCtrlBtn: FC<Props> = ({
                 popupContent={t('appDebug.feature.annotation.add') as string}
               >
                 <div
-                  className='p-1 rounded-md hover:bg-[#EEF4FF] hover:text-[#444CE7] cursor-pointer'
+                  className='p-1     hover:bg-[#EEF4FF] hover:text-[#38A169] cursor-pointer'
                   onClick={handleAdd}
                 >
                   <MessageFastPlus className='w-4 h-4' />
@@ -116,7 +116,7 @@ const CacheCtrlBtn: FC<Props> = ({
           popupContent={t('appDebug.feature.annotation.edit') as string}
         >
           <div
-            className='p-1 cursor-pointer rounded-md hover:bg-black/5'
+            className='p-1 cursor-pointer     hover:bg-black/5'
             onClick={onEdit}
           >
             <Edit04 className='w-4 h-4' />

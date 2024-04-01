@@ -25,14 +25,14 @@ export default function WorkspaceSelector({
       {
         ({ open }) => (
           <>
-            <Menu.Button className={`flex items-center justify-center h-7 rounded-md hover:bg-gray-50 ${open && 'bg-gray-50'} cursor-pointer`}>
+            <Menu.Button className={`flex items-center justify-center h-7     hover:bg-gray-50 ${open && 'bg-gray-50'} cursor-pointer`}>
               <NotionIcon
                 className='ml-1 mr-2'
                 src={currentWorkspace?.workspace_icon}
                 name={currentWorkspace?.workspace_name}
               />
               <div className='mr-1 w-[90px] text-left text-sm font-medium text-gray-700 truncate' title={currentWorkspace?.workspace_name}>{currentWorkspace?.workspace_name}</div>
-              <div className='mr-1 px-1 h-[18px] bg-primary-50 rounded-lg text-xs font-medium text-primary-600'>{currentWorkspace?.pages.length}</div>
+              <div className='mr-1 px-1 h-[18px] bg-primary-50    text-xs font-medium text-primary-600'>{currentWorkspace?.pages.length}</div>
               <div className={cn(s['down-arrow'], 'mr-2 w-3 h-3')} />
             </Menu.Button>
             <Transition
@@ -48,7 +48,7 @@ export default function WorkspaceSelector({
                 className={cn(
                   s.popup,
                   `absolute left-0 top-8 w-80
-                  origin-top-right rounded-lg bg-white
+                  origin-top-right    bg-white
                   border-[0.5px] border-gray-200`,
                 )}
               >

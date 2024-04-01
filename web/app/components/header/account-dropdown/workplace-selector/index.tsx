@@ -14,7 +14,7 @@ const itemClassName = `
   flex items-center px-3 py-2 h-10 cursor-pointer
 `
 const itemIconClassName = `
-  shrink-0 mr-2 flex items-center justify-center w-6 h-6 bg-[#EFF4FF] rounded-md text-xs font-medium text-primary-600
+  shrink-0 mr-2 flex items-center justify-center w-6 h-6 bg-[#EFF4FF]     text-xs font-medium text-primary-600
 `
 const itemNameClassName = `
   grow mr-2 text-sm text-gray-700 text-left
@@ -50,7 +50,7 @@ const WorkplaceSelector = () => {
             <Menu.Button className={cn(
               `
                 ${itemClassName} w-full
-                group hover:bg-gray-50 cursor-pointer ${open && 'bg-gray-50'} rounded-lg
+                group hover:bg-gray-50 cursor-pointer ${open && 'bg-gray-50'}   
               `,
             )}>
               <div className={itemIconClassName}>{currentWorkspace?.name[0].toLocaleUpperCase()}</div>
@@ -70,7 +70,7 @@ const WorkplaceSelector = () => {
                 className={cn(
                   `
                     absolute top-[1px] min-w-[200px] z-10 bg-white border-[0.5px] border-gray-200
-                    divide-y divide-gray-100 origin-top-right rounded-xl
+                    divide-y divide-gray-100 origin-top-right  
                   `,
                   s.popup,
                 )}

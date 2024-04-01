@@ -52,7 +52,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
         {
           currentItem
             ? (
-              <div className='flex items-center justify-between pl-3 pr-2.5 h-9 bg-gray-100 rounded-lg cursor-pointer'>
+              <div className='flex items-center justify-between pl-3 pr-2.5 h-9 bg-gray-100    cursor-pointer'>
                 <div className='text-sm text-gray-900'>{currentItem.name}</div>
                 <div className='flex items-center'>
                   <div className='mr-1.5 w-[270px] text-xs text-gray-400 truncate text-right'>
@@ -63,7 +63,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
               </div>
             )
             : (
-              <div className='flex items-center justify-between pl-3 pr-2.5 h-9 bg-gray-100 rounded-lg text-sm text-gray-400 cursor-pointer'>
+              <div className='flex items-center justify-between pl-3 pr-2.5 h-9 bg-gray-100    text-sm text-gray-400 cursor-pointer'>
                 {t('common.apiBasedExtension.selector.placeholder')}
                 <ChevronDown className={`w-4 h-4 text-gray-700 ${!open && 'opacity-60'}`} />
               </div>
@@ -71,7 +71,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
         }
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent className='w-[calc(100%-32px)] max-w-[576px] z-[102]'>
-        <div className='w-full rounded-lg border-[0.5px] border-gray-200 bg-white shadow-lg z-10'>
+        <div className='w-full    border-[0.5px] border-gray-200 bg-white shadow-lg z-10'>
           <div className='p-1'>
             <div className='flex items-center justify-between px-3 pt-2 pb-1'>
               <div className='text-xs font-medium text-gray-500'>
@@ -90,7 +90,7 @@ const ApiBasedExtensionSelector: FC<ApiBasedExtensionSelectorProps> = ({
                 data?.map(item => (
                   <div
                     key={item.id}
-                    className='px-3 py-1.5 w-full cursor-pointer hover:bg-gray-50 rounded-md text-left'
+                    className='px-3 py-1.5 w-full cursor-pointer hover:bg-gray-50     text-left'
                     onClick={() => handleSelect(item.id!)}
                   >
                     <div className='text-sm text-gray-900'>{item.name}</div>

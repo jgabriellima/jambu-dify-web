@@ -29,7 +29,7 @@ const Tab: FC<TabProps> = ({
           <div
             key={tab.key}
             className={`
-              flex items-center mr-1 px-[5px] h-[18px] rounded-md text-xs cursor-pointer
+              flex items-center mr-1 px-[5px] h-[18px]     text-xs cursor-pointer
               ${active === tab.key ? 'bg-gray-200 font-medium text-gray-900' : 'text-gray-500 font-normal'}
             `}
             onClick={() => onSelect(tab.key)}

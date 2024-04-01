@@ -38,7 +38,7 @@ export const SegmentIndexTag: FC<{ positionId: string | number; className?: stri
     return positionIdStr.padStart(3, '0')
   }, [positionId])
   return (
-    <div className={`text-gray-500 border border-gray-200 box-border flex items-center rounded-md italic text-[11px] pl-1 pr-1.5 font-medium ${className ?? ''}`}>
+    <div className={`text-gray-500 border border-gray-200 box-border flex items-center     italic text-[11px] pl-1 pr-1.5 font-medium ${className ?? ''}`}>
       <HashtagIcon className='w-3 h-3 text-gray-400 fill-current mr-1 stroke-current stroke-1' />
       {localPositionId}
     </div>
@@ -134,13 +134,13 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
         {isEditing && (
           <>
             <Button
-              className='mr-2 !h-7 !px-3 !py-[5px] text-xs font-medium text-gray-700 !rounded-md'
+              className='mr-2 !h-7 !px-3 !py-[5px] text-xs font-medium text-gray-700 !   '
               onClick={handleCancel}>
               {t('common.operation.cancel')}
             </Button>
             <Button
               type='primary'
-              className='!h-7 !px-3 !py-[5px] text-xs font-medium !rounded-md'
+              className='!h-7 !px-3 !py-[5px] text-xs font-medium !   '
               onClick={handleSave}
               disabled={loading}
             >
@@ -150,8 +150,8 @@ const SegmentDetailComponent: FC<ISegmentDetailProps> = ({
         )}
         {!isEditing && !archived && embeddingAvailable && (
           <>
-            <div className='group relative flex justify-center items-center w-6 h-6 hover:bg-gray-100 rounded-md cursor-pointer'>
-              <div className={cn(s.editTip, 'hidden items-center absolute -top-10 px-3 h-[34px] bg-white rounded-lg whitespace-nowrap text-xs font-semibold text-gray-700 group-hover:flex')}>{t('common.operation.edit')}</div>
+            <div className='group relative flex justify-center items-center w-6 h-6 hover:bg-gray-100     cursor-pointer'>
+              <div className={cn(s.editTip, 'hidden items-center absolute -top-10 px-3 h-[34px] bg-white    whitespace-nowrap text-xs font-semibold text-gray-700 group-hover:flex')}>{t('common.operation.edit')}</div>
               <Edit03 className='w-4 h-4 text-gray-500' onClick={() => setIsEditing(true)} />
             </div>
             <div className='mx-3 w-[1px] h-3 bg-gray-200' />

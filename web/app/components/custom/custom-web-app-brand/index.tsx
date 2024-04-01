@@ -105,10 +105,10 @@ const CustomWebAppBrand = () => {
   return (
     <div className='py-4'>
       <div className='mb-2 text-sm font-medium text-gray-900'>{t('custom.webapp.title')}</div>
-      <div className='relative mb-4 pl-4 pb-6 pr-[119px] rounded-xl border-[0.5px] border-black/[0.08] shadow-xs bg-gray-50 overflow-hidden'>
+      <div className='relative mb-4 pl-4 pb-6 pr-[119px]   border-[0.5px] border-black/[0.08] shadow-xs bg-gray-50 overflow-hidden'>
         <div className={`${s.mask} absolute top-0 left-0 w-full -bottom-2 z-10`}></div>
-        <div className='flex items-center -mt-2 mb-4 p-6 bg-white rounded-xl'>
-          <div className='flex items-center px-4 w-[125px] h-9 rounded-lg bg-primary-600 border-[0.5px] border-primary-700 shadow-xs'>
+        <div className='flex items-center -mt-2 mb-4 p-6 bg-white  '>
+          <div className='flex items-center px-4 w-[125px] h-9    bg-primary-600 border-[0.5px] border-primary-700 shadow-xs'>
             <MessageDotsCircle className='shrink-0 mr-2 w-4 h-4 text-white' />
             <div className='grow h-2 rounded-sm bg-white opacity-50' />
           </div>
@@ -129,7 +129,7 @@ const CustomWebAppBrand = () => {
           }
         </div>
       </div>
-      <div className='flex items-center justify-between mb-2 px-4 h-14 rounded-xl border-[0.5px] border-gray-200 bg-gray-50 text-sm font-medium text-gray-900'>
+      <div className='flex items-center justify-between mb-2 px-4 h-14   border-[0.5px] border-gray-200 bg-gray-50 text-sm font-medium text-gray-900'>
         {t('custom.webapp.removeBrand')}
         <Switch
           size='l'
@@ -139,7 +139,7 @@ const CustomWebAppBrand = () => {
         />
       </div>
       <div className={`
-        flex items-center justify-between px-4 py-3 rounded-xl border-[0.5px] border-gray-200 bg-gray-50
+        flex items-center justify-between px-4 py-3   border-[0.5px] border-gray-200 bg-gray-50
         ${webappBrandRemoved && 'opacity-30'}
       `}>
         <div>

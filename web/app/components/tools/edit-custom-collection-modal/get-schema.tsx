@@ -63,11 +63,11 @@ const GetSchema: FC<Props> = ({
           <div className='text-xs font-medium text-gray-700'>{t('tools.createTool.importFromUrl')}</div>
         </Button>
         {showImportFromUrl && (
-          <div className=' absolute left-[-35px] top-[26px] p-2 rounded-lg border border-gray-200 bg-white shadow-lg'>
+          <div className=' absolute left-[-35px] top-[26px] p-2    border border-gray-200 bg-white shadow-lg'>
             <div className='relative'>
               <input
                 type='text'
-                className='w-[244px] h-8 pl-1.5 pr-[44px] overflow-x-auto border border-gray-200 rounded-lg text-[13px]'
+                className='w-[244px] h-8 pl-1.5 pr-[44px] overflow-x-auto border border-gray-200    text-[13px]'
                 placeholder={t('tools.createTool.importFromUrlPlaceHolder')!}
                 value={importUrl}
                 onChange={e => setImportUrl(e.target.value)}
@@ -94,7 +94,7 @@ const GetSchema: FC<Props> = ({
           <ChevronDown className='w-3 h-3' />
         </Button>
         {showExamples && (
-          <div className='absolute top-7 right-0 p-1 rounded-lg bg-white shadow-sm'>
+          <div className='absolute top-7 right-0 p-1    bg-white shadow-sm'>
             {examples.map(item => (
               <div
                 key={item.key}
@@ -102,7 +102,7 @@ const GetSchema: FC<Props> = ({
                   onChange(item.content)
                   setShowExamples(false)
                 }}
-                className='px-3 py-1.5 rounded-lg hover:bg-gray-50 leading-5 text-sm font-normal text-gray-700 cursor-pointer whitespace-nowrap'
+                className='px-3 py-1.5    hover:bg-gray-50 leading-5 text-sm font-normal text-gray-700 cursor-pointer whitespace-nowrap'
               >
                 {t(`tools.createTool.exampleOptions.${item.key}`)}
               </div>

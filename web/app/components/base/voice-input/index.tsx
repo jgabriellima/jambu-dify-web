@@ -155,7 +155,7 @@ const VoiceInput = ({
   const seconds = parseInt(`${originDuration}`) % 60
 
   return (
-    <div className={cn(s.wrapper, 'absolute inset-0 rounded-xl')}>
+    <div className={cn(s.wrapper, 'absolute inset-0  ')}>
       <div className='absolute inset-[1.5px] flex items-center pl-[14.5px] pr-[6.5px] py-[14px] bg-primary-25 rounded-[10.5px] overflow-hidden'>
         <canvas id='voice-input-record' className='absolute left-0 bottom-0 w-full h-4' />
         {
@@ -180,7 +180,7 @@ const VoiceInput = ({
         {
           startRecord && (
             <div
-              className='flex justify-center items-center mr-1 w-8 h-8 hover:bg-primary-100 rounded-lg  cursor-pointer'
+              className='flex justify-center items-center mr-1 w-8 h-8 hover:bg-primary-100     cursor-pointer'
               onClick={handleStopRecorder}
             >
               <StopCircle className='w-5 h-5 text-primary-600' />
@@ -190,7 +190,7 @@ const VoiceInput = ({
         {
           startConvert && (
             <div
-              className='flex justify-center items-center mr-1 w-8 h-8 hover:bg-gray-200 rounded-lg  cursor-pointer'
+              className='flex justify-center items-center mr-1 w-8 h-8 hover:bg-gray-200     cursor-pointer'
               onClick={onCancel}
             >
               <XClose className='w-4 h-4 text-gray-500' />

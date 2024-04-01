@@ -758,7 +758,7 @@ const Configuration: FC = () => {
                   <div className='leading-6 text-base font-semibold text-gray-900'>{t('appDebug.orchestrate')}</div>
                   <div className='flex items-center h-[14px] space-x-1 text-xs'>
                     {isAdvancedMode && (
-                      <div className='ml-1 flex items-center h-5 px-1.5 border border-gray-100 rounded-md text-[11px] font-medium text-gray-500 uppercase'>{t('appDebug.promptMode.advanced')}</div>
+                      <div className='ml-1 flex items-center h-5 px-1.5 border border-gray-100     text-[11px] font-medium text-gray-500 uppercase'>{t('appDebug.promptMode.advanced')}</div>
                     )}
                   </div>
                 </div>
@@ -835,7 +835,7 @@ const Configuration: FC = () => {
                     )
                 }
               </div>
-              <div className='flex flex-col grow h-0 rounded-tl-2xl border-t border-l bg-gray-50 '>
+              <div className='flex flex-col grow h-0   border-t border-l bg-gray-50 '>
                 <Debug
                   hasSetAPIKEY={hasSettedApiKey}
                   onSetting={() => setShowAccountSettingModal({ payload: 'provider' })}

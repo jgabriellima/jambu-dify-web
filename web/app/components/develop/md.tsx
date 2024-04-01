@@ -40,7 +40,7 @@ export const Heading = function H2({
   return (
     <>
       <div className="flex items-center gap-x-3" >
-        <span className={`font-mono text-[0.625rem] font-semibold leading-6 rounded-lg px-1.5 ring-1 ring-inset ${style}`}>{method}</span>
+        <span className={`font-mono text-[0.625rem] font-semibold leading-6    px-1.5 ring-1 ring-inset ${style}`}>{method}</span>
         {/* <span className="h-0.5 w-0.5 rounded-full bg-zinc-300 dark:bg-zinc-600"></span> */}
         <span className="font-mono text-xs text-zinc-400">{url}</span>
       </div>

@@ -49,7 +49,7 @@ const Panel: FC<IPanelProps> = ({
 
   // overflow-hidden
   return (
-    <div className={cn(className, 'w-full rounded-xl border border-gray-100 overflow-hidden select-none')}>
+    <div className={cn(className, 'w-full   border border-gray-100 overflow-hidden select-none')}>
       {/* Header */}
       <div
         onClick={() => (!foldDisabled && !keepUnFold) && toggleFold()}

@@ -41,10 +41,10 @@ const Popup: FC<PopupProps> = ({
   )
 
   return (
-    <div className='w-[320px] max-h-[480px] rounded-lg border-[0.5px] border-gray-200 bg-white shadow-lg overflow-y-auto'>
+    <div className='w-[320px] max-h-[480px]    border-[0.5px] border-gray-200 bg-white shadow-lg overflow-y-auto'>
       <div className='sticky top-0 pl-3 pt-3 pr-2 pb-1 bg-white z-10'>
         <div className={`
-          flex items-center pl-[9px] pr-[10px] h-8 rounded-lg border
+          flex items-center pl-[9px] pr-[10px] h-8    border
           ${searchText ? 'bg-white border-gray-300 shadow-xs' : 'bg-gray-100 border-transparent'}
         `}>
           <SearchLg

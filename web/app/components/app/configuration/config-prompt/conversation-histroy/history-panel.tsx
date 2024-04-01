@@ -30,7 +30,7 @@ const HistoryPanel: FC<Props> = ({
         </div>
       }
       headerIcon={
-        <div className='p-1 rounded-md bg-white shadow-xs'>
+        <div className='p-1     bg-white shadow-xs'>
           <MessageClockCircle className='w-4 h-4 text-[#DD2590]' />
         </div>}
       headerRight={

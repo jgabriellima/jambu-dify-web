@@ -144,14 +144,14 @@ const AdvancedPromptInput: FC<Props> = ({
         <div className='leading-[18px] text-[13px] font-medium text-[#DC6803]'>{t('appDebug.promptMode.contextMissing')}</div>
       </div>
       <div
-        className='flex items-center h-6 px-2 rounded-md bg-[#fff] border border-gray-200 shadow-xs text-xs font-medium text-primary-600 cursor-pointer'
+        className='flex items-center h-6 px-2     bg-[#fff] border border-gray-200 shadow-xs text-xs font-medium text-primary-600 cursor-pointer'
         onClick={onHideContextMissingTip}
       >{t('common.operation.ok')}</div>
     </div>
   )
   return (
     <div className={`relative ${!isContextMissing ? s.gradientBorder : s.warningBorder}`}>
-      <div className='rounded-xl bg-white'>
+      <div className='  bg-white'>
         {isContextMissing
           ? contextMissing
           : (
@@ -198,7 +198,7 @@ const AdvancedPromptInput: FC<Props> = ({
           onHeightChange={setEditorHeight}
           footer={(
             <div className='pl-4 pb-2 flex'>
-              <div className="h-[18px] leading-[18px] px-1 rounded-md bg-gray-100 text-xs text-gray-500">{value.length}</div>
+              <div className="h-[18px] leading-[18px] px-1     bg-gray-100 text-xs text-gray-500">{value.length}</div>
             </div>
           )}
         >

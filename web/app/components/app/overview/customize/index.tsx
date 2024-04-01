@@ -21,7 +21,7 @@ type IShareLinkProps = {
 }
 
 const StepNum: FC<{ children: React.ReactNode }> = ({ children }) =>
-  <div className='h-7 w-7 flex justify-center items-center flex-shrink-0 mr-3 text-primary-600 bg-primary-50 rounded-2xl'>
+  <div className='h-7 w-7 flex justify-center items-center flex-shrink-0 mr-3 text-primary-600 bg-primary-50    '>
     {children}
   </div>
 
@@ -54,7 +54,7 @@ const CustomizeModal: FC<IShareLinkProps> = ({
     className='!max-w-2xl w-[640px]'
     closable={true}
   >
-    <div className='w-full mt-4 px-6 py-5 border-gray-200 rounded-lg border-[0.5px]'>
+    <div className='w-full mt-4 px-6 py-5 border-gray-200    border-[0.5px]'>
       <Tag bordered={true} hideBg={true} className='text-primary-600 border-primary-600 uppercase'>{t(`${prefixCustomize}.way`)} 1</Tag>
       <p className='my-2 text-base font-medium text-gray-800'>{t(`${prefixCustomize}.way1.name`)}</p>
       <div className='flex py-4'>
@@ -85,7 +85,7 @@ const CustomizeModal: FC<IShareLinkProps> = ({
         <div className='flex flex-col w-full overflow-hidden'>
           <div className='text-gray-900'>{t(`${prefixCustomize}.way1.step3`)}</div>
           <div className='text-gray-500 text-xs mt-1 mb-2'>{t(`${prefixCustomize}.way1.step3Tip`)}</div>
-          <pre className='overflow-x-scroll box-border py-3 px-4 bg-gray-100 text-xs font-medium rounded-lg select-text'>
+          <pre className='overflow-x-scroll box-border py-3 px-4 bg-gray-100 text-xs font-medium    select-text'>
             NEXT_PUBLIC_APP_ID={`'${appId}'`} <br />
             NEXT_PUBLIC_APP_KEY={'\'<Web API Key From Dify>\''} <br />
             NEXT_PUBLIC_API_URL={`'${api_base_url}'`}
@@ -94,7 +94,7 @@ const CustomizeModal: FC<IShareLinkProps> = ({
       </div>
 
     </div>
-    <div className='w-full mt-4 px-6 py-5 border-gray-200 rounded-lg border-[0.5px]'>
+    <div className='w-full mt-4 px-6 py-5 border-gray-200    border-[0.5px]'>
       <Tag bordered={true} hideBg={true} className='text-primary-600 border-primary-600 uppercase'>{t(`${prefixCustomize}.way`)} 2</Tag>
       <p className='mt-2 text-base font-medium text-gray-800'>{t(`${prefixCustomize}.way2.name`)}</p>
       <Button

@@ -22,7 +22,7 @@ const AppModeLabel = ({
   const { t } = useTranslation()
 
   return (
-    <div className={`inline-flex items-center px-2 h-6 rounded-md border border-gray-100 text-xs text-gray-500 ${className}`}>
+    <div className={`inline-flex items-center px-2 h-6     border border-gray-100 text-xs text-gray-500 ${className}`}>
       {
         mode === 'completion' && (
           <>

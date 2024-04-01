@@ -104,7 +104,7 @@ const SelectDataSet: FC<ISelectDataSetProps> = ({
       )}
 
       {(loaded && hasNoData) && (
-        <div className='flex items-center justify-center mt-6 rounded-lg space-x-1  h-[128px] text-[13px] border'
+        <div className='flex items-center justify-center mt-6    space-x-1  h-[128px] text-[13px] border'
           style={{
             background: 'rgba(0, 0, 0, 0.02)',
             borderColor: 'rgba(0, 0, 0, 0.02',
@@ -121,7 +121,7 @@ const SelectDataSet: FC<ISelectDataSetProps> = ({
             {datasets.map(item => (
               <div
                 key={item.id}
-                className={cn(s.item, selected.some(i => i.id === item.id) && s.selected, 'flex justify-between items-center h-10 px-2 rounded-lg bg-white border border-gray-200  cursor-pointer', !item.embedding_available && s.disabled)}
+                className={cn(s.item, selected.some(i => i.id === item.id) && s.selected, 'flex justify-between items-center h-10 px-2    bg-white border border-gray-200  cursor-pointer', !item.embedding_available && s.disabled)}
                 onClick={() => {
                   if (!item.embedding_available)
                     return
@@ -134,7 +134,7 @@ const SelectDataSet: FC<ISelectDataSetProps> = ({
                   </div>
                   <div className={cn('max-w-[200px] text-[13px] font-medium text-gray-800 overflow-hidden text-ellipsis whitespace-nowrap', !item.embedding_available && 'opacity-50 !max-w-[120px]')}>{item.name}</div>
                   {!item.embedding_available && (
-                    <span className='ml-1 shrink-0 px-1 border boder-gray-200 rounded-md text-gray-500 text-xs font-normal leading-[18px]'>{t('dataset.unavailable')}</span>
+                    <span className='ml-1 shrink-0 px-1 border boder-gray-200     text-gray-500 text-xs font-normal leading-[18px]'>{t('dataset.unavailable')}</span>
                   )}
                 </div>
 

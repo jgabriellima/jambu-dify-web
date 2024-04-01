@@ -31,7 +31,7 @@ const RadioCard: FC<Props> = ({
   return (
     <div className={cn(s.item, isChosen && s.active)}>
       <div className='flex py-3 pl-3 pr-4' onClick={onChosen}>
-        <div className={cn(iconBgClassName, 'mr-3 shrink-0 flex w-8 justify-center h-8 items-center rounded-lg')}>
+        <div className={cn(iconBgClassName, 'mr-3 shrink-0 flex w-8 justify-center h-8 items-center   ')}>
           {icon}
         </div>
         <div className='grow'>

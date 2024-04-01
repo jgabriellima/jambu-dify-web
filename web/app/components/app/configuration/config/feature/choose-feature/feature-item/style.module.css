@@ -30,7 +30,7 @@
 }
 
 .textToSpeechPreview {
-  @apply shadow-lg rounded-lg;
+  @apply shadow-lg   ;
   background-image: url(./preview-imgs/text-to-audio-preview-assistant@2x.png);
 }
 

@@ -20,7 +20,7 @@ const PresetsParameter: FC<PresetsParameterProps> = ({
     return (
       <div
         className={`
-          flex items-center px-[7px] h-7 rounded-md border-[0.5px] border-gray-200 shadow-xs
+          flex items-center px-[7px] h-7     border-[0.5px] border-gray-200 shadow-xs
           text-xs font-medium text-gray-700 cursor-pointer
           ${open && 'bg-gray-100'}
         `}

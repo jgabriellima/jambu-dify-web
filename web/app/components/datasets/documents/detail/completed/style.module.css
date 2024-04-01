@@ -41,7 +41,7 @@
   @apply text-primary-600 font-semibold text-xs absolute right-0 hidden h-12 pl-12 items-center;
 }
 .select {
-  @apply h-8 py-0 bg-gray-50 hover:bg-gray-100 rounded-lg shadow-none !important;
+  @apply h-8 py-0 bg-gray-50 hover:bg-gray-100    shadow-none !important;
 }
 .segModalContent {
   @apply h-96 text-gray-800 text-base break-all overflow-y-scroll;
@@ -60,7 +60,7 @@
   @apply text-gray-700 w-full max-h-[200px] overflow-auto flex flex-wrap;
 }
 .keyword {
-  @apply text-sm border border-gray-200 max-w-[200px] max-h-[100px] whitespace-pre-line overflow-y-auto mr-1 mb-2 last:mr-0 px-2 py-1 rounded-lg;
+  @apply text-sm border border-gray-200 max-w-[200px] max-h-[100px] whitespace-pre-line overflow-y-auto mr-1 mb-2 last:mr-0 px-2 py-1   ;
 }
 .hashText {
   @apply w-48 inline-block truncate;
@@ -142,7 +142,7 @@
     #f9fafb;
   box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
     0px 8px 8px -4px rgba(16, 24, 40, 0.03);
-  @apply rounded-2xl p-8;
+  @apply     p-8;
 }
 .warningWrapper {
   box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),

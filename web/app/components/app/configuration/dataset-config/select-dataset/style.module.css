@@ -5,7 +5,7 @@
 .item:hover,
 .item.selected {
   background: #F5F8FF;
-  border-color: #528BFF;
+  border-color: #4CAF50;
 }
 
 .item.disabled {

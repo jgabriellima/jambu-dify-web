@@ -151,7 +151,7 @@ export function Markdown(props: { content: string; className?: string }) {
                 alt={alt}
                 width={250}
                 height={250}
-                className="max-w-full h-auto align-middle border-none rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out mt-2 mb-2"
+                className="max-w-full h-auto align-middle border-none    shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out mt-2 mb-2"
                 {...props}
               />
             )
@@ -167,7 +167,7 @@ export function Markdown(props: { content: string; className?: string }) {
                   src={image.properties.src}
                   width={250}
                   height={250}
-                  className="max-w-full h-auto align-middle border-none rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out mt-2 mb-2"
+                  className="max-w-full h-auto align-middle border-none    shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out mt-2 mb-2"
                   alt={image.properties.alt}
                 />
               )

@@ -68,7 +68,7 @@ const TestApi: FC<Props> = ({
             <div className='space-y-4'>
               <div>
                 <div className={keyClassNames}>{t('tools.createTool.authMethod.title')}</div>
-                <div className='flex items-center h-9 justify-between px-2.5 bg-gray-100 rounded-lg cursor-pointer' onClick={() => setCredentialsModalShow(true)}>
+                <div className='flex items-center h-9 justify-between px-2.5 bg-gray-100    cursor-pointer' onClick={() => setCredentialsModalShow(true)}>
                   <div className='text-sm font-normal text-gray-900'>{t(`tools.createTool.authMethod.types.${tempCredential.auth_type}`)}</div>
                   <Settings01 className='w-4 h-4 text-gray-700 opacity-60' />
                 </div>
@@ -76,7 +76,7 @@ const TestApi: FC<Props> = ({
 
               <div>
                 <div className={keyClassNames}>{t('tools.test.parametersValue')}</div>
-                <div className='rounded-lg border border-gray-200'>
+                <div className='   border border-gray-200'>
                   <table className='w-full leading-[18px] text-xs text-gray-700 font-normal'>
                     <thead className='text-gray-500 uppercase'>
                       <tr className='border-b border-gray-200'>
@@ -110,7 +110,7 @@ const TestApi: FC<Props> = ({
                 <div className='leading-[18px] text-xs font-semibold text-gray-500'>{t('tools.test.testResult')}</div>
                 <div className='grow w-0 h-px bg-[rgb(243, 244, 246)]'></div>
               </div>
-              <div className='mt-2 px-3 py-2 h-[200px] overflow-y-auto overflow-x-hidden rounded-lg bg-gray-100 leading-4 text-xs font-normal text-gray-700'>
+              <div className='mt-2 px-3 py-2 h-[200px] overflow-y-auto overflow-x-hidden    bg-gray-100 leading-4 text-xs font-normal text-gray-700'>
                 {result || <span className='text-gray-400'>{t('tools.test.testResultPlaceholder')}</span>}
               </div>
             </div>

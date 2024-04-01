@@ -41,7 +41,7 @@ const QuotaPanel: FC<QuotaPanelProps> = ({
   const openaiOrAnthropic = MODEL_PROVIDER_QUOTA_GET_PAID.includes(provider.provider)
 
   return (
-    <div className='group relative shrink-0 min-w-[112px] px-3 py-2 rounded-lg bg-white/[0.3] border-[0.5px] border-black/5'>
+    <div className='group relative shrink-0 min-w-[112px] px-3 py-2    bg-white/[0.3] border-[0.5px] border-black/5'>
       <div className='flex items-center mb-2 h-4 text-xs font-medium text-gray-500'>
         {t('common.modelProvider.quota')}
         <TooltipPlus popupContent={
@@ -71,7 +71,7 @@ const QuotaPanel: FC<QuotaPanelProps> = ({
       {
         !currentQuota && provider.provider === 'anthropic' && (
           <Button
-            className='h-6 bg-white text-xs font-medium rounded-md'
+            className='h-6 bg-white text-xs font-medium    '
             onClick={handlePay}
           >
             {t('common.modelProvider.buyQuota')}
@@ -81,7 +81,7 @@ const QuotaPanel: FC<QuotaPanelProps> = ({
       {
         !currentQuota && MODEL_PROVIDER_QUOTA_GET_FREE.includes(provider.provider) && (
           <Button
-            className='h-6 bg-white text-xs font-medium rounded-md'
+            className='h-6 bg-white text-xs font-medium    '
             onClick={() => handleFreeQuota(provider.provider)}
           >
             {t('common.modelProvider.getFreeTokens')}

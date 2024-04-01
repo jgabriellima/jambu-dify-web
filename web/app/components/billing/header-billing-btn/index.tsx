@@ -38,7 +38,7 @@ const HeaderBillingBtn: FC<Props> = ({
     return <UpgradeBtn onClick={onClick} isShort />
 
   return (
-    <div onClick={onClick} className={cn(classNames, 'flex items-center h-[22px] px-2 rounded-md border text-xs font-semibold uppercase cursor-pointer')}>
+    <div onClick={onClick} className={cn(classNames, 'flex items-center h-[22px] px-2     border text-xs font-semibold uppercase cursor-pointer')}>
       {name}
     </div>
   )

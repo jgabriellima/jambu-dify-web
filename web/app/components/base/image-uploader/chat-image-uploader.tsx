@@ -29,7 +29,7 @@ const UploadOnlyFromLocal: FC<UploadOnlyFromLocalProps> = ({
       {hovering => (
         <div
           className={`
-            relative flex items-center justify-center w-8 h-8 rounded-lg cursor-pointer
+            relative flex items-center justify-center w-8 h-8    cursor-pointer
             ${hovering && 'bg-gray-100'}
           `}
         >
@@ -82,13 +82,13 @@ const UploaderButton: FC<UploaderButtonProps> = ({
         <button
           type="button"
           disabled={disabled}
-          className="relative flex items-center justify-center w-8 h-8 enabled:hover:bg-gray-100 rounded-lg disabled:cursor-not-allowed"
+          className="relative flex items-center justify-center w-8 h-8 enabled:hover:bg-gray-100    disabled:cursor-not-allowed"
         >
           <ImagePlus className="w-4 h-4 text-gray-500" />
         </button>
       </PortalToFollowElemTrigger>
       <PortalToFollowElemContent className="z-50">
-        <div className="p-2 w-[260px] bg-white rounded-lg border-[0.5px] border-gray-200 shadow-lg">
+        <div className="p-2 w-[260px] bg-white    border-[0.5px] border-gray-200 shadow-lg">
           <ImageLinkInput onUpload={handleUpload} />
           {hasUploadFromLocal && (
             <>
@@ -105,7 +105,7 @@ const UploaderButton: FC<UploaderButtonProps> = ({
                 {hovering => (
                   <div
                     className={cn(
-                      'flex items-center justify-center h-8 text-[13px] font-medium text-[#38A169] rounded-lg cursor-pointer',
+                      'flex items-center justify-center h-8 text-[13px] font-medium text-[#38A169]    cursor-pointer',
                       hovering && 'bg-primary-50',
                     )}
                   >

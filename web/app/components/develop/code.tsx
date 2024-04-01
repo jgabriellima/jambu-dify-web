@@ -271,7 +271,7 @@ export function CodeGroup({ children, title, inputs, targetCode, ...props }: ICh
     <CodeGroupContext.Provider value={true}>
       <Container
         {...containerProps}
-        className="my-6 overflow-hidden shadow-md not-prose rounded-2xl bg-zinc-900 dark:ring-1 dark:ring-white/10"
+        className="my-6 overflow-hidden shadow-md not-prose     bg-zinc-900 dark:ring-1 dark:ring-white/10"
       >
         <CodeGroupHeader title={title} {...headerProps}>
           {children}

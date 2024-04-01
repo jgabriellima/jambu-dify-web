@@ -38,7 +38,7 @@ const Tooltip: FC<TooltipProps> = ({
       <PortalToFollowElemContent
         className="z-[9999]"
       >
-        <div className='relative px-3 py-2 text-xs font-normal text-gray-700 bg-white rounded-md shadow-lg'>
+        <div className='relative px-3 py-2 text-xs font-normal text-gray-700 bg-white     shadow-lg'>
           {popupContent}
           {arrow}
         </div>

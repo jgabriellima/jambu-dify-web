@@ -72,7 +72,7 @@ const ViewAnnotationModal: FC<Props> = ({
           ? (
             <div className='flex items-center space-x-1'>
               <div>{t('appAnnotation.viewModal.hitHistory')}</div>
-              <div className='flex px-1.5 item-center rounded-md border border-black/[8%] h-5 text-xs font-medium text-gray-500'>{total} {t(`appAnnotation.viewModal.hit${hitHistoryList.length > 1 ? 's' : ''}`)}</div>
+              <div className='flex px-1.5 item-center     border border-black/[8%] h-5 text-xs font-medium text-gray-500'>{total} {t(`appAnnotation.viewModal.hit${hitHistoryList.length > 1 ? 's' : ''}`)}</div>
             </div>
           )
           : t('appAnnotation.viewModal.hitHistory')

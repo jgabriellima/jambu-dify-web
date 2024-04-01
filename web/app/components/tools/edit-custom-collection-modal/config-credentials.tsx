@@ -28,7 +28,7 @@ type ItemProps = {
 const SelectItem: FC<ItemProps> = ({ text, value, isChecked, onClick }) => {
   return (
     <div
-      className={cn(isChecked ? 'border-[2px] border-indigo-600 shadow-sm bg-white' : 'border border-gray-100', 'mb-2 flex items-center h-9 pl-3 w-[150px] rounded-xl bg-gray-25 hover:bg-gray-50 cursor-pointer space-x-2')}
+      className={cn(isChecked ? 'border-[2px] border-indigo-600 shadow-sm bg-white' : 'border border-gray-100', 'mb-2 flex items-center h-9 pl-3 w-[150px]   bg-gray-25 hover:bg-gray-50 cursor-pointer space-x-2')}
       onClick={() => onClick(value)}
     >
       <Radio isChecked={isChecked} />
@@ -120,7 +120,7 @@ const ConfigCredential: FC<Props> = ({
                   <input
                     value={tempCredential.api_key_header}
                     onChange={e => setTempCredential({ ...tempCredential, api_key_header: e.target.value })}
-                    className='w-full h-10 px-3 text-sm font-normal bg-gray-100 rounded-lg grow'
+                    className='w-full h-10 px-3 text-sm font-normal bg-gray-100    grow'
                     placeholder={t('tools.createTool.authMethod.types.apiKeyPlaceholder')!}
                   />
                 </div>
@@ -129,7 +129,7 @@ const ConfigCredential: FC<Props> = ({
                   <input
                     value={tempCredential.api_key_value}
                     onChange={e => setTempCredential({ ...tempCredential, api_key_value: e.target.value })}
-                    className='w-full h-10 px-3 text-sm font-normal bg-gray-100 rounded-lg grow'
+                    className='w-full h-10 px-3 text-sm font-normal bg-gray-100    grow'
                     placeholder={t('tools.createTool.authMethod.types.apiValuePlaceholder')!}
                   />
                 </div>

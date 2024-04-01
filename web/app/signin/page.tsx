@@ -35,7 +35,7 @@ gtag('config', 'AW-11217955271"');
       )}>
         <div className={
           cn(
-            'flex w-full flex-col bg-white shadow rounded-2xl shrink-0',
+            'flex w-full flex-col bg-white shadow     shrink-0',
             'space-between',
           )
         }>

@@ -60,7 +60,7 @@ const List: FC<Props> = ({
                 {/* Actions */}
                 <div className='flex space-x-2 text-gray-500'>
                   <div
-                    className='p-1 cursor-pointer rounded-md hover:bg-black/5'
+                    className='p-1 cursor-pointer     hover:bg-black/5'
                     onClick={
                       () => {
                         onView(item)
@@ -70,7 +70,7 @@ const List: FC<Props> = ({
                     <Edit02 className='w-4 h-4' />
                   </div>
                   <div
-                    className='p-1 cursor-pointer rounded-md hover:bg-black/5'
+                    className='p-1 cursor-pointer     hover:bg-black/5'
                     onClick={() => {
                       setCurrId(item.id)
                       setShowConfirmDelete(true)

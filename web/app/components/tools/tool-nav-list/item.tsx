@@ -23,13 +23,13 @@ const Item: FC<Props> = ({
   const language = getLanguage(locale)
   return (
     <div
-      className={cn(isCurrent && 'bg-white shadow-xs rounded-lg', 'mt-1 flex h-9 items-center px-2 space-x-2 cursor-pointer')}
+      className={cn(isCurrent && 'bg-white shadow-xs   ', 'mt-1 flex h-9 items-center px-2 space-x-2 cursor-pointer')}
       onClick={() => !isCurrent && onClick()}
     >
       {typeof payload.icon === 'string'
         ? (
           <div
-            className='w-6 h-6 bg-cover bg-center rounded-md'
+            className='w-6 h-6 bg-cover bg-center    '
             style={{
               backgroundImage: `url(${payload.icon})`,
             }}

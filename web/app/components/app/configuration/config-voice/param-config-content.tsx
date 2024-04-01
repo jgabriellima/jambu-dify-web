@@ -59,7 +59,7 @@ const VoiceParamConfig: FC = () => {
               }}
             >
               <div className={'relative h-9'}>
-                <Listbox.Button className={'w-full h-full rounded-lg border-0 bg-gray-100 py-1.5 pl-3 pr-10 sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200 cursor-pointer'}>
+                <Listbox.Button className={'w-full h-full    border-0 bg-gray-100 py-1.5 pl-3 pr-10 sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200 cursor-pointer'}>
                   <span className={classNames('block truncate text-left', !languageItem?.name && 'text-gray-400')}>
                     {languageItem?.name ? t(`common.voice.language.${languageItem?.value.replace('-', '')}`) : localLanguagePlaceholder}
                   </span>
@@ -77,12 +77,12 @@ const VoiceParamConfig: FC = () => {
                   leaveTo="opacity-0"
                 >
 
-                  <Listbox.Options className="absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm">
+                  <Listbox.Options className="absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto     bg-white py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm">
                     {languages.map((item: Item) => (
                       <Listbox.Option
                         key={item.value}
                         className={({ active }) =>
-                          `relative cursor-pointer select-none py-2 pl-3 pr-9 rounded-lg hover:bg-gray-100 text-gray-700 ${active ? 'bg-gray-100' : ''
+                          `relative cursor-pointer select-none py-2 pl-3 pr-9    hover:bg-gray-100 text-gray-700 ${active ? 'bg-gray-100' : ''
                           }`
                         }
                         value={item}
@@ -124,7 +124,7 @@ const VoiceParamConfig: FC = () => {
               }}
             >
               <div className={'relative h-9'}>
-                <Listbox.Button className={'w-full h-full rounded-lg border-0 bg-gray-100 py-1.5 pl-3 pr-10 sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200 cursor-pointer'}>
+                <Listbox.Button className={'w-full h-full    border-0 bg-gray-100 py-1.5 pl-3 pr-10 sm:text-sm sm:leading-6 focus-visible:outline-none focus-visible:bg-gray-200 group-hover:bg-gray-200 cursor-pointer'}>
                   <span className={classNames('block truncate text-left', !voiceItem?.name && 'text-gray-400')}>{voiceItem?.name ?? localVoicePlaceholder}</span>
                   <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                     <ChevronDownIcon
@@ -140,12 +140,12 @@ const VoiceParamConfig: FC = () => {
                   leaveTo="opacity-0"
                 >
 
-                  <Listbox.Options className="absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm">
+                  <Listbox.Options className="absolute z-10 mt-1 px-1 max-h-60 w-full overflow-auto     bg-white py-1 text-base shadow-lg border-gray-200 border-[0.5px] focus:outline-none sm:text-sm">
                     {voiceItems?.map((item: Item) => (
                       <Listbox.Option
                         key={item.value}
                         className={({ active }) =>
-                          `relative cursor-pointer select-none py-2 pl-3 pr-9 rounded-lg hover:bg-gray-100 text-gray-700 ${active ? 'bg-gray-100' : ''
+                          `relative cursor-pointer select-none py-2 pl-3 pr-9    hover:bg-gray-100 text-gray-700 ${active ? 'bg-gray-100' : ''
                           }`
                         }
                         value={item}

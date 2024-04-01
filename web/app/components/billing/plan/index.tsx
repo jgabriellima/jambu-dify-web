@@ -45,7 +45,7 @@ const PlanComp: FC<Props> = ({
 
   return (
     <div
-      className='rounded-xl border border-white select-none'
+      className='  border border-white select-none'
       style={{
         background: typeStyle[type].bg,
         boxShadow: '5px 7px 12px 0px rgba(0, 0, 0, 0.06)',
@@ -75,7 +75,7 @@ const PlanComp: FC<Props> = ({
       </div>
 
       {/* Plan detail */}
-      <div className='rounded-xl bg-white px-6 py-3'>
+      <div className='  bg-white px-6 py-3'>
         <VectorSpaceInfo className='py-3' />
         <AppsInfo className='py-3' />
         {isInHeader && type === Plan.sandbox && (

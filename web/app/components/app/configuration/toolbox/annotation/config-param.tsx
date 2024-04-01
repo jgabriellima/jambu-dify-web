@@ -60,13 +60,13 @@ const AnnotationReplyConfig: FC<Props> = ({
       <Panel
         className="mt-4"
         headerIcon={
-          <MessageFast className='w-4 h-4 text-[#444CE7]' />
+          <MessageFast className='w-4 h-4 text-[#38A169]' />
         }
         title={t('appDebug.feature.annotation.title')}
         headerRight={
           <div className='flex items-center'>
             <div
-              className='flex items-center rounded-md h-7 px-3 space-x-1 text-gray-700 cursor-pointer hover:bg-gray-200'
+              className='flex items-center     h-7 px-3 space-x-1 text-gray-700 cursor-pointer hover:bg-gray-200'
               onClick={() => { setIsShowEdit(true) }}
             >
               <Settings04 className="w-[14px] h-[14px]" />
@@ -76,7 +76,7 @@ const AnnotationReplyConfig: FC<Props> = ({
               </div>
             </div>
             <div
-              className='ml-1 flex items-center h-7 px-3 space-x-1 leading-[18px] text-xs font-medium text-gray-700 rounded-md cursor-pointer hover:bg-gray-200'
+              className='ml-1 flex items-center h-7 px-3 space-x-1 leading-[18px] text-xs font-medium text-gray-700     cursor-pointer hover:bg-gray-200'
               onClick={() => {
                 router.push(`/app/${appId}/annotations`)
               }}>

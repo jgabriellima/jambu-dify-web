@@ -51,7 +51,7 @@ const Header: FC<IResultHeaderProps> = ({
                   rating: null,
                 })
               }}
-              className='flex w-7 h-7 items-center justify-center rounded-md cursor-pointer  !text-primary-600 border border-primary-200 bg-primary-100 hover:border-primary-300 hover:bg-primary-200'>
+              className='flex w-7 h-7 items-center justify-center     cursor-pointer  !text-primary-600 border border-primary-200 bg-primary-100 hover:border-primary-300 hover:bg-primary-200'>
               <HandThumbUpIcon width={16} height={16} />
             </div>
           </Tooltip>
@@ -68,14 +68,14 @@ const Header: FC<IResultHeaderProps> = ({
                   rating: null,
                 })
               }}
-              className='flex w-7 h-7 items-center justify-center rounded-md cursor-pointer  !text-red-600 border border-red-200 bg-red-100 hover:border-red-300 hover:bg-red-200'>
+              className='flex w-7 h-7 items-center justify-center     cursor-pointer  !text-red-600 border border-red-200 bg-red-100 hover:border-red-300 hover:bg-red-200'>
               <HandThumbDownIcon width={16} height={16} />
             </div>
           </Tooltip>
         )}
 
         {showFeedback && !feedback.rating && (
-          <div className='flex rounded-lg border border-gray-200 p-[1px] space-x-1'>
+          <div className='flex    border border-gray-200 p-[1px] space-x-1'>
             <Tooltip
               selector="feedback-like"
               content="Great Rating"
@@ -86,7 +86,7 @@ const Header: FC<IResultHeaderProps> = ({
                     rating: 'like',
                   })
                 }}
-                className='flex w-6 h-6 items-center justify-center rounded-md cursor-pointer hover:bg-gray-100'>
+                className='flex w-6 h-6 items-center justify-center     cursor-pointer hover:bg-gray-100'>
                 <HandThumbUpIcon width={16} height={16} />
               </div>
             </Tooltip>
@@ -100,7 +100,7 @@ const Header: FC<IResultHeaderProps> = ({
                     rating: 'dislike',
                   })
                 }}
-                className='flex w-6 h-6 items-center justify-center rounded-md cursor-pointer hover:bg-gray-100'>
+                className='flex w-6 h-6 items-center justify-center     cursor-pointer hover:bg-gray-100'>
                 <HandThumbDownIcon width={16} height={16} />
               </div>
             </Tooltip>

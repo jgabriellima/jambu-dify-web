@@ -46,7 +46,7 @@ const SavedItems: FC<ISavedItemsProps> = ({
           {list.map(({ id, answer }) => (
             <div
               key={id}
-              className='p-4 rounded-xl  bg-gray-50'
+              className='p-4    bg-gray-50'
               style={{
                 boxShadow: '0px 1px 2px rgba(16, 24, 40, 0.05)',
               }}

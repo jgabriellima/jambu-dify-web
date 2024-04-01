@@ -3,7 +3,7 @@ import { LinkExternal01 } from '@/app/components/base/icons/src/vender/line/gene
 
 const ModelTrigger = () => {
   return (
-    <div className='flex items-center px-2 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 cursor-pointer'>
+    <div className='flex items-center px-2 h-8    bg-gray-100 hover:bg-gray-200 cursor-pointer'>
       <div className='grow flex items-center'>
         <div className='mr-1.5 flex items-center justify-center w-4 h-4 rounded-[5px] border-dashed border-black/5'>
           <CubeOutline className='w-[11px] h-[11px] text-gray-400' />

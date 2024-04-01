@@ -42,7 +42,7 @@ const Question: FC<QuestionProps> = ({
             <Log log={item.log!} containerRef={ref} />
           )
         }
-        <div className='px-4 py-3 bg-[#D1E9FF]/50 rounded-b-2xl rounded-tl-2xl text-sm text-gray-900'>
+        <div className='px-4 py-3 bg-[#D1E9FF]/50 rounded-b-2xl   text-sm text-gray-900'>
           {
             !!imgSrcs.length && (
               <ImageGallery srcs={imgSrcs} />

@@ -13,7 +13,7 @@ const ModelTrigger: FC<ModelTriggerProps> = ({
   return (
     <div
       className={`
-        flex items-center px-2 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 cursor-pointer
+        flex items-center px-2 h-8    bg-gray-100 hover:bg-gray-200 cursor-pointer
         ${className}
         ${open && '!bg-gray-200'}
       `}

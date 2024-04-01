@@ -79,7 +79,7 @@ const VariablePickerMenuItem: FC<VariablePickerMenuItemProps> = ({
     <div
       key={option.key}
       className={`
-        flex items-center px-3 h-6 rounded-md hover:bg-primary-50 cursor-pointer
+        flex items-center px-3 h-6     hover:bg-primary-50 cursor-pointer
         ${isSelected && 'bg-primary-50'}
       `}
       tabIndex={-1}
@@ -189,7 +189,7 @@ const VariablePicker: FC<VariablePickerProps> = ({
   })
 
   const newToolOption = new VariablePickerOption(t('common.promptEditor.variable.modal.addTool'), {
-    icon: <Tool03 className='mr-2 w-[14px] h-[14px] text-[#444CE7]' />,
+    icon: <Tool03 className='mr-2 w-[14px] h-[14px] text-[#38A169]' />,
     extraElement: <ArrowUpRight className='w-3 h-3 text-gray-400' />,
     onSelect: () => {
       if (onAddExternalTool)
@@ -229,7 +229,7 @@ const VariablePicker: FC<VariablePickerProps> = ({
       ) =>
         (anchorElementRef.current && mergedOptions.length)
           ? ReactDOM.createPortal(
-            <div className='mt-[25px] w-[240px] bg-white rounded-lg border-[0.5px] border-gray-200 shadow-lg'>
+            <div className='mt-[25px] w-[240px] bg-white    border-[0.5px] border-gray-200 shadow-lg'>
               {
                 !!options.length && (
                   <>
@@ -281,7 +281,7 @@ const VariablePicker: FC<VariablePickerProps> = ({
               <div className='p-1'>
                 <div
                   className={`
-                    flex items-center px-3 h-6 rounded-md hover:bg-primary-50 cursor-pointer
+                    flex items-center px-3 h-6     hover:bg-primary-50 cursor-pointer
                     ${selectedIndex === options.length + toolOptions.length && 'bg-primary-50'}
                   `}
                   ref={newOption.setRefElement}
@@ -300,7 +300,7 @@ const VariablePicker: FC<VariablePickerProps> = ({
                 </div>
                 <div
                   className={`
-                    flex items-center px-3 h-6 rounded-md hover:bg-primary-50 cursor-pointer
+                    flex items-center px-3 h-6     hover:bg-primary-50 cursor-pointer
                     ${selectedIndex === options.length + toolOptions.length + 1 && 'bg-primary-50'}
                   `}
                   ref={newToolOption.setRefElement}

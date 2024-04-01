@@ -17,7 +17,7 @@ const Panel: FC<Props> = ({
   const { t } = useTranslation()
 
   return (
-    <div className='rounded-md bg-gray-100 overflow-hidden border border-black/5'>
+    <div className='    bg-gray-100 overflow-hidden border border-black/5'>
       <div className='flex items-center px-2 py-1 leading-[18px] bg-gray-50 uppercase text-xs font-medium text-gray-500'>
         {t(`tools.thought.${isRequest ? 'requestTitle' : 'responseTitle'}`)} {toolName}
       </div>

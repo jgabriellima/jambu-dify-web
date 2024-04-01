@@ -131,12 +131,12 @@ const ExtraInfo = ({ isMobile, relatedApps }: IExtraInfoProps) => {
         toggle={toggleTips}
         isMobile={isMobile}
         triggerElement={
-          <div className={classNames('h-7 w-7 inline-flex justify-center items-center rounded-lg bg-transparent', isShowTips && '!bg-gray-50')}>
+          <div className={classNames('h-7 w-7 inline-flex justify-center items-center    bg-transparent', isShowTips && '!bg-gray-50')}>
             <QuestionMarkCircleIcon className='h-4 w-4 flex-shrink-0 text-gray-500' />
           </div>
         }
       >
-        <div className={classNames('mt-5 p-3', isMobile && 'border-[0.5px] border-gray-200 shadow-lg rounded-lg bg-white w-[150px]')}>
+        <div className={classNames('mt-5 p-3', isMobile && 'border-[0.5px] border-gray-200 shadow-lg    bg-white w-[150px]')}>
           <div className='flex items-center justify-start gap-2'>
             <div className={s.emptyIconDiv}>
               <Squares2X2Icon className='w-3 h-3 text-gray-500' />

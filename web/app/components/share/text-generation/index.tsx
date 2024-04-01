@@ -537,7 +537,7 @@ const TextGeneration: FC<IMainProps> = ({
                 isRight: true,
                 extra: savedMessages.length > 0
                   ? (
-                    <div className='ml-1 flext items-center h-5 px-1.5 rounded-md border border-gray-200 text-gray-500 text-xs font-medium'>
+                    <div className='ml-1 flext items-center h-5 px-1.5     border border-gray-200 text-gray-500 text-xs font-medium'>
                       {savedMessages.length}
                     </div>
                   )

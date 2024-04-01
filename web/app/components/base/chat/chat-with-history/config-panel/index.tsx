@@ -26,7 +26,7 @@ const ConfigPanel = () => {
     <div className='flex flex-col max-h-[80%] w-full max-w-[720px]'>
       <div
         className={`
-          grow rounded-xl overflow-y-auto
+          grow   overflow-y-auto
           ${showConfigPanelBeforeChat && 'border-[0.5px] border-gray-100 shadow-lg'}
           ${!showConfigPanelBeforeChat && collapsed && 'border border-indigo-100'}
           ${!showConfigPanelBeforeChat && !collapsed && 'border-[0.5px] border-gray-100 shadow-lg'}
@@ -67,7 +67,7 @@ const ConfigPanel = () => {
                   {t('share.chat.configStatusDes')}
                 </div>
                 <Button
-                  className='shrink-0 px-2 py-0 h-6 bg-white text-xs font-medium text-primary-600 rounded-md'
+                  className='shrink-0 px-2 py-0 h-6 bg-white text-xs font-medium text-primary-600    '
                   onClick={() => setCollapsed(false)}
                 >
                   <Edit02 className='mr-1 w-3 h-3' />

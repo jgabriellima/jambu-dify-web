@@ -54,7 +54,7 @@ const Header: FC<IHeaderProps> = ({
           htmlContent={t('share.chat.resetChat')}
           position='top'
         >
-          <div className='flex cursor-pointer hover:rounded-lg hover:bg-black/5 w-8 h-8 items-center justify-center' onClick={() => {
+          <div className='flex cursor-pointer hover:   hover:bg-black/5 w-8 h-8 items-center justify-center' onClick={() => {
             onCreateNewChat?.()
           }}>
             <ReplayIcon className="h-4 w-4 text-sm font-bold text-white" />

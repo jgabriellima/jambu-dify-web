@@ -34,7 +34,7 @@ const Category: FC<ICategoryProps> = ({
       isSelected
         ? 'bg-white text-primary-600 border-gray-200 font-semibold shadow-[0px_1px_2px_rgba(16,24,40,0.05)]'
         : 'border-transparent font-medium',
-      'flex items-center h-7 px-3 border cursor-pointer rounded-lg',
+      'flex items-center h-7 px-3 border cursor-pointer   ',
     )
 
   return (

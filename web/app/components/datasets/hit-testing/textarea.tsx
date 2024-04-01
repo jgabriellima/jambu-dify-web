@@ -75,7 +75,7 @@ const TextAreaWithButton = ({
             >
               <div
                 onClick={onClickRetrievalMethod}
-                className='flex px-2 h-7 items-center space-x-1 bg-white hover:bg-[#ECE9FE] rounded-md shadow-sm cursor-pointer text-[#6927DA]'
+                className='flex px-2 h-7 items-center space-x-1 bg-white hover:bg-[#ECE9FE]     shadow-sm cursor-pointer text-[#6927DA]'
               >
                 <Icon className='w-3.5 h-3.5'></Icon>
                 <div className='text-xs font-medium'>{t(`dataset.retrieval.${retrievalMethod}.title`)}</div>

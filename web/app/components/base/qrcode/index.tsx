@@ -39,7 +39,7 @@ const ShareQRCode = ({ content, selectorId, className }: Props) => {
       content={t(`${prefixEmbedded}`) || ''}
     >
       <div
-        className={`w-8 h-8 cursor-pointer rounded-lg ${className ?? ''}`}
+        className={`w-8 h-8 cursor-pointer    ${className ?? ''}`}
         onMouseLeave={onMouseLeave}
         onClick={onClickShow}
       >

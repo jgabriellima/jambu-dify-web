@@ -61,7 +61,7 @@ export const SimpleBtn = ({ className, isDisabled, onClick, children }: {
   children: React.ReactNode
 }) => (
   <div
-    className={cn(className, isDisabled ? 'border-gray-100 text-gray-300' : 'border-gray-200 text-gray-700 cursor-pointer hover:border-gray-300 hover:shadow-sm', 'flex items-center h-7 px-3 rounded-md border text-xs  font-medium')}
+    className={cn(className, isDisabled ? 'border-gray-100 text-gray-300' : 'border-gray-200 text-gray-700 cursor-pointer hover:border-gray-300 hover:shadow-sm', 'flex items-center h-7 px-3     border text-xs  font-medium')}
     onClick={() => !isDisabled && onClick?.()}
   >
     {children}
@@ -200,7 +200,7 @@ const GenerationItem: FC<IGenerationItemProps> = ({
                   rating: 'like',
                 })
               }}
-              className='flex w-6 h-6 items-center justify-center rounded-md cursor-pointer hover:bg-gray-100'>
+              className='flex w-6 h-6 items-center justify-center     cursor-pointer hover:bg-gray-100'>
               <HandThumbUpIcon width={16} height={16} />
             </div>
             <div
@@ -209,7 +209,7 @@ const GenerationItem: FC<IGenerationItemProps> = ({
                   rating: 'dislike',
                 })
               }}
-              className='flex w-6 h-6 items-center justify-center rounded-md cursor-pointer hover:bg-gray-100'>
+              className='flex w-6 h-6 items-center justify-center     cursor-pointer hover:bg-gray-100'>
               <HandThumbDownIcon width={16} height={16} />
             </div>
           </>
@@ -222,7 +222,7 @@ const GenerationItem: FC<IGenerationItemProps> = ({
               rating: null,
             })
           }}
-          className='flex w-7 h-7 items-center justify-center rounded-md cursor-pointer  !text-primary-600 border border-primary-200 bg-primary-100 hover:border-primary-300 hover:bg-primary-200'>
+          className='flex w-7 h-7 items-center justify-center     cursor-pointer  !text-primary-600 border border-primary-200 bg-primary-100 hover:border-primary-300 hover:bg-primary-200'>
           <HandThumbUpIcon width={16} height={16} />
         </div>
       )}
@@ -233,7 +233,7 @@ const GenerationItem: FC<IGenerationItemProps> = ({
               rating: null,
             })
           }}
-          className='flex w-7 h-7 items-center justify-center rounded-md cursor-pointer  !text-red-600 border border-red-200 bg-red-100 hover:border-red-300 hover:bg-red-200'>
+          className='flex w-7 h-7 items-center justify-center     cursor-pointer  !text-red-600 border border-red-200 bg-red-100 hover:border-red-300 hover:bg-red-200'>
           <HandThumbDownIcon width={16} height={16} />
         </div>
       )}
@@ -241,7 +241,7 @@ const GenerationItem: FC<IGenerationItemProps> = ({
   )
 
   return (
-    <div ref={ref} className={cn(className, isTop ? `rounded-xl border ${!isError ? 'border-gray-200 bg-white' : 'border-[#FECDCA] bg-[#FEF3F2]'} ` : 'rounded-br-xl !mt-0')}
+    <div ref={ref} className={cn(className, isTop ? `  border ${!isError ? 'border-gray-200 bg-white' : 'border-[#FECDCA] bg-[#FEF3F2]'} ` : 'rounded-br-xl !mt-0')}
       style={isTop
         ? {
           boxShadow: '0px 1px 2px rgba(16, 24, 40, 0.05)',
@@ -258,7 +258,7 @@ const GenerationItem: FC<IGenerationItemProps> = ({
             style={mainStyle}
           >
             {(isTop && taskId) && (
-              <div className='mb-2 text-gray-500 border border-gray-200 box-border flex items-center rounded-md italic text-[11px] pl-1 pr-1.5 font-medium w-fit group-hover:opacity-100'>
+              <div className='mb-2 text-gray-500 border border-gray-200 box-border flex items-center     italic text-[11px] pl-1 pr-1.5 font-medium w-fit group-hover:opacity-100'>
                 <HashtagIcon className='w-3 h-3 text-gray-400 fill-current mr-1 stroke-current stroke-1' />
                 {taskId}
               </div>)

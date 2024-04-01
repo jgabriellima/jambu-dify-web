@@ -24,7 +24,7 @@ export type IAppSelecotr = {
 export default function AppSelector({ isMobile }: IAppSelecotr) {
   const itemClassName = `
     flex items-center w-full h-9 px-3 text-gray-700 text-[14px]
-    rounded-lg font-normal hover:bg-gray-50 cursor-pointer
+       font-normal hover:bg-gray-50 cursor-pointer
   `
   const router = useRouter()
   const [aboutVisible, setAboutVisible] = useState(false)
@@ -77,7 +77,7 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                 <Menu.Items
                   className="
                     absolute right-0 mt-1.5 w-60 max-w-80
-                    divide-y divide-gray-100 origin-top-right rounded-lg bg-white
+                    divide-y divide-gray-100 origin-top-right    bg-white
                     shadow-lg
                   "
                 >
@@ -146,7 +146,7 @@ export default function AppSelector({ isMobile }: IAppSelecotr) {
                   <Menu.Item>
                     <div className='p-1' onClick={() => handleLogout()}>
                       <div
-                        className='flex items-center justify-between h-9 px-3 rounded-lg cursor-pointer group hover:bg-gray-50'
+                        className='flex items-center justify-between h-9 px-3    cursor-pointer group hover:bg-gray-50'
                       >
                         <div className='font-normal text-[14px] text-gray-700'>{t('common.userProfile.logout')}</div>
                         <LogOut01 className='hidden w-[14px] h-[14px] text-gray-500 group-hover:flex' />

@@ -24,8 +24,8 @@ const NoData: FC<INoDataProps> = ({
   const { t } = useTranslation()
 
   return (
-    <div className='mt-[60px] px-5 py-4 rounded-2xl bg-gray-50 '>
-      <div className='flex items-center justify-center w-11 h-11 border border-gray-100 rounded-lg'>
+    <div className='mt-[60px] px-5 py-4     bg-gray-50 '>
+      <div className='flex items-center justify-center w-11 h-11 border border-gray-100   '>
         {markIcon}
       </div>
       <div className='mt-2'>

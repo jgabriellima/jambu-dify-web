@@ -150,7 +150,7 @@ const ParameterItem: FC<ParameterItemProps> = ({
           />}
           <input
             ref={numberInputRef}
-            className='shrink-0 block ml-4 pl-3 w-16 h-8 appearance-none outline-none rounded-lg bg-gray-100 text-[13px] text-gra-900'
+            className='shrink-0 block ml-4 pl-3 w-16 h-8 appearance-none outline-none    bg-gray-100 text-[13px] text-gra-900'
             type='number'
             max={parameterRule.max}
             min={parameterRule.min}
@@ -178,7 +178,7 @@ const ParameterItem: FC<ParameterItemProps> = ({
     if (parameterRule.type === 'string' && !parameterRule.options?.length) {
       return (
         <input
-          className='flex items-center px-3 w-[200px] h-8 appearance-none outline-none rounded-lg bg-gray-100 text-[13px] text-gra-900'
+          className='flex items-center px-3 w-[200px] h-8 appearance-none outline-none    bg-gray-100 text-[13px] text-gra-900'
           value={renderValue as string}
           onChange={handleStringInputChange}
         />

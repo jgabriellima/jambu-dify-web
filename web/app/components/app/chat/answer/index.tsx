@@ -37,7 +37,7 @@ const Divider: FC<{ name: string }> = ({ name }) => {
   </div>
 }
 const IconWrapper: FC<{ children: React.ReactNode | string }> = ({ children }) => {
-  return <div className={'rounded-lg h-6 w-6 flex items-center justify-center hover:bg-gray-100'}>
+  return <div className={'   h-6 w-6 flex items-center justify-center hover:bg-gray-100'}>
     {children}
   </div>
 }
@@ -115,7 +115,7 @@ const Answer: FC<IAnswerProps> = ({
 
     const isLike = rating === 'like'
     const ratingIconClassname = isLike ? 'text-primary-600 bg-primary-100 hover:bg-primary-200' : 'text-red-600 bg-red-100 hover:bg-red-200'
-    const UserSymbol = <UserCircleIcon className='absolute top-[-2px] left-[18px] w-3 h-3 rounded-lg text-gray-400 bg-white' />
+    const UserSymbol = <UserCircleIcon className='absolute top-[-2px] left-[18px] w-3 h-3    text-gray-400 bg-white' />
     // The tooltip is always displayed, but the content is different for different scenarios.
     return (
       <Tooltip
@@ -123,7 +123,7 @@ const Answer: FC<IAnswerProps> = ({
         content={((isWebScene || (!isUserFeedback && !isWebScene)) ? isLike ? t('appDebug.operation.cancelAgree') : t('appDebug.operation.cancelDisagree') : (!isWebScene && isUserFeedback) ? `${t('appDebug.operation.userAction')}${isLike ? t('appDebug.operation.agree') : t('appDebug.operation.disagree')}` : '') as string}
       >
         <div
-          className={`relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-white cursor-pointer text-gray-500 hover:text-gray-800 ${(!isWebScene && isUserFeedback) ? '!cursor-default' : ''}`}
+          className={`relative box-border flex items-center justify-center h-7 w-7 p-0.5    bg-white cursor-pointer text-gray-500 hover:text-gray-800 ${(!isWebScene && isUserFeedback) ? '!cursor-default' : ''}`}
           style={{ boxShadow: '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.05)' }}
           {...((isWebScene || (!isUserFeedback && !isWebScene))
             ? {
@@ -135,7 +135,7 @@ const Answer: FC<IAnswerProps> = ({
             }
             : {})}
         >
-          <div className={`${ratingIconClassname} rounded-lg h-6 w-6 flex items-center justify-center`}>
+          <div className={`${ratingIconClassname}    h-6 w-6 flex items-center justify-center`}>
             <RatingIcon isLike={isLike} />
           </div>
           {!isWebScene && isUserFeedback && UserSymbol}
@@ -147,10 +147,10 @@ const Answer: FC<IAnswerProps> = ({
   const renderHasAnnotationBtn = () => {
     return (
       <div
-        className={cn(s.hasAnnotationBtn, 'relative box-border flex items-center justify-center h-7 w-7 p-0.5 rounded-lg bg-white cursor-pointer text-[#444CE7]')}
+        className={cn(s.hasAnnotationBtn, 'relative box-border flex items-center justify-center h-7 w-7 p-0.5    bg-white cursor-pointer text-[#38A169]')}
         style={{ boxShadow: '0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.05)' }}
       >
-        <div className='p-1 rounded-lg bg-[#EEF4FF] '>
+        <div className='p-1    bg-[#EEF4FF] '>
           <MessageFast className='w-4 h-4' />
         </div>
       </div>
@@ -303,7 +303,7 @@ const Answer: FC<IAnswerProps> = ({
                           {item.suggestedQuestions.filter(q => !!q && q.trim()).map((question, index) => (
                             <div
                               key={index}
-                              className='mt-1 mr-1 max-w-full last:mr-0 shrink-0 py-[5px] leading-[18px] items-center px-4 rounded-lg border border-gray-200 shadow-xs bg-white text-xs font-medium text-primary-600 cursor-pointer'
+                              className='mt-1 mr-1 max-w-full last:mr-0 shrink-0 py-[5px] leading-[18px] items-center px-4    border border-gray-200 shadow-xs bg-white text-xs font-medium text-primary-600 cursor-pointer'
                               onClick={() => onQueryChange(question)}
                             >
                               {question}

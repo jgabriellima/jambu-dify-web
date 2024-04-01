@@ -23,7 +23,7 @@ const TabSlider: FC<TabSliderProps> = ({
   const current = options[currentIndex]
 
   return (
-    <div className={cn(className, 'relative flex p-0.5 rounded-lg bg-gray-200')}>
+    <div className={cn(className, 'relative flex p-0.5    bg-gray-200')}>
       {
         options.map((option, index) => (
           <div

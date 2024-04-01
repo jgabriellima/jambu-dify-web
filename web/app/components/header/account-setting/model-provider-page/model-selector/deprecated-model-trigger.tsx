@@ -22,7 +22,7 @@ const ModelTrigger: FC<ModelTriggerProps> = ({
   return (
     <div
       className={`
-        group flex items-center px-2 h-8 rounded-lg bg-[#FFFAEB] cursor-pointer
+        group flex items-center px-2 h-8    bg-[#FFFAEB] cursor-pointer
         ${className}
       `}
     >

@@ -16,13 +16,13 @@
   );
 }
 .opBtn {
-  @apply w-fit h-6 text-xs px-2 py-1 text-gray-700 rounded-md !important;
+  @apply w-fit h-6 text-xs px-2 py-1 text-gray-700     !important;
 }
 .opIcon {
   @apply mr-1 stroke-current text-gray-700 w-3 h-3;
 }
 .progressContainer {
-  @apply relative flex mb-2 h-4 rounded-md w-full;
+  @apply relative flex mb-2 h-4     w-full;
 }
 .progressBgItem {
   @apply flex-1 border-r border-r-white first:rounded-l-md;
@@ -47,7 +47,7 @@
   @apply bg-orange-500;
 }
 .economyIcon {
-  background-color: #444ce7;
+  background-color: #38A169;
   mask-image: url(../../assets/normal.svg);
 }
 .tokens {

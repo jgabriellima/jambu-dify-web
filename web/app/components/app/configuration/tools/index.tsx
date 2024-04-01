@@ -81,20 +81,20 @@ const Tools = () => {
   }
 
   return (
-    <div className='mt-3 px-3 rounded-xl bg-gray-50'>
+    <div className='mt-3 px-3   bg-gray-50'>
       <div className='flex items-center h-12'>
         <div className='grow flex items-center'>
           <div
             className={`
-              group flex items-center justify-center mr-1 w-6 h-6 rounded-md 
+              group flex items-center justify-center mr-1 w-6 h-6     
               ${externalDataToolsConfig.length && 'hover:shadow-xs hover:bg-white'}
             `}
             onClick={() => setExpanded(v => !v)}
           >
             {
               externalDataToolsConfig.length
-                ? <Tool03 className='group-hover:hidden w-4 h-4 text-[#444CE7]' />
-                : <Tool03 className='w-4 h-4 text-[#444CE7]' />
+                ? <Tool03 className='group-hover:hidden w-4 h-4 text-[#38A169]' />
+                : <Tool03 className='w-4 h-4 text-[#38A169]' />
             }
             {
               !!externalDataToolsConfig.length && (
@@ -132,11 +132,11 @@ const Tools = () => {
               externalDataToolsConfig.map((item, index: number) => (
                 <div
                   key={`${index}-${item.type}-${item.label}-${item.variable}`}
-                  className='group flex items-center mb-1 last-of-type:mb-0 px-2.5 py-2 rounded-lg border-[0.5px] border-gray-200 bg-white shadow-xs'
+                  className='group flex items-center mb-1 last-of-type:mb-0 px-2.5 py-2    border-[0.5px] border-gray-200 bg-white shadow-xs'
                 >
                   <div className='grow flex items-center'>
                     <AppIcon size='large'
-                      className='mr-2 !w-6 !h-6 rounded-md border-[0.5px] border-black/5'
+                      className='mr-2 !w-6 !h-6     border-[0.5px] border-black/5'
                       icon={item.icon}
                       background={item.icon_background}
                     />
@@ -156,13 +156,13 @@ const Tools = () => {
                     </TooltipPlus>
                   </div>
                   <div
-                    className='hidden group-hover:flex items-center justify-center mr-1 w-6 h-6 hover:bg-black/5 rounded-md cursor-pointer'
+                    className='hidden group-hover:flex items-center justify-center mr-1 w-6 h-6 hover:bg-black/5     cursor-pointer'
                     onClick={() => handleOpenExternalDataToolModal(item, index)}
                   >
                     <Settings01 className='w-4 h-4 text-gray-500' />
                   </div>
                   <div
-                    className='hidden group/action group-hover:flex items-center justify-center w-6 h-6 hover:bg-[#FEE4E2] rounded-md cursor-pointer'
+                    className='hidden group/action group-hover:flex items-center justify-center w-6 h-6 hover:bg-[#FEE4E2]     cursor-pointer'
                     onClick={() => setExternalDataToolsConfig([...externalDataToolsConfig.slice(0, index), ...externalDataToolsConfig.slice(index + 1)])}
                   >
                     <Trash03 className='w-4 h-4 text-gray-500 group-hover/action:text-[#D92D20]' />

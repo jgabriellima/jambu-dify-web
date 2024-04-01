@@ -110,7 +110,7 @@ const NewSegmentModal: FC<NewSegmentModalProps> = ({
   }
 
   return (
-    <Modal isShow={isShow} onClose={() => {}} className='pt-8 px-8 pb-6 !max-w-[640px] !rounded-xl'>
+    <Modal isShow={isShow} onClose={() => {}} className='pt-8 px-8 pb-6 !max-w-[640px] ! '>
       <div className={'flex flex-col relative'}>
         <div className='absolute right-0 -top-0.5 flex items-center h-6'>
           <div className='flex justify-center items-center w-6 h-6 cursor-pointer' onClick={handleCancel}>
@@ -118,7 +118,7 @@ const NewSegmentModal: FC<NewSegmentModalProps> = ({
           </div>
         </div>
         <div className='mb-[14px]'>
-          <span className='inline-flex items-center px-1.5 h-5 border border-gray-200 rounded-md'>
+          <span className='inline-flex items-center px-1.5 h-5 border border-gray-200    '>
             <Hash02 className='mr-0.5 w-3 h-3 text-gray-400' />
             <span className='text-[11px] font-medium text-gray-500 italic'>
               {
@@ -136,13 +136,13 @@ const NewSegmentModal: FC<NewSegmentModalProps> = ({
         </div>
         <div className='flex justify-end'>
           <Button
-            className='mr-2 !h-9 !px-4 !py-2 text-sm font-medium text-gray-700 !rounded-lg'
+            className='mr-2 !h-9 !px-4 !py-2 text-sm font-medium text-gray-700 !  '
             onClick={handleCancel}>
             {t('common.operation.cancel')}
           </Button>
           <Button
             type='primary'
-            className='!h-9 !px-4 !py-2 text-sm font-medium !rounded-lg'
+            className='!h-9 !px-4 !py-2 text-sm font-medium !  '
             onClick={handleSave}
             disabled={loading}
           >

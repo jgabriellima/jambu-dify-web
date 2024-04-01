@@ -114,7 +114,7 @@ const ParamsConfig: FC = () => {
   return (
     <div>
       <div
-        className={cn('flex items-center rounded-md h-7 px-3 space-x-1 text-gray-700 cursor-pointer hover:bg-gray-200', open && 'bg-gray-200')}
+        className={cn('flex items-center     h-7 px-3 space-x-1 text-gray-700 cursor-pointer hover:bg-gray-200', open && 'bg-gray-200')}
         onClick={() => {
           setTempDataSetConfigs({
             ...datasetConfigs,
@@ -142,14 +142,14 @@ const ParamsConfig: FC = () => {
           >
             <div className='mt-2 space-y-3'>
               <RadioCard
-                icon={<NTo1Retrieval className='shrink-0 mr-3 w-9 h-9 rounded-lg' />}
+                icon={<NTo1Retrieval className='shrink-0 mr-3 w-9 h-9   ' />}
                 title={t('appDebug.datasetConfig.retrieveOneWay.title')}
                 description={t('appDebug.datasetConfig.retrieveOneWay.description')}
                 isChosen={type === RETRIEVE_TYPE.oneWay}
                 onChosen={() => { setType(RETRIEVE_TYPE.oneWay) }}
               />
               <RadioCard
-                icon={<MultiPathRetrieval className='shrink-0 mr-3 w-9 h-9 rounded-lg' />}
+                icon={<MultiPathRetrieval className='shrink-0 mr-3 w-9 h-9   ' />}
                 title={t('appDebug.datasetConfig.retrieveMultiWay.title')}
                 description={t('appDebug.datasetConfig.retrieveMultiWay.description')}
                 isChosen={type === RETRIEVE_TYPE.multiWay}

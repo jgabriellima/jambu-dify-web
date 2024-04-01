@@ -50,7 +50,7 @@ const Moderation = () => {
   }
 
   return (
-    <div className='flex items-center px-3 h-12 bg-gray-50 rounded-xl overflow-hidden'>
+    <div className='flex items-center px-3 h-12 bg-gray-50   overflow-hidden'>
       <div className='shrink-0 flex items-center justify-center mr-1 w-6 h-6'>
         <FileSearch02 className='shrink-0 w-4 h-4 text-[#039855]' />
       </div>
@@ -65,7 +65,7 @@ const Moderation = () => {
       <div className='shrink-0 ml-4 mr-1 w-[1px] h-3.5 bg-gray-200'></div>
       <div
         className={`
-          shrink-0 flex items-center px-3 h-7 cursor-pointer rounded-md
+          shrink-0 flex items-center px-3 h-7 cursor-pointer    
           text-xs text-gray-700 font-medium hover:bg-gray-200
         `}
         onClick={handleOpenModerationSettingModal}

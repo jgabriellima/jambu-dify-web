@@ -64,7 +64,7 @@ const DebugItem: FC<DebugItemProps> = ({
 
   return (
     <div
-      className={`flex flex-col min-w-[320px] rounded-xl bg-white border-[0.5px] border-black/5 ${className}`}
+      className={`flex flex-col min-w-[320px]   bg-white border-[0.5px] border-black/5 ${className}`}
       style={style}
     >
       <div className='shrink-0 flex items-center justify-between h-10 px-3 border-b-[0.5px] border-b-black/5'>

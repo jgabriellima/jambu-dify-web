@@ -15,7 +15,7 @@ const Activate = () => {
     )}>
       <div className={
         cn(
-          'flex w-full flex-col bg-white shadow rounded-2xl shrink-0',
+          'flex w-full flex-col bg-white shadow     shrink-0',
           'space-between',
         )
       }>

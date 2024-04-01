@@ -33,7 +33,7 @@ type Props = {
 
 const RecordsEmpty: FC = () => {
   const { t } = useTranslation()
-  return <div className='bg-gray-50 rounded-2xl p-5'>
+  return <div className='bg-gray-50     p-5'>
     <div className={s.clockWrapper}>
       <div className={cn(s.clockIcon, 'w-5 h-5')}></div>
     </div>
@@ -207,7 +207,7 @@ const HitTesting: FC<Props> = ({ datasetId }: Props) => {
           }}
         />}
       </Modal>
-      <Drawer isOpen={isShowModifyRetrievalModal} onClose={() => setIsShowModifyRetrievalModal(false)} footer={null} mask={isMobile} panelClassname='mt-16 mx-2 sm:mr-2 mb-3 !p-0 !max-w-[640px] rounded-xl'>
+      <Drawer isOpen={isShowModifyRetrievalModal} onClose={() => setIsShowModifyRetrievalModal(false)} footer={null} mask={isMobile} panelClassname='mt-16 mx-2 sm:mr-2 mb-3 !p-0 !max-w-[640px]  '>
         <ModifyRetrievalModal
           indexMethod={currentDataset?.indexing_technique || ''}
           value={retrievalConfig}

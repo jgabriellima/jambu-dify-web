@@ -60,7 +60,7 @@ const ProviderCard: FC<ProviderCardProps> = ({
 
   return (
     <div
-      className='group relative flex flex-col justify-between px-4 py-3 h-[148px] border-[0.5px] border-black/5 rounded-xl shadow-xs hover:shadow-lg'
+      className='group relative flex flex-col justify-between px-4 py-3 h-[148px] border-[0.5px] border-black/5   shadow-xs hover:shadow-lg'
       style={{ background: provider.background || DEFAULT_BACKGROUND_COLOR }}
     >
       <div>

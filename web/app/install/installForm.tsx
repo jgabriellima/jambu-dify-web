@@ -106,7 +106,7 @@ const InstallForm = () => {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     placeholder={t('login.emailPlaceholder') || ''}
-                    className={'appearance-none block w-full rounded-lg pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm'}
+                    className={'appearance-none block w-full    pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm'}
                   />
                 </div>
               </div>
@@ -115,14 +115,14 @@ const InstallForm = () => {
                 <label htmlFor="name" className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">
                   {t('login.name')}
                 </label>
-                <div className="mt-1 relative rounded-md shadow-sm">
+                <div className="mt-1 relative     shadow-sm">
                   <input
                     id="name"
                     type="text"
                     value={name}
                     onChange={e => setName(e.target.value)}
                     placeholder={t('login.namePlaceholder') || ''}
-                    className={'appearance-none block w-full rounded-lg pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm pr-10'}
+                    className={'appearance-none block w-full    pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm pr-10'}
                   />
                 </div>
               </div>
@@ -131,14 +131,14 @@ const InstallForm = () => {
                 <label htmlFor="password" className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">
                   {t('login.password')}
                 </label>
-                <div className="mt-1 relative rounded-md shadow-sm">
+                <div className="mt-1 relative     shadow-sm">
                   <input
                     id="password"
                     type={showPassword ? 'text' : 'password'}
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     placeholder={t('login.passwordPlaceholder') || ''}
-                    className={'appearance-none block w-full rounded-lg pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm pr-10'}
+                    className={'appearance-none block w-full    pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm pr-10'}
                   />
                   <div className="absolute inset-y-0 right-0 flex items-center pr-3">
                     <button

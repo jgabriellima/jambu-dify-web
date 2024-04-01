@@ -136,14 +136,14 @@ const ActivateForm = () => {
                 <label htmlFor="name" className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">
                   {t('login.name')}
                 </label>
-                <div className="mt-1 relative rounded-md shadow-sm">
+                <div className="mt-1 relative     shadow-sm">
                   <input
                     id="name"
                     type="text"
                     value={name}
                     onChange={e => setName(e.target.value)}
                     placeholder={t('login.namePlaceholder') || ''}
-                    className={'appearance-none block w-full rounded-lg pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm pr-10'}
+                    className={'appearance-none block w-full    pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm pr-10'}
                   />
                 </div>
               </div>
@@ -152,14 +152,14 @@ const ActivateForm = () => {
                 <label htmlFor="password" className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">
                   {t('login.password')}
                 </label>
-                <div className="mt-1 relative rounded-md shadow-sm">
+                <div className="mt-1 relative     shadow-sm">
                   <input
                     id="password"
                     type='password'
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     placeholder={t('login.passwordPlaceholder') || ''}
-                    className={'appearance-none block w-full rounded-lg pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm pr-10'}
+                    className={'appearance-none block w-full    pl-[14px] px-3 py-2 border border-gray-200 hover:border-gray-300 hover:shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400 caret-primary-600 sm:text-sm pr-10'}
                   />
                 </div>
                 <div className='mt-1 text-xs text-gray-500'>{t('login.error.passwordInvalid')}</div>
@@ -169,7 +169,7 @@ const ActivateForm = () => {
                 <label htmlFor="name" className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">
                   {t('login.interfaceLanguage')}
                 </label>
-                <div className="relative mt-1 rounded-md shadow-sm">
+                <div className="relative mt-1     shadow-sm">
                   <SimpleSelect
                     defaultValue={defaultLanguage()}
                     items={languages}
@@ -184,7 +184,7 @@ const ActivateForm = () => {
                 <label htmlFor="timezone" className="block text-sm font-medium text-gray-700">
                   {t('login.timezone')}
                 </label>
-                <div className="relative mt-1 rounded-md shadow-sm">
+                <div className="relative mt-1     shadow-sm">
                   <SimpleSelect
                     defaultValue={timezone}
                     items={timezones}

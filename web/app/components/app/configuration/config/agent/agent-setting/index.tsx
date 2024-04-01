@@ -42,7 +42,7 @@ const AgentSetting: FC<Props> = ({
       }}
     >
       <div
-        className='w-[640px] flex flex-col h-full overflow-hidden bg-white border-[0.5px] border-gray-200 rounded-xl shadow-xl'
+        className='w-[640px] flex flex-col h-full overflow-hidden bg-white border-[0.5px] border-gray-200   shadow-xl'
       >
         <div className='shrink-0 flex justify-between items-center pl-6 pr-5 h-14 border-b border-b-gray-100'>
           <div className='flex flex-col text-base font-semibold text-gray-900'>
@@ -99,7 +99,7 @@ const AgentSetting: FC<Props> = ({
                 type="number"
                 min={maxIterationsMin}
                 max={maxIterationsMax} step={1}
-                className="block w-11 h-7 leading-7 rounded-lg border-0 pl-1 px-1.5 bg-gray-100 text-gray-900  placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-primary-600"
+                className="block w-11 h-7 leading-7    border-0 pl-1 px-1.5 bg-gray-100 text-gray-900  placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-primary-600"
                 value={tempPayload.max_iteration}
                 onChange={(e) => {
                   let value = parseInt(e.target.value, 10)
@@ -117,13 +117,13 @@ const AgentSetting: FC<Props> = ({
           </ItemPanel>
 
           {!isFunctionCall && (
-            <div className='py-2 bg-gray-50 rounded-xl shadow-xs'>
+            <div className='py-2 bg-gray-50   shadow-xs'>
               <div className='flex items-center h-8 px-4 leading-6 text-sm font-semibold text-gray-700'>{t('tools.builtInPromptTitle')}</div>
               <div className='h-[396px] px-4 overflow-y-auto leading-5 text-sm font-normal text-gray-700 whitespace-pre-line'>
                 {isChatModel ? DEFAULT_AGENT_PROMPT.chat : DEFAULT_AGENT_PROMPT.completion}
               </div>
               <div className='px-4'>
-                <div className='inline-flex items-center h-5 px-1 rounded-md bg-gray-100 leading-[18px] text-xs font-medium text-gray-500'>{(isChatModel ? DEFAULT_AGENT_PROMPT.chat : DEFAULT_AGENT_PROMPT.completion).length}</div>
+                <div className='inline-flex items-center h-5 px-1     bg-gray-100 leading-[18px] text-xs font-medium text-gray-500'>{(isChatModel ? DEFAULT_AGENT_PROMPT.chat : DEFAULT_AGENT_PROMPT.completion).length}</div>
               </div>
             </div>
           )}
