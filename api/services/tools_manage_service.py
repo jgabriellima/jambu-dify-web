@@ -1,4 +1,5 @@
 import json
+import logging
 
 from flask import current_app
 from httpx import get
@@ -23,6 +24,8 @@ from core.tools.utils.parser import ApiBasedToolSchemaParser
 from extensions.ext_database import db
 from models.tools import ApiToolProvider, BuiltinToolProvider
 from services.model_provider_service import ModelProviderService
+
+logger = logging.getLogger(__name__)
 
 
 class ToolManageService:
@@ -138,9 +141,9 @@ class ToolManageService:
             :return: the list of tool providers
         """
         provider = ToolManager.get_builtin_provider(provider_name)
-        return [
-            v.to_dict() for _, v in (provider.credentials_schema or {}).items()
-        ]
+        return json.loads(serialize_base_model_array([
+            v for _, v in (provider.credentials_schema or {}).items()
+        ]))
 
     @staticmethod
     def parser_api_schema(schema: str) -> list[ApiBasedToolBundle]:
@@ -309,6 +312,7 @@ class ToolManageService:
             # try to parse schema, avoid SSRF attack
             ToolManageService.parser_api_schema(schema)
         except Exception as e:
+            logger.error(f"parse api schema error: {str(e)}")
             raise ValueError('invalid schema, please check the url you provided')
         
         return {
