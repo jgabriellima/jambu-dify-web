@@ -10,6 +10,7 @@ import {
   type Node,
   type NodeOutPutVar,
 } from '../../../../types'
+import Wrap from '../editor/wrap'
 import ToggleExpandBtn from '@/app/components/workflow/nodes/_base/components/toggle-expand-btn'
 import useToggleExpend from '@/app/components/workflow/nodes/_base/hooks/use-toggle-expend'
 import PromptEditor from '@/app/components/base/prompt-editor'
@@ -20,8 +21,9 @@ import { useEventEmitterContextContext } from '@/context/event-emitter'
 import { PROMPT_EDITOR_INSERT_QUICKLY } from '@/app/components/base/prompt-editor/plugins/update-block'
 import { Variable02 } from '@/app/components/base/icons/src/vender/solid/development'
 import TooltipPlus from '@/app/components/base/tooltip-plus'
-
 type Props = {
+  className?: string
+  headerClassName?: string
   instanceId?: string
   title: string | JSX.Element
   value: string
@@ -43,6 +45,8 @@ type Props = {
 }
 
 const Editor: FC<Props> = ({
+  className,
+  headerClassName,
   instanceId,
   title,
   value,
@@ -102,10 +106,10 @@ const Editor: FC<Props> = ({
   }
 
   return (
-    <div className={cn(wrapClassName)} style={wrapStyle}>
+    <Wrap className={cn(className, wrapClassName)} style={wrapStyle} isInNode isExpand={isExpand}>
       <div ref={ref} className={cn(isFocus ? s.gradientBorder : 'bg-gray-100', isExpand && 'h-full', '!rounded-[9px] p-0.5')}>
         <div className={cn(isFocus ? 'bg-gray-50' : 'bg-gray-100', isExpand && 'h-full flex flex-col', 'rounded-lg')}>
-          <div className='pt-1 pl-3 pr-2 flex justify-between h-6 items-center'>
+          <div className={cn(headerClassName, 'pt-1 pl-3 pr-2 flex justify-between h-6 items-center')}>
             <div className='leading-4 text-xs font-semibold text-gray-700 uppercase'>{title}</div>
             <div className='flex items-center'>
               <div className='leading-[18px] text-xs font-medium text-gray-500'>{value?.length || 0}</div>
@@ -138,10 +142,11 @@ const Editor: FC<Props> = ({
 
           {/* Min: 80 Max: 560. Header: 24 */}
           <div className={cn('pb-2', isExpand && 'flex flex-col grow')}>
-            <div className={cn(isExpand ? 'grow' : 'max-h-[536px]', 'px-3 min-h-[56px]  overflow-y-auto')}>
+            <div className={cn(isExpand ? 'grow' : 'max-h-[536px]', 'relative px-3 min-h-[56px]  overflow-y-auto')}>
               <PromptEditor
                 instanceId={instanceId}
                 compact
+                className='min-h-[56px]'
                 style={isExpand ? { height: editorExpandHeight - 5 } : {}}
                 value={value}
                 contextBlock={{
@@ -190,7 +195,7 @@ const Editor: FC<Props> = ({
 
         </div>
       </div>
-    </div>
+    </Wrap>
 
   )
 }
