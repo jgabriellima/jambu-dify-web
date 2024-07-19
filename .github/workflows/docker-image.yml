@@ -25,5 +25,6 @@ jobs:
 
       - name: Build and push API image
         run: |
-          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/jambu-dify-web:latest -f web/Dockerfile .
+          cd web
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/jambu-dify-web:latest -f Dockerfile .
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/jambu-dify-web:latest
