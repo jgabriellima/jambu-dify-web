@@ -322,12 +322,15 @@ const translation = {
       language: 'Langue',
       resolutionTooltip: 'Support de la langue pour la voix de synthèse de texte.',
       voice: 'Voix',
+      autoPlay: 'Lecture Automatique',
+      autoPlayEnabled: 'Allumer',
+      autoPlayDisabled: 'Fermeture',
     },
   },
   openingStatement: {
     title: 'Ouverture de Conversation',
     add: 'Ajouter',
-    writeOpner: 'Écrire l\'introduction',
+    writeOpener: 'Écrire l\'introduction',
     placeholder: 'Rédigez votre message d\'ouverture ici, vous pouvez utiliser des variables, essayez de taper {{variable}}.',
     openingQuestion: 'Questions d\'ouverture',
     noDataPlaceHolder:

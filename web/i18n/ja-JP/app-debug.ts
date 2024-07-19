@@ -319,12 +319,15 @@ const translation = {
       language: '言語',
       resolutionTooltip: 'テキスト読み上げの音声言語をサポートします。',
       voice: '音声',
+      autoPlay: '自動再生',
+      autoPlayEnabled: '開ける',
+      autoPlayDisabled: '關閉',
     },
   },
   openingStatement: {
     title: '会話開始',
     add: '追加',
-    writeOpner: 'オープナーを書く',
+    writeOpener: 'オープナーを書く',
     placeholder: 'ここにオープナーメッセージを書いてください。変数を使用できます。{{variable}} を入力してみてください。',
     openingQuestion: '開始質問',
     noDataPlaceHolder:

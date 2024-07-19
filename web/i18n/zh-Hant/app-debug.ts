@@ -318,12 +318,15 @@ const translation = {
       language: '語言',
       resolutionTooltip: '文字轉語音音色支援語言。',
       voice: '音色',
+      autoPlay: '自動播放',
+      autoPlayEnabled: '開啟',
+      autoPlayDisabled: '關閉',
     },
   },
   openingStatement: {
     title: '對話開場白',
     add: '新增開場白',
-    writeOpner: '編寫開場白',
+    writeOpener: '編寫開場白',
     placeholder: '在這裡寫下你的開場白，你可以使用變數，嘗試輸入 {{variable}}。',
     openingQuestion: '開場問題',
     noDataPlaceHolder:

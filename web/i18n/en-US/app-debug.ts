@@ -51,7 +51,7 @@ const translation = {
       title: 'Experience enhance',
     },
     conversationOpener: {
-      title: 'Conversation remakers',
+      title: 'Conversation Opener',
       description: 'In a chat app, the first sentence that the AI actively speaks to the user is usually used as a welcome.',
     },
     suggestedQuestionsAfterAnswer: {
@@ -284,6 +284,7 @@ const translation = {
     'varName': 'Variable Name',
     'labelName': 'Label Name',
     'inputPlaceholder': 'Please input',
+    'content': 'Content',
     'required': 'Required',
     'errorMsg': {
       varNameRequired: 'Variable name is required',
@@ -322,12 +323,15 @@ const translation = {
       language: 'Language',
       resolutionTooltip: 'Text-to-speech voice support language。',
       voice: 'Voice',
+      autoPlay: 'Auto Play',
+      autoPlayEnabled: 'Turn On',
+      autoPlayDisabled: 'Turn Off',
     },
   },
   openingStatement: {
     title: 'Conversation Opener',
     add: 'Add',
-    writeOpner: 'Write opener',
+    writeOpener: 'Write opener',
     placeholder: 'Write your opener message here, you can use variables, try type {{variable}}.',
     openingQuestion: 'Opening Questions',
     noDataPlaceHolder:
